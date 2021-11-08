@@ -5,7 +5,7 @@
   <!-- Required meta tags --> 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Regal Admin</title>
+  <title>Sailor</title>
   <!-- base:css -->
   <link rel="stylesheet" href="{{url('Backend/vendors/mdi/css/materialdesignicons.min.css')}}">
   <link rel="stylesheet" href="{{url('Backend/vendors/feather/feather.css')}}">
@@ -25,7 +25,7 @@
 <body>
   <div class="container-scroller">
     <!-- partial:partials/_navbar.html -->
-    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+     <!-- <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
         <a class="navbar-brand brand-logo" href="index.html"><img src="{{url('Backend/images/logo.svg')}}" alt="logo"/></a>
         <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{url('Backend/images/logo-mini.svg')}}" alt="logo"/></a>
@@ -118,11 +118,14 @@
           <span class="icon-menu"></span>
         </button>
       </div>
-    </nav>
+    </nav>  -->
+  @include('admin.static.head')
+    
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
+      
       <!-- partial:partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <!-- <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="user-profile">
           <div class="user-image">
             <img src="{{url('Backend/images/faces/face29.jpg')}}">
@@ -201,7 +204,10 @@
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
+      @include('admin.static.side')
+
+
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
