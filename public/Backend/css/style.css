@@ -8618,7 +8618,7 @@
   --gray-lighter: #e8eff4;
   --gray-lightest: #e6e9ed;
   --black: #000000;
-  --primary: #ec37fc;
+  --primary: #37fcba;
   --secondary: #e4e6f6;
   --success: #51c81c;
   --info: #3794fc;
@@ -10984,8 +10984,8 @@ fieldset:disabled .ajax-upload-dragdrop a.ajax-file-upload,
 
 .btn-primary {
   color: #fff;
-  background-color: #ec37fc;
-  border-color: #ec37fc;
+  background-color: #24e0e0;
+  border-color: #24e0e0;24e0e0
 }
 
 .btn-primary:hover {
@@ -11003,7 +11003,7 @@ fieldset:disabled .ajax-upload-dragdrop a.ajax-file-upload,
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #ec37fc;
+  background-color: #24e0e0;
   border-color: #ec37fc;
 }
 
@@ -11279,8 +11279,8 @@ fieldset:disabled .ajax-upload-dragdrop a.ajax-file-upload,
 }
 
 .btn-outline-primary {
-  color: #ec37fc;
-  border-color: #ec37fc;
+  color: #37fcb0;
+  border-color: #37f5fc;
 }
 
 .btn-outline-primary:hover {
@@ -11301,8 +11301,8 @@ fieldset:disabled .ajax-upload-dragdrop a.ajax-file-upload,
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #ec37fc;
-  border-color: #ec37fc;
+  background-color: #37fcec;
+  border-color: #37fcaa;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
@@ -21753,7 +21753,7 @@ dl li {
 /* Sidebar */
 .sidebar {
   min-height: calc(100vh - 60px);
-  background: #ec37fc;
+  background: #fc3737b3;
   font-family: "Karla", sans-serif;
   font-weight: normal;
   padding: 0;
@@ -22045,7 +22045,7 @@ dl li {
 }
 
 .navbar .navbar-brand-wrapper {
-  background: #ec37fc;
+  background: #dc3545de;
   transition: width 0.25s ease, background 0.25s ease;
   -webkit-transition: width 0.25s ease, background 0.25s ease;
   -moz-transition: width 0.25s ease, background 0.25s ease;
@@ -22066,7 +22066,7 @@ dl li {
 }
 
 .navbar .navbar-brand-wrapper .navbar-brand:active, .navbar .navbar-brand-wrapper .navbar-brand:focus, .navbar .navbar-brand-wrapper .navbar-brand:hover {
-  color: #1b2658;
+  color: #37fcba;
 }
 
 .navbar .navbar-brand-wrapper .navbar-brand img {
