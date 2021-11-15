@@ -120,6 +120,7 @@
       </div>
     </nav>  -->
   @include('admin.static.head')
+  
     
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
@@ -210,7 +211,9 @@
       <!-- CONTENT -->
       <!-- partial -->
       <div class="main-panel">
-        @yield('dashboard')
+        
+        @yield('content')
+        
         
           </div>
         

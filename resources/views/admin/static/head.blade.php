@@ -1,6 +1,7 @@
 <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <!-- <a class="navbar-brand brand-logo" href="index.html"><img src=" alt="Sailor"/></a> -->
+        <a class="navbar-brand brand-logo" href="index.html">Sailor Management System</a>
+
         <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{url('Backend/images/logo-mini.svg')}}" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
@@ -12,11 +13,16 @@
           </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">
-            <li class="nav-item dropdown d-lg-flex d-none">
+            <!-- <li class="nav-item dropdown d-lg-flex d-none">
+            <a class="nav-link" href="{{url('/login')}}">
                 <button type="button" class="btn btn-info font-weight-bold">+ Log in</button>
-            </li>
+            </li> -->
             <li class="nav-item dropdown d-lg-flex d-none">
-                <button type="button" class="btn btn-info font-weight-bold">+ Log out</button>
+              <a class="nav-link" href="{{url('/SignUp')}}">
+              <button type="button" class="btn btn-info font-weight-bold">+ Sign Up</button>
+          </li>
+            <li class="nav-item dropdown d-lg-flex d-none">
+                <button type="button" class="btn btn-info font-weight-bold">+ Log In</button>
             </li>
        
             </a>

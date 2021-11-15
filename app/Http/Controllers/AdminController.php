@@ -10,7 +10,8 @@ class AdminController extends Controller
 public function Dashboard()
    {
     //  return "Sailor Management System";
-     return view("admin.dashboard");
+  
+     return view('admin.pages.dashboard');
 
     }
 }
