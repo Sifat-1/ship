@@ -73,22 +73,23 @@ a {
 </head>
 <body>
 
-<form action="/action_page.php">
+<form action="{{route('get.register')}}"method="POST">
+  @csrf
   <div class="container">
     <h1>Register</h1>
-    <p>Please fill in this form to create an account.</p>
+    <p>Please fill in this form to get Registered.</p>
     <hr>
     <label for="UserName"><b>Username</b></label>
-    <input type="text" placeholder="Enter Name" name="UserName" id="UserName" required>
+    <input name="name" type="text" placeholder="Enter Name" name="username" id="username" required>
 
     <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <input name="email" type="text" placeholder="Enter Email" name="email" id="email" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <input name="pass" type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
     <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <input name="repass"type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 

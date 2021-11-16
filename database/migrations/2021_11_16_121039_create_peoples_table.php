@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSeamenTable extends Migration
+class CreatePeoplesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,14 @@ class CreateSeamenTable extends Migration
      */
     public function up()
     {
-        Schema::create('seamen', function (Blueprint $table) {
+        Schema::create('peoples', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('description');
-
+            $table->string('rank');
+            $table->string('address');
+            $table->string('email');
+            $table->double('phone');
+            $table->string('ship');
             $table->timestamps();
         });
     }
@@ -29,6 +32,6 @@ class CreateSeamenTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('seamen');
+        Schema::dropIfExists('peoples');
     }
 }

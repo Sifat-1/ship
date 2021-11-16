@@ -16,7 +16,7 @@
             <!-- <li class="nav-item dropdown d-lg-flex d-none">
             <a class="nav-link" href="{{url('/login')}}">
                 <button type="button" class="btn btn-info font-weight-bold">+ Log in</button>
-            </li> -->
+            </li> --> 
             <li class="nav-item dropdown d-lg-flex d-none">
               <a class="nav-link" href="{{url('/SignUp')}}">
               <button type="button" class="btn btn-info font-weight-bold">+ Sign Up</button>

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Seaman;
+use App\Models\People;
 
 class SailorController extends Controller
 {
@@ -18,12 +18,16 @@ class SailorController extends Controller
     }
     public function StoreSailor(Request $request)
     {
-    //    dd($request->all());
-    Seaman::create([
-
+    // dd($request->all());
+        People::create([
         'name'=>$request->name,
-        'id'=>$request->id,
-        'description'=>$request->description
+        'rank'=>$request->rank,
+        'address'=>$request->address,
+        'email'=>$request->email,
+        'phone'=>$request->phone,
+        'ship'=>$request->ship
+
+        
 
     ]);
     return redirect()->back();

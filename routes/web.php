@@ -24,7 +24,14 @@ Route::get('/', function () {
 
  Route::get('/dashboard',[AdminController::class,'Dashboard']);
  Route::get('/SignUp',[RegistrationController::class,'Registration']);
+ Route::post('/GetRegister',[RegistrationController::class,'GetRegistration'])->name('get.register');
  Route::get('/login',[LoginController::class,'Login']);         
  Route::get('/SailorProfile',[SailorController::class,'SailorProfile']);
  Route::get('/CreatSailor',[SailorController::class,'CreatSailor']);
  Route::post('/StoreSailor',[SailorController::class,'StoreSailor'])->name('store.sailor');
+
+ 
+// Route::get('/test', function () {
+//     return view('admin.pages.test');
+//     // return view('admin.pages.homepage');
+// });
