@@ -9,9 +9,7 @@
     <div class="mb-3">
         <label for="exampleInputName" class="form-label">Sailor Name</label>
         <input name="name" placeholder="Enter Sailor Name" type="text" class="form-control" id="exampleInputName">
-
     </div>
-
     <div class="mb-3">
         <label for="exampleInputRank" class="form-label">Sailor rank</label>
         <input name="rank"placeholder="Enter Sailor rank"  type="text" class="form-control" id="exampleInputRank">

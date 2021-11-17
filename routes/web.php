@@ -5,7 +5,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SailorController;
 use App\Http\Controllers\RegistrationController;
-
+use App\Http\Controllers\AdmissionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,6 +29,7 @@ Route::get('/', function () {
  Route::get('/SailorProfile',[SailorController::class,'SailorProfile']);
  Route::get('/CreatSailor',[SailorController::class,'CreatSailor']);
  Route::post('/StoreSailor',[SailorController::class,'StoreSailor'])->name('store.sailor');
+ Route::get('/FillForm',[AdmissionController::class,'FillForm']);
 
  
 // Route::get('/test', function () {

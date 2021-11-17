@@ -9,7 +9,10 @@ class SailorController extends Controller
 {
     public function SailorProfile()
     {
-        return view('admin.pages.sailorprofilelist');
+        $sailors=People::all();
+        // dd($sailors);
+
+        return view('admin.pages.sailorprofilelist',compact('sailors'));
 
     }
     public function CreatSailor()
