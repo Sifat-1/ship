@@ -22,6 +22,15 @@ class SailorController extends Controller
     public function StoreSailor(Request $request)
     {
     // dd($request->all());
+    $request->validate([
+      'name'=>'required',
+      'rank'=>'required',
+      'address'=>'required',
+      'email'=>'required',
+      'ship'=>'required',
+
+
+    ]);
         People::create([
         'name'=>$request->name,
         'rank'=>$request->rank,
@@ -33,7 +42,7 @@ class SailorController extends Controller
         
 
     ]);
-    return redirect()->back();
+    return redirect()->back()->with('success','Sailor_profile has created successfully.');
 }
 
 

@@ -2,6 +2,21 @@
 @section('content')
 <h3>Create new Sailor_Profile</h3>
 
+@if(session()->has('success'))
+  <p class="alet alert-success">
+      {{session()->get ('success')}}
+  </p>
+  @endif
+
+  @if($errors->any())
+<div class="alert alert-danger">
+    <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{$error}}</li>
+        @endforeach
+    </ul>
+</div>
+@endif
 
 
 <form action="{{route('store.sailor')}}" method="POST">

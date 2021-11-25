@@ -23,10 +23,7 @@
 </head>
 <body>
 
-
-
-
-<a href="/CreatSailor" class="button">Create New_Profile</a>
+  <a href="/CreatSailor" class="button">Create New_Profile</a>
 <!-- <button class="button">View Chart</button> -->
 
 <table class="table table-success table-striped">
