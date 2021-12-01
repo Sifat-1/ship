@@ -21212,9 +21212,9 @@ dl li {
 }
 
 .table td img {
-  width: 36px;
-  height: 36px;
-  border-radius: 100%;
+  width: 100px;
+  height: 50px;
+  border-radius: 0%;
 }
 
 .table td .badge {

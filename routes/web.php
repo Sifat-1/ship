@@ -6,6 +6,8 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SailorController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\AdmissionController;
+use App\Http\Controllers\CandidateController;
+use App\Http\Controllers\RankController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +32,11 @@ Route::get('/', function () {
  Route::get('/CreatSailor',[SailorController::class,'CreatSailor']);
  Route::post('/StoreSailor',[SailorController::class,'StoreSailor'])->name('store.sailor');
  Route::get('/FillForm',[AdmissionController::class,'FillForm']);
+ Route::get('/CandidateList',[CandidateController::class,'CandidateList']);
+ Route::post('/StoreCandidatedata',[CandidateController::class,'StoreCandidatedata'])->name('store.candidate');
+ Route::get('/ShowRank',[RankController::class,'ShowRank']);
+ Route::get('/CtreatRank',[RankController::class,'CreatRank']);
+ Route::post('/StoreRank',[RankController::class,'StoreRank'])->name('store.rank');
 
  
 // Route::get('/test', function () {

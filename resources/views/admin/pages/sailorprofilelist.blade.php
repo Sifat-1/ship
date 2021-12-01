@@ -1,6 +1,7 @@
 @extends('master')
 @section('content')
-<h3> Showing Sailor_Profile List </h3>
+<div class="col-xs-12 col-sm-12 col-md-12"> 
+<h3> Showing SailorProfile List </h3>
 <!-- <a href="" class="btn btn-success">Create new Sailor_profile</a> -->
 <!DOCTYPE html>
 <html>
@@ -21,10 +22,13 @@
 }
 </style>
 </head>
+
 <body>
 
   <a href="/CreatSailor" class="button">Create New_Profile</a>
 <!-- <button class="button">View Chart</button> -->
+
+
 
 <table class="table table-success table-striped">
   <thead>
@@ -35,12 +39,14 @@
       <th scope="col">Email</th>
     </tr>
   </thead>
-  <tbody>    
+  <tbody>   
     @foreach($sailors as $person)                                                                              
     <tr>
-      <th>{{$person->id}}</th>
+            <th>{{$person->id}}</th>
            <td>{{$person->name}}</td>
-           <td>{{$person->rank}}</td>
+
+           {{-- new created method has been declared with databse table fild name --}}
+           <td>{{$person->rankcategory->rank}}</td>
            <td>{{$person->email}}</td>
     </tr>
     @endforeach
@@ -48,6 +54,8 @@
 </table>
 
 </body>
+
 </html>
+</div>
 
 @endsection

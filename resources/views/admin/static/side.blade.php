@@ -32,7 +32,14 @@
           <li class="nav-item"> <a class="nav-link" href=""></a></li> 
         </ul>
       </div> -->
+
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/CandidateList ">
+          <!-- <i class="icon-disc menu-icon"></i> -->
+          <span class="menu-title">Candidate</span>
+          <i class="menu-arrow"></i>
+        </a>
     <li class="nav-item">
       <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
         <!-- <i class="icon-disc menu-icon"></i> -->
@@ -42,7 +49,7 @@
         <div class="collapse" id="ui-basic">
         <ul class="nav flex-column sub-menu">
           <li class="nav-item"> <a class="nav-link" href="/SailorProfile">Sailor Profile</a></li>
-          <li class="nav-item"> <a class="nav-link" href="">Sailor Rank</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/ShowRank">Sailor Rank</a></li>
           </ul>
       </div> 
     </li>

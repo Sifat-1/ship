@@ -1,6 +1,7 @@
 @extends('master')
 @section('content')
-<h3>Create new Sailor_Profile</h3>
+<h3>Create new SailorProfile</h3>
+{{-- validation start --}}
 
 @if(session()->has('success'))
   <p class="alet alert-success">
@@ -17,6 +18,7 @@
     </ul>
 </div>
 @endif
+{{-- validation and succes massege end --}}
 
 
 <form action="{{route('store.sailor')}}" method="POST">
@@ -27,8 +29,20 @@
     </div>
     <div class="mb-3">
         <label for="exampleInputRank" class="form-label">Sailor rank</label>
-        <input name="rank"placeholder="Enter Sailor rank"  type="text" class="form-control" id="exampleInputRank">
+    
+    {{-- <input name="rank"placeholder="Enter Sailor rank"  type="text" class="form-control" id="exampleInputRank"> --}}
+    <select name="rank" class="form-control">
+        <option>Select Rank</option>
+
+        {{-- compact name --}}
+
+        @foreach ($ranks as $item)
+        {{-- database new table name --}}
+            <option value="{{$item->id}}">{{$item->rank}}</option>
+        @endforeach
+    </select>
     </div>
+
     <div class="mb-3">
         <label for="exampleInputAddress" class="form-label">Sailor Address</label>
         <input name="address"placeholder="Enter Sailo Address"  type="text" class="form-control" id="exampleInputAddress">
