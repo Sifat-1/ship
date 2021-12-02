@@ -43,3 +43,9 @@ Route::get('/', function () {
 //     return view('admin.pages.test');
 //     // return view('admin.pages.homepage');
 // });
+
+// this is for website view
+Route::get('/', function () {
+    return view('website.master');
+
+});

@@ -1,0 +1,463 @@
+﻿/* -----------------------------------------
+:: H1-H6 
+----------------------------------------- */
+@media (min-width: 992px) {
+h1, .h1 {
+	font-size: 41px;
+}
+h2, .h2 {
+	font-size: 34px;
+}
+h3, .h3 {
+	font-size: 20px;
+}
+h4, .h4 {
+	font-size: 20px;
+}
+h5, .h5 {
+	font-size: 16px;
+}
+h6, .h6 {
+	font-size: 14px;
+}
+.lead {
+	font-size: 14px;
+}
+/* -----------------------------------------
+:: TEXT ALIGNMENT
+----------------------------------------- */
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.text-justify {
+	text-align: justify;
+}
+.text-nowrap {
+	white-space: nowrap;
+}
+.text-lowercase {
+	text-transform: lowercase;
+}
+.text-uppercase {
+	text-transform: uppercase;
+}
+.text-capitalize {
+	text-transform: capitalize;
+}
+.text-indent-xs {
+	text-indent: 5px;
+}
+.text-indent-sm {
+	text-indent: 10px;
+}
+.text-indent-md {
+	text-indent: 15px;
+}
+.text-indent-lg {
+	text-indent: 20px;
+}
+.text-indent-xl {
+	text-indent: 30px;
+}
+.text-indent-xxl {
+	text-indent: 50px;
+}
+.text-inline {
+	display: inline;
+}
+/* -----------------------------------------
+:: PADDING and MARGINS
+----------------------------------------- */
+.margin-top-125 {
+	margin-top: 125px;
+}
+.margin-0 {
+	margin: 0;
+}
+.margin-bottom-0 {
+	margin-bottom: 0;
+}
+.padding-0 {
+	padding: 0;
+}
+.padding-5 {
+	padding: 5px;
+}
+.padding-10 {
+	padding: 10px;
+}
+.padding-15 {
+	padding: 15px;
+}
+.padding-20 {
+	padding: 20px;
+}
+.padding-30 {
+	padding: 30px;
+}
+.padding-50 {
+	padding: 50px;
+}
+.padding-100 {
+	padding: 100px;
+}
+.padding-v-5 {
+	padding: 5px 0 5px 0;
+}
+.padding-v-10 {
+	padding: 10px 0 10px 0;
+}
+.padding-v-15 {
+	padding: 15px 0 15px 0;
+}
+.padding-v-20 {
+	padding: 20px 0 20px 0;
+}
+.padding-v-30 {
+	padding: 30px 0 30px 0;
+}
+.padding-v-50 {
+	padding: 50px 0 50px 0;
+}
+.padding-v-100 {
+	padding: 100px 0 100px 0;
+}
+.padding-v-150 {
+	padding: 150px 0 100px 0;
+}
+.padding-sm {
+	padding-left: 0;
+	padding-right: 10px;
+}
+.pull-left-lg {
+	margin-left: -200px;
+}
+.content-indent-lg {
+	margin-right: -75px;
+}
+/* -----------------------------------------
+:: FONT SIZE
+----------------------------------------- */
+.font-xs {
+	font-size: 1rem;
+}
+.font-sm {
+	font-size: 2rem;
+}
+.font-md {
+	font-size: 3rem;
+}
+.font-lg {
+	font-size: 4rem;
+}
+.font-xl {
+	font-size: 5rem;
+}
+.font-xxl {
+	font-size: 6rem;
+}
+.font-jumbo {
+	font-size: 400px;
+}
+/* -----------------------------------------
+:: LINE HEIGHT
+----------------------------------------- */
+.line-xs {
+	line-height: .75;
+}
+.line-sm {
+	line-height: 1;
+}
+.line-md {
+	line-height: 1.25;
+}
+.line-lg {
+	line-height: 1.6;
+}
+.line-xl {
+	line-height: 2.0;
+}
+.line-xxl {
+	line-height: 3.0;
+}
+.line-xxxl {
+	line-height: 4.0;
+}
+/* -----------------------------------------
+:: COLUMN EQUAL HEIGHT ALIGNMENT
+----------------------------------------- */
+.row-eq-height {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+/* -----------------------------------------
+:: SECTION DEFAULT
+----------------------------------------- */
+.section__template--top {
+	margin: 50px 100px 100px 100px;
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+}
+.section {
+	/*margin: 50px 100px;*/
+	margin: 20px 100px;
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+}
+.section-inner {
+	padding: 25px;
+}
+.section-default .section-inner:before {
+	content: "";
+	width: 36px;
+	height: 12px;
+	position: absolute;
+	top: 20px;
+	left: 15px;
+	background: url(../graphics/section-top-left-dots.png);
+}
+.section-default .section-inner:after {
+	content: "";
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	background: url(../graphics/section-top-right-dots.png);
+}
+/* -----------------------------------------
+:: SECTION WITH CAROUSEL
+----------------------------------------- */
+.section-with-carousel {
+}
+/* -----------------------------------------
+:: SECTION WITH MAP BACKGROUND
+----------------------------------------- */
+.section-with-map-background:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 20px solid #5da4d8;
+}
+/* -----------------------------------------
+:: SECTION WITH TEXTURED BACKGROUND
+----------------------------------------- */
+.section-with-textured-background:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 20px solid #5da4d8;
+}
+/* -----------------------------------------
+:: SECTION WITH PARALLAX BACKGROUND
+----------------------------------------- */
+.section.section-parallax:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 20px solid #5da4d8;
+}
+/* -----------------------------------------
+:: SECTION WITH GRAYSCALE BACKGROUND
+----------------------------------------- */
+.section-grayscale .section-inner:before {
+	content: "";
+	width: 36px;
+	height: 12px;
+	position: absolute;
+	top: 20px;
+	left: 15px;
+	background: url(../graphics/section-top-left-dots.png);
+}
+.section-grayscale .section-inner:after {
+	content: "";
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	background: url(../graphics/section-top-right-dots.png);
+}
+/* -----------------------------------------
+:: SECTION WITH MIXED BLEND BACKGROUND
+----------------------------------------- */
+.section.section-mixed-blend .section-inner:before {
+	content: "";
+	width: 36px;
+	height: 12px;
+	position: absolute;
+	top: 40px;
+	left: 15px;
+	background: url(../graphics/section-top-left-dots.png);
+}
+.section.section-mixed-blend .section-inner:after {
+	content: "";
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 40px;
+	right: 15px;
+	background: url(../graphics/section-top-right-dots.png);
+}
+/* -----------------------------------------
+:: SECTION WITH SPLIT PARALLAX BACKGROUND
+----------------------------------------- */
+.section-split-parallax--left {
+	background: url("../graphics/section-split-parallax--left-top.png") top right no-repeat, url("../graphics/section-split-parallax--left-bottom.png") bottom right no-repeat;
+	padding: 20px 0 0 0;
+	border-left: 20px solid #5da4d8;
+}
+.section-split-parallax--left .section-inner {
+	padding: 50px 50px 50px 30px;
+	height: 100%;
+}
+.section-split-parallax--left.section-split-parallax--left-column .section-inner {
+	padding: 50px 50px 50px 30px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.section-split-parallax--left .section-inner:before {
+	content: "";
+	width: 36px;
+	height: 12px;
+	position: absolute;
+	top: 40px;
+	left: 15px;
+	background: url(../graphics/section-top-left-dots.png);
+}
+.section-split-parallax--right {
+	padding: 20px 0 20px 0;
+}
+.section-split-parallax--right .section-inner {
+	background: #2E3035;
+	padding: 50px;
+	height: 100%;
+}
+.section-split-parallax--right .section-inner:after {
+	content: "";
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 40px;
+	right: 15px;
+	background: url(../graphics/section-top-right-dots.png);
+}
+/* -----------------------------------------
+:: SECTION WITH SPLIT IMAGE AND CONTENT
+----------------------------------------- */
+@media(min-width:1024px) {
+.section-bg-style4--bg-light {
+	margin-top: 0;
+}
+}
+@media(min-width:1680px) {
+.section-bg-style4 {
+	padding: 5%;
+}
+.section-bg-style4--bg-title {
+	position: absolute;
+	left: 101%;
+	top: 0;
+	bottom: 0;
+	transform: rotate(90deg);
+	height: 100%;
+	width: 55%;
+	text-align: center;
+	font-size: 90px;
+	font-weight: 800;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: rgba(255, 255, 255, 0.5);
+	transform-origin: left top 0;
+	white-space: nowrap;
+	display: inline-block;
+}
+}
+/* -----------------------------------------
+:: SECTION DARK
+----------------------------------------- */
+.section-dark {
+	position: relative;
+	background-position: center center;
+	background-size: cover;
+	box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
+	/*margin: 50px 100px;*/
+	margin: 20px 100px;
+}
+.section-dark .section-inner {
+	background: url('../graphics/section3-dots.png') left center, rgba(44,52,59,0.88);
+	position: relative;
+	border-bottom: 3px solid rgba(240,170,98,1.0);
+	border-top: 3px solid rgba(240,170,98,1.0);
+}
+.section-dark .row {
+	padding: 60px 0 60px 0;
+}
+.section-dark .wrapper:before {
+	content: "";
+	height: 15px;
+	width: 100%;
+	position: absolute;
+	background: url('../graphics/shadow-top-15.png') center bottom repeat-x;
+	top: 0px;
+	left: 0;
+	right: 0;
+}
+.section-dark .wrapper:after {
+	content: "";
+	height: 15px;
+	width: 100%;
+	position: absolute;
+	background: url('../graphics/shadow-bottom-15.png') center top repeat-x;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.section-dark .article-heading, .section-dark {
+	color: #ffffff;
+}
+/* -----------------------------------------
+:: DIVIDERS and BORDERS
+----------------------------------------- */
+.divider1 {
+	height: 50px;
+	background: #003066;
+	box-shadow: inset 0 50px 50px -50px #001731, inset 0 -50px 50px -50px #001731;
+}
+/* -----------------------------------------------------------------------
+}
+:: Up To 992px     
+----------------------------------------------------------------------- */
+}
+@media (min-width: 992px) {
+/* -----------------------------------------
+:: HEADER
+----------------------------------------- */
+/* -----------------------------------------
+:: HEADINGS
+----------------------------------------- */
+/* -----------------------------------------
+:: CONTENT BACKGROUNDS
+----------------------------------------- */
+/* -----------------------------------------
+:: THEME SPECIFIC STYLES
+----------------------------------------- */
+}
+/* -----------------------------------------------------------------------
+:: LARGER THAN 992px
+----------------------------------------------------------------------- */

@@ -41,8 +41,8 @@ class CandidateController extends Controller
               'fathername'=>'required',
               'mothername'=>'required',
               'foccupation'=>'required',
-              'moccupationl'=>'required',
-              'image'=>'required',
+              'moccupation'=>'required',
+              'image_name'=>'required',
               
         
         

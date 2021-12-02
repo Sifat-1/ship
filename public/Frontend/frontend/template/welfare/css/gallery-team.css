@@ -1,0 +1,213 @@
+﻿img {
+	max-width: 100%;
+}
+
+/*gallery1*/
+.gallery1 {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.gallery1 li {
+	display: inline-block; /*margin: 10px 5px 0 5px;*/;
+	margin: 10px 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: top; /*height: 250px;*/;
+	width: 24%;
+}
+
+.gallery1.wide-2 li {
+	width: 49.5%;
+}
+
+.gallery1.wide-3 li {
+	width: 33%;
+}
+
+.gallery1.wide-4 li {
+	width: 24.5%;
+}
+
+.gallery1.wide-5 li {
+	width: 19.5%;
+}
+
+.gallery1 li strong {
+	color: #414141;
+}
+
+@media screen and (max-width: 992px) {
+.gallery1 li {
+	width: 49% !important;
+}
+
+}
+@media screen and (max-width: 400px) {
+.gallery1 li {
+	width: 80% !important;
+}
+
+}
+.gallery1 li > a, .gallery1 li > a img {
+	border: none;
+	outline: none;
+	display: block;
+	position: relative;
+}
+
+.gallery1 li > a + h3 {
+	font-size: 14px;
+    height: 85px;
+    text-transform: initial;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    background-color: #003066;
+	color: #ffffff;
+	font-weight: 400;
+}
+
+.gallery1 .gallery1-content {
+	display: none;
+}
+
+.gallery1 li.gallery1-open > a::after {
+	top: auto;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #fff;
+	border-width: 15px;
+	left: 50%;
+	margin: 45px 0 0 -15px;
+}
+
+.gallery1-o {
+	position: absolute;
+	top: auto;
+	left: 0;
+	width: 100%;
+	margin-top: 10px;
+	text-align: left;
+	height: 0;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.0);
+}
+
+.gallery1-inner {
+	padding: 50px 15px;
+	height: 100%;
+}
+
+.gallery1-x {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+
+.gallery1-x::before, .gallery1-x::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	height: 3px;
+	background: #414141;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.gallery1-x::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.gallery1-x:hover::before, .gallery1-x:hover::after {
+	background: #414141;
+}
+
+.gallery1-img-large, .gallery1-list {
+	width: 50%;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.gallery1-list {
+	padding: 0 40px 0 20px;
+}
+
+.gallery1-img-large {
+	text-align: center;
+}
+
+.gallery1-img-large img {
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.gallery1-loader {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ddd;
+	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	-webkit-animation: loader 0.5s infinite ease-in-out both;
+	-moz-animation: loader 0.5s infinite ease-in-out both;
+	animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+@-moz-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+@keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+@media screen and (max-width: 830px) {
+/*	.gallery1-o h3 { font-size: 32px; }
+	.gallery1-o p { font-size: 13px; }
+	.gallery1-o a { font-size: 12px; }*/
+}
+@media screen and (max-width: 650px) {
+.gallery1-img-large {
+	display: none;
+}
+
+.gallery1-list {
+	float: none;
+	width: 100%;
+}
+
+}
+@media screen and (max-width: 418px) {
+.gallery1-list {
+	padding: 0;
+}
+
+}

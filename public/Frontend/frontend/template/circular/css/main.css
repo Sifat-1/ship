@@ -1,0 +1,129 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Bolt - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+ 
+/* FONTS */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
+
+/* OVERALL ASPECT */
+
+
+
+/* nt-title */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+	width :100%;
+	
+    border: 1px solid #ddd;
+}
+td {
+    padding: 5px 10px;
+    border-top: 1px solid #003066;
+    border-right: 1px solid #003066;
+}
+th {
+	background: #003066;
+    color: white;
+	font-weight: bold;
+	text-align: center;
+	/* padding: 10px 10px; */
+	border-right: 1px solid #003066;
+}
+tr, td {
+    text-align: left;
+	padding: 5px;
+	margin-top: 0px;
+}
+
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+#nt-title-container {
+	background: #F2F2F2;
+}
+
+
+
+#nt-title li {
+	font-size: 28px;
+	color: #4E4E4E;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+/* nt-example1 */
+
+#nt-example1 {
+	max-width: 100%;
+	/* margin-right: 20px; */
+}
+.miluzx{
+	max-width: 100%;
+	max-height:100%;
+	padding-left: 0px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+#nt-example1-container {
+	text-align: center;
+	max-width: 100%;
+}
+
+#nt-example1-container i {
+	font-size: 36px;
+	color: #003066;
+	margin: 8px;
+	cursor: pointer;
+	-webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#nt-example1-container i:hover {
+	color: #333;
+}
+
+#nt-example1 li {
+	color: #4e4e4e;
+	background: #F2F2F2;
+	overflow: hidden;
+	height: 400px;
+	width: 100%;
+	/* padding: 10px;
+	line-height: 30px; */
+	font-size: 14px;
+	text-align: left;
+	border-radius: 10px;
+}
+#nt-example1 li a {
+	color: rgb(217, 166, 49);
+	
+}
+#nt-example1 li td:hover {
+	/* background: #3e5e9a; */
+	color: #008500;
+}
+
+@media screen and (min-width: 320px){
+	
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) { 
+	
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* STYLES HERE */
+}

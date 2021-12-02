@@ -1,0 +1,22 @@
+
+
+/*----------- 4. Navigation -------------*/
+
+nav {
+	position: relative;
+	z-index: 999;
+	background: #003066;
+	box-shadow: 0 2px 3px rgba(0,0,0,.2);
+}
+
+.sticky {
+	position: fixed;
+	margin-top: 0px;
+	z-index: 1000;
+	display: block;
+	top: 0px;
+	height: 50px;
+	width: 100%;
+	
+	
+}

@@ -1,0 +1,73 @@
+﻿@media only screen and (min-width: 768px) {
+/* services2.htm */
+.services2-wrapper {
+	background: url('../../themed-images/backgrounds/services2-bg.html') center center repeat-y;
+	border-bottom: 1px solid #ed841a;
+	border-top: 1px solid #ed841a;
+}
+
+.services2-left .news-btn {
+	float: right;
+	margin-right: -3px;
+}
+
+.services2-left, .services2-right {
+	transition: all .3s ease;
+}
+
+.services2-left:hover, .services2-right:hover {
+	/* background: rgba(0,0,0,0.25); */
+}
+
+.services2-right .news-btn {
+	float: right;
+	margin-left: -3px;
+}
+
+.services2-left .news-btn:after {
+	content: "_____";
+	color: rgba(240,170,98,0.90);
+	position: absolute;
+	right: -32px;
+	top: 0px;
+}
+
+.services2-right .news-btn:after {
+	content: "_____";
+	color: rgba(240,170,98,0.90);
+	position: absolute;
+	left: -32px;
+	bottom: 20px;
+}
+
+.services2-right .news-btn {
+	float: left;
+}
+
+.services2-right .article-heading p, .services2-right .article-heading h3 {
+	text-align: left;
+}
+
+.services2-left .article-heading p, .services2-right .article-heading p {
+	text-align: justify;
+	margin-top: 5px;
+	color: #fff;
+}
+
+.section9-dark {
+	padding: 20px 60px 60px 60px;
+}
+
+.section9-light {
+	padding: 20px 60px 60px 60px;
+}
+
+.services-news {
+	padding: 0px 20px;
+}
+
+.section9-light .article-heading {
+	padding: 30px 20px 10px 20px;
+}
+}
+
