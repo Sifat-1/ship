@@ -10,10 +10,10 @@
           <div class="sl-slider">
             <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-38" data-slice2-rotation="-38" data-slice1-scale="2" data-slice2-scale="2">
               <div class="sl-slide-inner">
-                <div class="bg-img1" style="background-image:url('Frontend/slider/ship.jpg');"></div>
+                <div class="bg-img1" style="background-image:url('Frontend/slider/another.jpg');"></div>
                 <div class="sl-shadow"></div>
                 <div class="sl-content-top">
-                  <div class="sl-slide-title">WELCOME TO EXPLORE SAILOR LIFE</div>                               
+                  <div class="sl-slide-title">WELCOME TO EXPLORE SAILOR WORLD</div>                               
                 </div>
               </div>
             </div>
@@ -22,16 +22,16 @@
                 <div class="bg-img1" style="background-image:url('Frontend/slider/war.jpg');"></div>
                 <div class="sl-shadow"></div>
                 <div class="sl-content-top">
-                  <div class="sl-slide-title">WELCOME TO EXPLORE SAILOR LIFE</div>                               
+                  <div class="sl-slide-title">WELCOME TO EXPLORE SAILOR WORLD</div>                               
                 </div>
               </div>
             </div>
             <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-38" data-slice2-rotation="-38" data-slice1-scale="2" data-slice2-scale="2">
               <div class="sl-slide-inner">
-                <div class="bg-img1" style="background-image:url('Frontend/slider/World-in-glass-bottle-sea.jpg');"></div>
+                <div class="bg-img1" style="background-image:url('Frontend/slider/istockphoto.jpg');"></div>
                 <div class="sl-shadow"></div>
                 <div class="sl-content-top">
-                  <div class="sl-slide-title">WELCOME TO EXPLORE SAILOR LIFE</div>                               
+                  <div class="sl-slide-title">WELCOME TO EXPLORE SAILOR WORLD</div>                               
                 </div>
               </div>
             </div>
@@ -53,10 +53,10 @@
   </div>
   
   
-  <section class="section section-bg" style="background: white;">
+  <section class="section section-bg" style="background: #d8f0f3;">
     <div id="sheckmojibimagediv">
-      <a href="http://mujib100.gov.bd/" target="_blank"><img  src="{{url('Frontend/avatars/mojibborso.png')}}" style="display: inline-block; width: 100%"></a>
-      <button type="button" class="btn btn-primary">Primary</button>
+      <a href="http://mujib100.gov.bd/" target="_blank"><img  src="{{url('Frontend/avatars/juan.jpg')}}" style="display: inline-block; width: 100%"></a>
+      
     </div>
     <div>
       <div id="countdown_block"></div>
@@ -380,8 +380,8 @@
           <div class="col-lg-3 section-split-parallax--left section-split-parallax--left-column">
             <div class="section-inner">
               <div class="content-left wow fadeInUp">
-                <p class="single-word" style="text-align:center; color:#fff; font-size:30px ;">
-                  VISION AND MISSION OF BANGLADESH NAVY
+                <p class="single-word" style="text-align:center; color:rgb(219, 228, 231); font-size:25px ;">
+                  MILITARY SAILOR VS RECREATIONAL SAILOR
                 </p>                   
               </div>
             </div>
@@ -390,9 +390,9 @@
             <div class="section-inner">
               <ul class="demo2" style="list-style: none;">
                 <li class="news-item">
-                  <h1 style="color:#fff;">Mission</h1>
+                  <h1 style="color:#fff;">MILITARY SAILOR</h1>
                   <p class="small">
-                    <div style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-align: justify; background: #2E3035; color: #fff !important; font-size: 16px;">The mission of Bangladesh Navy is to defend the country from threats emanating on, above and under the sea; promote and protect our maritime interest, assist maritime governance and contribute to the diplomatic objective of our nation.</div>
+                    <div style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-align: justify; background: #031031; color: #fff !important; font-size: 16px;">The military hires sailors to work on Navy frigates. In most countries, people who captain military vessels are required to have college degrees as well as several years of military service. Navigators, machinists, and engineers play a role in keeping the boat moving, while other sailors work as chefs, janitors, and deckhands. On military vessels, large numbers of the crew are assigned to heavy weaponry, and some boats carry airplanes and pilots who have no actual role in operating or navigating the ship.</div>
                     <form method="post" action="https://www.navy.mil.bd/Mission">
                       <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTI%3D" /> 
                       <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                <button type="submit" style="border-width: 0px; background-color: transparent;"><a>Read More</a></button>
@@ -400,9 +400,9 @@
                   </p>
                 </li>
                 <li class="news-item">
-                  <h1 style="color:#fff;">Vision</h1>
+                  <h1 style="color:#fff;">RECREATIONAL SAILOR</h1>
                   <p class="small">
-                    <div style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-align: justify; background: #2E3035; color: #fff !important; font-size: 16px;">Bangladesh Navy shall evolve into a credible three dimensional navy capable of maintaining an effective posture across the full spectrum of any conflict at sea. Bangladesh Navy shall also be able to undertake constabulary and benign tasks to ensure good order at sea for carrying out national maritime economic activities.</div>
+                    <div style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-align: justify; background: #031031; color: #fff !important; font-size: 16px;">A recreational sailor does not typically have to undergo any formal training, and many sailors learn how to row small boats before moving on to motor powered boats and yachts. Many nations require sailors who operate boats beyond a certain size to obtain licenses, although in some countries these sailors do not have to undergo any kind of examination in order to receive a license. Highly skilled sailors take part in competitive races, some of which involve traveling long distances across major oceans. Many sailors spend months at sea and sail as a means of traveling between nations rather than for competitive or business reasons.</div>
                     <form method="post" action="https://www.navy.mil.bd/Vision">
                       <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTI%3D" /> 
                       <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                <button type="submit" style="border-width: 0px; background-color: transparent;"><a>Read More</a></button>
@@ -417,9 +417,9 @@
       <section class="section section-bg section-bg-style4">
         <div class="section-bg-style4--bg-imagemilumax hidden-xs"></div>
         <div class="col-lg-3">
-          <h1 style="color:#fff;" class="wow fadeInUp">LIFE IN THE NAVY</h1>
+          <h1 style="color:#fff;" class="wow fadeInUp">LIFE IN THE SEA</h1>
           <div class="row wow fadeInUp">
-            <p class="small_gallery hidden-xs" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 10; -webkit-box-orient: vertical; text-align: justify;">Joining And Serving In Bangladesh Navy Is not just A Career. A Way Of Life. The Life In Navy Is Varied, Exciting And Challenging In Every Moment. One Can Get Unique Experience In His/Her Life If Selected To Join Navy. The Service Offers Excellent Opportunity To Serve The Nation And At The Same Time Scope To See The World.</p>
+            <p class="small_gallery hidden-xs" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 10; -webkit-box-orient: vertical; text-align: justify;">Life at sea is full of both hardships and rewards.For one thing, while at sea, you will be putting all your skills and determination to actual test. You will be given responsibility and will be doing an important job for which you have been uniquely trained.</p>
             <a class="submitmyform">Read More</a>
             <form method="post" action="https://www.navy.mil.bd/LIFE-IN-THE-NAVY">
               <input type="hidden" name="url_link" value="bmF2eV9saWZlc2V4cGxvZGUx" /> 
@@ -430,29 +430,29 @@
           <div class="col-lg-8 col-lg-offset-1 section-bg-style4--bg-light">
             <div class="row" style="padding: 19px; padding-bottom: 29px;">
               <div class="col-md-6">
-                <article class="article-numbered wow fadeInUp">
+                {{-- <article class="article-numbered wow fadeInUp">
                   <h3 class="article-numbered--title1">JOIN AS OFFICER CADET</h3>
                   <p class="article-numbered-content" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; text-align: justify;">If you are a young gentleman passed HSC exam with required qualification and aspiration to build up a challenging career then Bangladesh Navy is the right place for you. Bangladesh Naval Academy is waiting for you to support fulfilling your dreams. </p>
                   <a style="padding-left: 16px;" class="submitmyform">Read More</a>
                   <form method="post" action="https://www.navy.mil.bd/JOIN-AS-OFFICER-CADET">
                     <input type="hidden" name="url_link" value="bmF2eV9saWZlc2V4cGxvZGUy" /> 
                     <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">          </form>
-                  </article>
+                  </article> --}}
                 </div>
                 <div class="col-md-6">
-                  <article class="article-numbered wow fadeInUp">
-                    <h3 class="article-numbered--title1">JOIN AS DIRECT ENTRY OFFICER</h3>
+                   <article class="article-numbered wow fadeInUp"> 
+                    {{-- <h3 class="article-numbered--title1">JOIN AS DIRECT ENTRY OFFICER</h3>
                     <p class="article-numbered-content" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; text-align: justify;">A fresh post graduate or graduate can select the career in Bangladesh if he/she is looking for an exciting career with lots of opportunities to see the world. No other service in the nation can offer you this opportunity offered by Bangladesh Navy, why don&amp;rsquo;t you take a chance? </p>
                     <a style="padding-left: 16px;" class="submitmyform">Read More</a>
                     <form method="post" action="https://www.navy.mil.bd/JOIN-AS-DIRECT-ENTRY-OFFICER">
                       <input type="hidden" name="url_link" value="bmF2eV9saWZlc2V4cGxvZGUz" /> 
-                      <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">          </form>
-                    </article>
+                      <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">          </form> --}}
+                    </article> 
                   </div>
                   <div class="col-md-6">
                     <article class="article-numbered wow fadeInUp">
                       <h3 class="article-numbered--title1">JOIN AS SAILOR</h3>
-                      <p class="article-numbered-content" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; text-align: justify;">Bangladesh Navy is the right place for physically fit, energetic and intelligent boys to join in as a sailor. The New Entry Training School can provide you the required training to be a proud member of Bangladesh Navy. </p>
+                      <p class="article-numbered-content" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; text-align: justify;">As a sailor someone can work on passenger ships, freighters, and tanker ships, navigating sea-going vessels and assisting with the maintenance, operation, and service of these vessels. The term sailor was derived from the fact that all water-borne vessels were once powered by sails. </p>
                       <a style="padding-left: 16px;" class="submitmyform">Read More</a>
                       <form method="post" action="https://www.navy.mil.bd/JOIN-AS-SAILOR">
                         <input type="hidden" name="url_link" value="bmF2eV9saWZlc2V4cGxvZGU0" /> 

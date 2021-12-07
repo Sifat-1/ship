@@ -73,7 +73,7 @@ ul.dropdown-menu.cart-list a.btn.btn-cart:hover{
 #header.headerbg-lightcolor{
     /* background-color:rgba(250, 250, 250, 0.7); */
 
-    background: #003066;
+    background: #161252b8;
 }
 #header.headerbg-darkcolor{
     background-color:rgba(0, 0, 0, 0.3);
@@ -666,14 +666,18 @@ nav.bootsnav ul.nav li.dropdown ul.dropdown-menu li img{
 }
 nav.navbar.bootsnav ul.nav > li.mmm2linemenu > a, nav.navbar.bootsnav ul.nav > li.dropdown.mmm2linemenu > a{
     /* padding:19px 0; */
-    color: #fff;
+    color: #e2f100
+    
+    
+    
+    ;
     display: block;
     float: left;
-    font-size: 12px;
+    font-size: 17px;
     line-height: 18px;
     padding: 13px 15px;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: initial;
     letter-spacing: 0.5px;
 }
 .fixed-nav nav.navbar.bootsnav ul.nav > li.mmm2linemenu > a, .fixed-nav nav.navbar.bootsnav ul.nav > li.dropdown.mmm2linemenu > a{

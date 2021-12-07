@@ -1,4 +1,6 @@
-﻿/* -----------------------------------------
+﻿
+
+/* -----------------------------------------
 :: H1-H6 
 ----------------------------------------- */
 @media (min-width: 992px) {
@@ -345,7 +347,7 @@ h6, .h6 {
 	padding: 20px 0 20px 0;
 }
 .section-split-parallax--right .section-inner {
-	background: #2E3035;
+	background: #2e353300;
 	padding: 50px;
 	height: 100%;
 }

@@ -25,7 +25,7 @@ body {
 	font-size: 16px;
 	line-height: 1.42857143;
 	/*color: #eae4d6;*/
-	background-color: #003066;  
+	background-color: #1aab9d5c;  
 
 	box-shadow: inset 0 50px 50px -50px #003066, inset 0 -50px 50px -50px #003066;
 	/* background: url('fleet.jpg') no-repeat fixed 0 0 / cover; */
@@ -297,8 +297,8 @@ small, .small {
 	padding-right: 8px;
 }
 small, .small_gallery {
-	font-size: 1.3em;
-	line-height: 31px;
+	font-size: -1.7em;
+	line-height: 32px;
 	text-align: justify;
 	padding-right: 8px;
 	text-transform: capitalize;
@@ -1134,7 +1134,7 @@ section h2:first-of-type::after, .section h2:first-of-type::after, .section-bg.s
 	background: rgba(0, 0, 0, 0.65);
 }
 .section-bg-style4--bg-image_chief {
-	background: url(../img/backgrounds/blue-comic-background-with-lines-and-halftone_1017-11432.jpg) repeat fixed 0 0 / cover;
+	background: url(../img/backgrounds/istockphoto-1287121458-170667a.jpg) repeat fixed 0 0 / cover;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1148,7 +1148,7 @@ section h2:first-of-type::after, .section h2:first-of-type::after, .section-bg.s
 	box-sizing: border-box;
 }
 .section-bg-style4--bg-imagemilumax {
-	background: url(../img/bg.jpg) repeat fixed 0 0 / cover;
+	background: url(../img/kii.jpg) repeat fixed 0 0 / cover;
 	position: absolute;
 	top: 0;
 	left: 0;
