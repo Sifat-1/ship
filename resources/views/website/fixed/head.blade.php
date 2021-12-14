@@ -16,6 +16,20 @@
           <div class="tagline">
             <h1 class="website-name">
               <a href="index.html">Sailor Life</a>
+             
             </h1>
             <p>In War and Peace Invincible at Sea</p>
+            
           </div>
+          <div>
+
+
+            {{-- notification of  successful registration--}}
+            @if(session()->has('notification'))
+            <p class="alert alert-success">{{session()->get('notification')}}</p>
+        @endif
+        
+        @if(session()->has('error'))
+            <p class="alert alert-danger">{{session()->get('error')}}</p>
+        @endif
+         </div>

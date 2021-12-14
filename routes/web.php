@@ -9,6 +9,7 @@ use App\Http\Controllers\AdmissionController;
 use App\Http\Controllers\CandidateController;
 use App\Http\Controllers\RankController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -58,15 +59,22 @@ Route::get('/CreatsCriteria',[CourseController::class,'CreatsCriteria']);
 Route::get('/ShowsCriteria',[CourseController::class,'ShowsCriteria']);
 Route::post('/StoresCriteria',[CourseController::class,'StoresCriteria'])->name('store.scriteria');
 
+ // Login and registration
+
+ Route::post('/registration',[UserController::class,'registration'])->name('user.registration');
+ Route::post('/login',[UserController::class,'login'])->name('user.login');
+ Route::get('/logout',[UserController::class,'logout'])->name('user.logout');
+
 
  
 
 
 // this is for website view
-// Route::get('/', function () {
-//     return view('website.master');
+Route::get('/', function () {
+    return view('website.master');
 
-// });
+   
+})->name('home');
 
 
 
