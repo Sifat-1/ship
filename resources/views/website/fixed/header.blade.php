@@ -176,16 +176,16 @@
                                           </ul>
                                         </li>
                                         <li class="dropdown megamenu-fw mmm2linemenu">
-                                          <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">What we do</a>
+                                          <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Sailor</a>
                                           <ul class="dropdown-menu megamenu-content animated fade-Out-Up" role="menu">
                                             <li>
                                               <div class="row">
                                                 <div class="col-menu col-sm-6 col-md-3">
-                                                  <h4 class="title">ROLE OF BN</h4>
+                                                  <h4 class="title"> Rank of Sailor</h4>
                                                   <div class="content">
                                                     <ul class="menu-col">
                                                       <li style="cursor: pointer;">
-                                                        <a class="submitmyform">Role of BN</a>
+                                                        <a class="submitmyform"> rank list</a>
                                                         <form method="post" action="https://www.navy.mil.bd/Role-of-BN">
                                                           <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEz" /> 
                                                           <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
@@ -193,7 +193,7 @@
                                                       </ul>
                                                     </div>
                                                   </div>
-                                                  <div class="col-menu col-sm-6 col-md-3">
+                                                  {{-- <div class="col-menu col-sm-6 col-md-3">
                                                     <h4 class="title">OPERATIONS</h4>
                                                     <div class="content">
                                                       <ul class="menu-col">
@@ -206,7 +206,7 @@
                                                         </ul>
                                                       </div>
                                                     </div>
-                                                    
+                                                     --}}
                                                     
                                                     
                                                     
@@ -215,16 +215,70 @@
                                               </ul>
                                             </li>
                                             <li class="dropdown megamenu-fw mmm2linemenu">
-                                              <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Operation</a>
+                                              <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Courses</a>
                                               <ul class="dropdown-menu megamenu-content animated fade-Out-Up" role="menu">
                                                 <li>
                                                   <div class="row">
                                                     <div class="col-menu col-sm-6 col-md-3">
-                                                      <h4 class="title">MRCC &amp; MRSC</h4>
+                                                      <h4 class="title"> All  Courses</h4>
                                                       <div class="content">
                                                         <ul class="menu-col">
                                                           <li style="cursor: pointer;">
-                                                            <a class="submitmyform">MRCC</a>
+                                                            <a class="submitmyform"> show courses</a>
+                                                            <form method="post" action="https://www.navy.mil.bd/Role-of-BN">
+                                                              <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEz" /> 
+                                                              <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
+                                                            </li>
+                                                          </ul>
+                                                        </div>
+                                                      </div>
+                                                      {{-- <div class="row">
+                                                        <div class="col-menu col-sm-6 col-md-3">
+                                                          <h4 class="title">Specialised Courses</h4>
+                                                          <div class="content">
+                                                            <ul class="menu-col">
+                                                              <li style="cursor: pointer;">
+                                                                <a class="submitmyform"> show courses</a>
+                                                                <form method="post" action="https://www.navy.mil.bd/Role-of-BN">
+                                                                  <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEz" /> 
+                                                                  <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
+                                                                </li>
+                                                              </ul>
+                                                            </div>
+                                                          </div>
+                                                          <div class="row">
+                                                            <div class="col-menu col-sm-6 col-md-3">
+                                                              <h4 class="title">Others Courses</h4>
+                                                              <div class="content">
+                                                                <ul class="menu-col">
+                                                                  <li style="cursor: pointer;">
+                                                                    <a class="submitmyform"> show courses</a>
+                                                                    <form method="post" action="https://www.navy.mil.bd/Role-of-BN">
+                                                                      <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEz" /> 
+                                                                      <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
+                                                                    </li>
+                                                                  </ul>
+                                                                </div>
+                                                              </div>
+                                                             
+                                                          --}}
+                                                     
+                                                        
+                                                      </div>
+                                                    </li>
+                                                  </ul>
+                                                </li>
+                                            <li class="dropdown megamenu-fw mmm2linemenu">
+                                              <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Admission</a>
+                                              <ul class="dropdown-menu megamenu-content animated fade-Out-Up" role="menu">
+                                                <li>
+                                                  <div class="row">
+                                                    <div class="col-menu col-sm-6 col-md-3">
+                                                      <h4 class="title">Admission news</h4>
+                                                      <div class="content">
+                                                        <ul class="menu-col">
+                                                          <li style="cursor: pointer;">
+                                                            <a class="submitmyform">News</a>
                                                             <form method="post" action="https://www.navy.mil.bd/MRCC">
                                                               <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTE1" /> 
                                                               <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
@@ -233,19 +287,18 @@
                                                         </div>
                                                       </div>
                                                       <div class="col-menu col-sm-6 col-md-3">
-                                                        <h4 class="title">GENERAL OPERATIONS</h4>
+                                                        <h4 class="title">Admission Form</h4>
                                                         <div class="content">
                                                           <ul class="menu-col">
                                                             <li style="cursor: pointer;">
-                                                              <a class="submitmyform">GENERAL OPERATIONS</a>
-                                                              <form method="post" action="https://www.navy.mil.bd/GENERAL-OPERATIONS">
-                                                                <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTE2" /> 
-                                                                <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
+                                                              <a href={{url('/FillForm')}} class="submitmyform">Fill up Form</a>
+                                                              
+                                                                                        
                                                               </li>
                                                             </ul>
                                                           </div>
                                                         </div>
-                                                        <div class="col-menu col-sm-6 col-md-3">
+                                                        {{-- <div class="col-menu col-sm-6 col-md-3">
                                                           <h4 class="title">HUMANITARIAN ASSISTANCE &amp; DISASTER RELIEF (HADR)</h4>
                                                           <div class="content">
                                                             <ul class="menu-col">
@@ -263,8 +316,8 @@
                                                                   </li>
                                                                 </ul>
                                                               </div>
-                                                            </div>
-                                                            <div class="col-menu col-sm-6 col-md-3">
+                                                            </div> --}}
+                                                            {{-- <div class="col-menu col-sm-6 col-md-3">
                                                               <h4 class="title">MARITIME SECURITY</h4>
                                                               <div class="content">
                                                                 <ul class="menu-col">
@@ -282,8 +335,8 @@
                                                                       </li>
                                                                     </ul>
                                                                   </div>
-                                                                </div>
-                                                                <div class="col-menu col-sm-6 col-md-3">
+                                                                </div> --}}
+                                                                {{-- <div class="col-menu col-sm-6 col-md-3">
                                                                   <h4 class="title">NAVAL DIPLOMACY</h4>
                                                                   <div class="content">
                                                                     <ul class="menu-col">
@@ -301,8 +354,8 @@
                                                                           </li>
                                                                         </ul>
                                                                       </div>
-                                                                    </div>
-                                                                    <div class="col-menu col-sm-6 col-md-3">
+                                                                    </div> --}}
+                                                                    {{-- <div class="col-menu col-sm-6 col-md-3">
                                                                       <h4 class="title">UN MISSION</h4>
                                                                       <div class="content">
                                                                         <ul class="menu-col">
@@ -338,8 +391,8 @@
                                                                                     </li>
                                                                                   </ul>
                                                                                 </div>
-                                                                              </div>
-                                                                              <div class="col-menu col-sm-6 col-md-3">
+                                                                              </div> --}}
+                                                                              {{-- <div class="col-menu col-sm-6 col-md-3">
                                                                                 <h4 class="title">In Aid to Civil Power</h4>
                                                                                 <div class="content">
                                                                                   <ul class="menu-col">
@@ -369,8 +422,8 @@
                                                                                             </li>
                                                                                           </ul>
                                                                                         </div>
-                                                                                      </div>
-                                                                                      <div class="col-menu col-sm-6 col-md-3">
+                                                                                      </div> --}}
+                                                                                      {{-- <div class="col-menu col-sm-6 col-md-3">
                                                                                         <h4 class="title">BLUE ECONOMY</h4>
                                                                                         <div class="content">
                                                                                           <ul class="menu-col">
@@ -382,10 +435,10 @@
                                                                                               </li>
                                                                                             </ul>
                                                                                           </div>
-                                                                                        </div>
+                                                                                        </div> --}}
                                                                                         
                                                                                         
-                                                                                        
+                                                                                        {{-- another feathers start --}}
                                                                                         
                                                                                       </div>
                                                                                     </li>
@@ -396,8 +449,8 @@
                                                                                   <ul class="dropdown-menu megamenu-content animated fade-Out-Up" role="menu">
                                                                                     <li>
                                                                                       <div class="row">
-                                                                                        <div class="col-menu col-sm-6 col-md-3">
-                                                                                          <h4 class="title">Training in BN</h4>
+                                                                                        {{-- <div class="col-menu col-sm-6 col-md-3"> --}}
+                                                                                          {{-- <h4 class="title">Training in BN</h4>
                                                                                           <div class="content">
                                                                                             <ul class="menu-col">
                                                                                               <li style="cursor: pointer;">
@@ -407,60 +460,9 @@
                                                                                                   <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
                                                                                                 </li>
                                                                                               </ul>
-                                                                                            </div>
-                                                                                          </div>
-                                                                                          <div class="col-menu col-sm-6 col-md-3">
-                                                                                            <h4 class="title">Training Location map </h4>
-                                                                                            <div class="content">
-                                                                                              <ul class="menu-col">
-                                                                                                <li style="cursor: pointer;">
-                                                                                                  <a class="submitmyform">Location map</a>
-                                                                                                  <form method="post" action="https://www.navy.mil.bd/Location-map">
-                                                                                                    <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTQ4" /> 
-                                                                                                    <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                  </li>
-                                                                                                </ul>
-                                                                                              </div>
-                                                                                            </div>
-                                                                                            <div class="col-menu col-sm-6 col-md-3">
-                                                                                              <h4 class="title">Foreign countries Training</h4>
-                                                                                              <div class="content">
-                                                                                                <ul class="menu-col">
-                                                                                                  <li style="cursor: pointer;">
-                                                                                                    <a class="submitmyform">Offered Courses to Overseas Countries</a>
-                                                                                                    <form method="post" action="https://www.navy.mil.bd/Offered-Courses-to-Overseas-Countries">
-                                                                                                      <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTMz" /> 
-                                                                                                      <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                    </li>
-                                                                                                  </ul>
-                                                                                                </div>
-                                                                                              </div>
-                                                                                              <div class="col-menu col-sm-6 col-md-3">
-                                                                                                <h4 class="title"> Support from other Services</h4>
-                                                                                                <div class="content">
-                                                                                                  <ul class="menu-col">
-                                                                                                    <li style="cursor: pointer;">
-                                                                                                      <a class="submitmyform"> Support from other Services</a>
-                                                                                                      <form method="post" action="#">
-                                                                                                        <input type="hidden" name="url_link" value="" /> 
-                                                                                                        <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                      </li>
-                                                                                                    </ul>
-                                                                                                  </div>
-                                                                                                </div>
-                                                                                                <div class="col-menu col-sm-6 col-md-3">
-                                                                                                  <h4 class="title">Overseas Officers and sailors</h4>
-                                                                                                  <div class="content">
-                                                                                                    <ul class="menu-col">
-                                                                                                      <li style="cursor: pointer;">
-                                                                                                        <a class="submitmyform">Overseas Officers and sailors</a>
-                                                                                                        <form method="post" action="#">
-                                                                                                          <input type="hidden" name="url_link" value="" /> 
-                                                                                                          <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                        </li>
-                                                                                                      </ul>
-                                                                                                    </div>
-                                                                                                  </div>
+                                                                                            </div> --}}
+                                                                                          {{-- </div> --}}
+                                                                                     
                                                                                                   <div class="col-menu col-sm-6 col-md-3">
                                                                                                     <h4 class="title">Sailors Training </h4>
                                                                                                     <div class="content">
@@ -511,83 +513,7 @@
                                                                                                                   </ul>
                                                                                                                 </div>
                                                                                                               </div>
-                                                                                                              <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                <h4 class="title">Training design and Evaluation cell</h4>
-                                                                                                                <div class="content">
-                                                                                                                  <ul class="menu-col">
-                                                                                                                    <li style="cursor: pointer;">
-                                                                                                                      <a class="submitmyform">design and Evaluation cell</a>
-                                                                                                                      <form method="post" action="https://www.navy.mil.bd/design-and-Evaluation-cell">
-                                                                                                                        <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTQy" /> 
-                                                                                                                        <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                      </li>
-                                                                                                                      <li style="cursor: pointer;">
-                                                                                                                        <a class="submitmyform">Monitoring cell</a>
-                                                                                                                        <form method="post" action="https://www.navy.mil.bd/Monitoring-cell">
-                                                                                                                          <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTQz" /> 
-                                                                                                                          <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                        </li>
-                                                                                                                        <li style="cursor: pointer;">
-                                                                                                                          <a class="submitmyform">Quality Control</a>
-                                                                                                                          <form method="post" action="https://www.navy.mil.bd/Quality-Control">
-                                                                                                                            <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTQ0" /> 
-                                                                                                                            <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                          </li>
-                                                                                                                        </ul>
-                                                                                                                      </div>
-                                                                                                                    </div>
-                                                                                                                    <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                      <h4 class="title">Officers Training</h4>
-                                                                                                                      <div class="content">
-                                                                                                                        <ul class="menu-col">
-                                                                                                                          <li style="cursor: pointer;">
-                                                                                                                            <a class="submitmyform">Basic Training</a>
-                                                                                                                            <form method="post" action="https://www.navy.mil.bd/Basic-Training">
-                                                                                                                              <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTk2" /> 
-                                                                                                                              <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                            </li>
-                                                                                                                            <li style="cursor: pointer;">
-                                                                                                                              <a class="submitmyform">Specialised Training</a>
-                                                                                                                              <form method="post" action="https://www.navy.mil.bd/Specialised-Training">
-                                                                                                                                <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTk3" /> 
-                                                                                                                                <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                              </li>
-                                                                                                                              <li style="cursor: pointer;">
-                                                                                                                                <a class="submitmyform">Others Training</a>
-                                                                                                                                <form method="post" action="https://www.navy.mil.bd/Others-Training">
-                                                                                                                                  <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTk4" /> 
-                                                                                                                                  <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                </li>
-                                                                                                                              </ul>
-                                                                                                                            </div>
-                                                                                                                          </div>
-                                                                                                                          <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                            <h4 class="title">others Training</h4>
-                                                                                                                            <div class="content">
-                                                                                                                              <ul class="menu-col">
-                                                                                                                                <li style="cursor: pointer;">
-                                                                                                                                  <a class="submitmyform">Practical Training</a>
-                                                                                                                                  <form method="post" action="https://www.navy.mil.bd/Practical-Training">
-                                                                                                                                    <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTQ2" /> 
-                                                                                                                                    <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                  </li>
-                                                                                                                                  <li style="cursor: pointer;">
-                                                                                                                                    <a class="submitmyform">OJT</a>
-                                                                                                                                    <form method="post" action="https://www.navy.mil.bd/OJT">
-                                                                                                                                      <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTQ3" /> 
-                                                                                                                                      <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                    </li>
-                                                                                                                                    <li style="cursor: pointer;">
-                                                                                                                                      <a class="submitmyform">Skilled Training (for Civilian)</a>
-                                                                                                                                      <form method="post" action="https://www.navy.mil.bd/Skilled-Training-(for-Civilian)">
-                                                                                                                                        <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEyNQ%3D%3D" /> 
-                                                                                                                                        <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                      </li>
-                                                                                                                                    </ul>
-                                                                                                                                  </div>
-                                                                                                                                </div>
-                                                                                                                                
-                                                                                                                                
+                                                                                                                                                                                                                                          
                                                                                                                                 
                                                                                                                                 
                                                                                                                               </div>
@@ -595,7 +521,7 @@
                                                                                                                           </ul>
                                                                                                                         </li>
                                                                                                                         <li class="dropdown megamenu-fw mmm2linemenu">
-                                                                                                                          <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Achievement</a>
+                                                                                                                          <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Mission</a>
                                                                                                                           <ul class="dropdown-menu megamenu-content animated fade-Out-Up" role="menu">
                                                                                                                             <li>
                                                                                                                               <div class="row">
@@ -639,7 +565,7 @@
                                                                                                                                   </ul>
                                                                                                                                 </li>
                                                                                                                                 <li class="dropdown megamenu-fw mmm2linemenu">
-                                                                                                                                  <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Command</a>
+                                                                                                                                  <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Report</a>
                                                                                                                                   <ul class="dropdown-menu megamenu-content animated fade-Out-Up" role="menu">
                                                                                                                                     <li>
                                                                                                                                       <div class="row">
@@ -656,227 +582,9 @@
                                                                                                                                               </ul>
                                                                                                                                             </div>
                                                                                                                                           </div>
-                                                                                                                                          <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                                            <h4 class="title">Organization</h4>
-                                                                                                                                            <div class="content">
-                                                                                                                                              <ul class="menu-col">
-                                                                                                                                                <li style="cursor: pointer;">
-                                                                                                                                                  <a class="submitmyform">Organogram</a>
-                                                                                                                                                  <form method="post" action="https://www.navy.mil.bd/Organogram">
-                                                                                                                                                    <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTUw" /> 
-                                                                                                                                                    <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                  </li>
-                                                                                                                                                  <li style="cursor: pointer;">
-                                                                                                                                                    <a class="submitmyform">Area HQ</a>
-                                                                                                                                                    <form method="post" action="https://www.navy.mil.bd/Area-HQ">
-                                                                                                                                                      <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTUx" /> 
-                                                                                                                                                      <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                    </li>
-                                                                                                                                                  </ul>
-                                                                                                                                                </div>
-                                                                                                                                              </div>
-                                                                                                                                              <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                                                <h4 class="title">NHQ</h4>
-                                                                                                                                                <div class="content">
-                                                                                                                                                  <ul class="menu-col">
-                                                                                                                                                    <li style="cursor: pointer;">
-                                                                                                                                                      <a class="submitmyform">ACNS (O)</a>
-                                                                                                                                                      <form method="post" action="https://www.navy.mil.bd/ACNS-(O)">
-                                                                                                                                                        <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTUy" /> 
-                                                                                                                                                        <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                      </li>
-                                                                                                                                                      <li style="cursor: pointer;">
-                                                                                                                                                        <a class="submitmyform">ACNS (P)</a>
-                                                                                                                                                        <form method="post" action="https://www.navy.mil.bd/ACNS-(P)">
-                                                                                                                                                          <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEyMA%3D%3D" /> 
-                                                                                                                                                          <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                        </li>
-                                                                                                                                                        <li style="cursor: pointer;">
-                                                                                                                                                          <a class="submitmyform">ACNS (M)</a>
-                                                                                                                                                          <form method="post" action="https://www.navy.mil.bd/ACNS-(M)">
-                                                                                                                                                            <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTU0" /> 
-                                                                                                                                                            <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                          </li>
-                                                                                                                                                          <li style="cursor: pointer;">
-                                                                                                                                                            <a class="submitmyform">ACNS (log)</a>
-                                                                                                                                                            <form method="post" action="https://www.navy.mil.bd/ACNS-(log)">
-                                                                                                                                                              <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTU1" /> 
-                                                                                                                                                              <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                            </li>
-                                                                                                                                                          </ul>
-                                                                                                                                                        </div>
-                                                                                                                                                      </div>
-                                                                                                                                                      <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                                                        <h4 class="title">COMDHAKA</h4>
-                                                                                                                                                        <div class="content">
-                                                                                                                                                          <ul class="menu-col">
-                                                                                                                                                            <li style="cursor: pointer;">
-                                                                                                                                                              <a class="submitmyform">Biodata</a>
-                                                                                                                                                              <form method="post" action="https://www.navy.mil.bd/Biodata">
-                                                                                                                                                                <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTU3" /> 
-                                                                                                                                                                <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                              </li>
-                                                                                                                                                              <li style="cursor: pointer;">
-                                                                                                                                                                <a class="submitmyform">Activities</a>
-                                                                                                                                                                <form method="post" action="https://www.navy.mil.bd/Activities">
-                                                                                                                                                                  <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTU4" /> 
-                                                                                                                                                                  <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                </li>
-                                                                                                                                                              </ul>
-                                                                                                                                                            </div>
-                                                                                                                                                          </div>
-                                                                                                                                                          <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                                                            <h4 class="title">COMCHIT</h4>
-                                                                                                                                                            <div class="content">
-                                                                                                                                                              <ul class="menu-col">
-                                                                                                                                                                <li style="cursor: pointer;">
-                                                                                                                                                                  <a class="submitmyform">Biodata</a>
-                                                                                                                                                                  <form method="post" action="https://www.navy.mil.bd/Biodata">
-                                                                                                                                                                    <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTU5" /> 
-                                                                                                                                                                    <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                  </li>
-                                                                                                                                                                  <li style="cursor: pointer;">
-                                                                                                                                                                    <a class="submitmyform">Activities</a>
-                                                                                                                                                                    <form method="post" action="https://www.navy.mil.bd/Activities">
-                                                                                                                                                                      <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTYw" /> 
-                                                                                                                                                                      <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                    </li>
-                                                                                                                                                                  </ul>
-                                                                                                                                                                </div>
-                                                                                                                                                              </div>
-                                                                                                                                                              <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                                                                <h4 class="title">COMBAN</h4>
-                                                                                                                                                                <div class="content">
-                                                                                                                                                                  <ul class="menu-col">
-                                                                                                                                                                    <li style="cursor: pointer;">
-                                                                                                                                                                      <a class="submitmyform">Biodata</a>
-                                                                                                                                                                      <form method="post" action="https://www.navy.mil.bd/Biodata">
-                                                                                                                                                                        <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTYx" /> 
-                                                                                                                                                                        <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                      </li>
-                                                                                                                                                                      <li style="cursor: pointer;">
-                                                                                                                                                                        <a class="submitmyform">Activities</a>
-                                                                                                                                                                        <form method="post" action="https://www.navy.mil.bd/Activities">
-                                                                                                                                                                          <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTYy" /> 
-                                                                                                                                                                          <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                        </li>
-                                                                                                                                                                      </ul>
-                                                                                                                                                                    </div>
-                                                                                                                                                                  </div>
-                                                                                                                                                                  <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                                                                    <h4 class="title">COMKHUL</h4>
-                                                                                                                                                                    <div class="content">
-                                                                                                                                                                      <ul class="menu-col">
-                                                                                                                                                                        <li style="cursor: pointer;">
-                                                                                                                                                                          <a class="submitmyform">Biodata</a>
-                                                                                                                                                                          <form method="post" action="https://www.navy.mil.bd/Biodata">
-                                                                                                                                                                            <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTYz" /> 
-                                                                                                                                                                            <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                          </li>
-                                                                                                                                                                          <li style="cursor: pointer;">
-                                                                                                                                                                            <a class="submitmyform">Activities</a>
-                                                                                                                                                                            <form method="post" action="https://www.navy.mil.bd/Activities">
-                                                                                                                                                                              <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTY0" /> 
-                                                                                                                                                                              <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                            </li>
-                                                                                                                                                                          </ul>
-                                                                                                                                                                        </div>
-                                                                                                                                                                      </div>
-                                                                                                                                                                      <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                                                                        <h4 class="title">CSD</h4>
-                                                                                                                                                                        <div class="content">
-                                                                                                                                                                          <ul class="menu-col">
-                                                                                                                                                                            <li style="cursor: pointer;">
-                                                                                                                                                                              <a class="submitmyform">Biodata</a>
-                                                                                                                                                                              <form method="post" action="https://www.navy.mil.bd/Biodata">
-                                                                                                                                                                                <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTY1" /> 
-                                                                                                                                                                                <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                              </li>
-                                                                                                                                                                              <li style="cursor: pointer;">
-                                                                                                                                                                                <a class="submitmyform">Activities</a>
-                                                                                                                                                                                <form method="post" action="https://www.navy.mil.bd/Activities">
-                                                                                                                                                                                  <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTY2" /> 
-                                                                                                                                                                                  <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                                </li>
-                                                                                                                                                                              </ul>
-                                                                                                                                                                            </div>
-                                                                                                                                                                          </div>
-                                                                                                                                                                          <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                                                                            <h4 class="title">COMNAV</h4>
-                                                                                                                                                                            <div class="content">
-                                                                                                                                                                              <ul class="menu-col">
-                                                                                                                                                                                <li style="cursor: pointer;">
-                                                                                                                                                                                  <a class="submitmyform">Biodata</a>
-                                                                                                                                                                                  <form method="post" action="https://www.navy.mil.bd/Biodata">
-                                                                                                                                                                                    <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTY3" /> 
-                                                                                                                                                                                    <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                                  </li>
-                                                                                                                                                                                  <li style="cursor: pointer;">
-                                                                                                                                                                                    <a class="submitmyform">Activities</a>
-                                                                                                                                                                                    <form method="post" action="https://www.navy.mil.bd/Activities">
-                                                                                                                                                                                      <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTY4" /> 
-                                                                                                                                                                                      <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                                    </li>
-                                                                                                                                                                                  </ul>
-                                                                                                                                                                                </div>
-                                                                                                                                                                              </div>
-                                                                                                                                                                              <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                                                                                <h4 class="title">COMSWADS</h4>
-                                                                                                                                                                                <div class="content">
-                                                                                                                                                                                  <ul class="menu-col">
-                                                                                                                                                                                    <li style="cursor: pointer;">
-                                                                                                                                                                                      <a class="submitmyform">Biodata</a>
-                                                                                                                                                                                      <form method="post" action="https://www.navy.mil.bd/Biodata">
-                                                                                                                                                                                        <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTk5" /> 
-                                                                                                                                                                                        <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                                      </li>
-                                                                                                                                                                                      <li style="cursor: pointer;">
-                                                                                                                                                                                        <a class="submitmyform">Activities</a>
-                                                                                                                                                                                        <form method="post" action="https://www.navy.mil.bd/Activities">
-                                                                                                                                                                                          <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEwMA%3D%3D" /> 
-                                                                                                                                                                                          <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                                        </li>
-                                                                                                                                                                                      </ul>
-                                                                                                                                                                                    </div>
-                                                                                                                                                                                  </div>
-                                                                                                                                                                                  <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                                                                                    <h4 class="title">COMSUB</h4>
-                                                                                                                                                                                    <div class="content">
-                                                                                                                                                                                      <ul class="menu-col">
-                                                                                                                                                                                        <li style="cursor: pointer;">
-                                                                                                                                                                                          <a class="submitmyform">Biodata</a>
-                                                                                                                                                                                          <form method="post" action="https://www.navy.mil.bd/Biodata">
-                                                                                                                                                                                            <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTY5" /> 
-                                                                                                                                                                                            <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                                          </li>
-                                                                                                                                                                                          <li style="cursor: pointer;">
-                                                                                                                                                                                            <a class="submitmyform">Activities</a>
-                                                                                                                                                                                            <form method="post" action="https://www.navy.mil.bd/Activities">
-                                                                                                                                                                                              <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTcw" /> 
-                                                                                                                                                                                              <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                                            </li>
-                                                                                                                                                                                          </ul>
-                                                                                                                                                                                        </div>
-                                                                                                                                                                                      </div>
-                                                                                                                                                                                      <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                                                                                        <h4 class="title">COMFLOT WEST</h4>
-                                                                                                                                                                                        <div class="content">
-                                                                                                                                                                                          <ul class="menu-col">
-                                                                                                                                                                                            <li style="cursor: pointer;">
-                                                                                                                                                                                              <a class="submitmyform">BIODATA</a>
-                                                                                                                                                                                              <form method="post" action="https://www.navy.mil.bd/BIODATA">
-                                                                                                                                                                                                <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEwMw%3D%3D" /> 
-                                                                                                                                                                                                <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                                              </li>
-                                                                                                                                                                                              <li style="cursor: pointer;">
-                                                                                                                                                                                                <a class="submitmyform">ACTIVITIES</a>
-                                                                                                                                                                                                <form method="post" action="https://www.navy.mil.bd/ACTIVITIES">
-                                                                                                                                                                                                  <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEwNA%3D%3D" /> 
-                                                                                                                                                                                                  <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                                                </li>
-                                                                                                                                                                                              </ul>
-                                                                                                                                                                                            </div>
-                                                                                                                                                                                          </div>
+                                                                                                                                        
+                                                                                                                                                              
+                                                                                                                                         
                                                                                                                                                                                           <div class="col-menu col-sm-6 col-md-3">
                                                                                                                                                                                             <h4 class="title">CHIEF HYDROGRAPHER</h4>
                                                                                                                                                                                             <div class="content">
@@ -905,7 +613,7 @@
                                                                                                                                                                                         </ul>
                                                                                                                                                                                       </li>
                                                                                                                                                                                       <li class="dropdown megamenu-fw mmm2linemenu">
-                                                                                                                                                                                        <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Miscellaneous</a>
+                                                                                                                                                                                        <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Arcade</a>
                                                                                                                                                                                         <ul class="dropdown-menu megamenu-content animated fade-Out-Up" role="menu">
                                                                                                                                                                                           <li>
                                                                                                                                                                                             <div class="row">
@@ -1297,13 +1005,13 @@
                                                                                                                                                                                                                                                                                           <h4 class="title">Career</h4>
                                                                                                                                                                                                                                                                                           <div class="content">
                                                                                                                                                                                                                                                                                             <ul class="menu-col">
-                                                                                                                                                                                                                                                                                              <li style="cursor: pointer;">
+                                                                                                                                                                                                                                                                                              {{-- <li style="cursor: pointer;">
                                                                                                                                                                                                                                                                                                 <a class="submitmyform">Officers</a>
                                                                                                                                                                                                                                                                                                 <form method="post" action="https://www.navy.mil.bd/Officers">
                                                                                                                                                                                                                                                                                                   <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEw" /> 
                                                                                                                                                                                                                                                                                                   <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                            
                                                                                                                                                                                                                                                                                                   </form>
-                                                                                                                                                                                                                                                                                                </li>
+                                                                                                                                                                                                                                                                                                </li> --}}
                                                                                                                                                                                                                                                                                                 <li style="cursor: pointer;">
                                                                                                                                                                                                                                                                                                   <a class="submitmyform">Sailors</a>
                                                                                                                                                                                                                                                                                                   <form method="post" action="https://www.navy.mil.bd/Sailors">
@@ -1311,13 +1019,13 @@
                                                                                                                                                                                                                                                                                                     <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                           
                                                                                                                                                                                                                                                                                                    </form>
                                                                                                                                                                                                                                                                                                   </li>
-                                                                                                                                                                                                                                                                                                  <li style="cursor: pointer;">
+                                                                                                                                                                                                                                                                                                  {{-- <li style="cursor: pointer;">
                                                                                                                                                                                                                                                                                                     <a class="submitmyform">Civilians</a>
                                                                                                                                                                                                                                                                                                     <form method="post" action="https://www.navy.mil.bd/Civilians">
                                                                                                                                                                                                                                                                                                       <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEy" /> 
                                                                                                                                                                                                                                                                                                       <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                             
                                                                                                                                                                                                                                                                                                      </form>
-                                                                                                                                                                                                                                                                                                    </li>
+                                                                                                                                                                                                                                                                                                    </li> --}}
                                                                                                                                                                                                                                                                                                   </ul>
                                                                                                                                                                                                                                                                                                 </div>
                                                                                                                                                                                                                                                                                               </div>

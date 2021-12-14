@@ -66,4 +66,10 @@ table, th, td {
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div> --}}
+  <picture><img src="/backend/images/sailor.PNG"></picture>
+<ul class="navbar-nav navbar-nav-right">
+             <li class="nav-item dropdown d-lg-flex d-none">
+           
+            </li>
+</ul>
 @endsection

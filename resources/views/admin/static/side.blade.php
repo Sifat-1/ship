@@ -40,7 +40,7 @@
           <span class="menu-title">Candidate</span>
           <i class="menu-arrow"></i>
         </a>
-    <li class="nav-item">
+    <li class="nav-item" >
       <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
         <!-- <i class="icon-disc menu-icon"></i> -->
         <span class="menu-title">Sailor</span>
@@ -53,13 +53,47 @@
           </ul>
       </div> 
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="pages/charts/chartjs.html">
-        <!-- <i class="icon-pie-graph menu-icon"></i> -->
-        <span class="menu-title">Exam</span>
+
+    <li class="nav-item" >
+      <a class="nav-link" data-toggle="collapse" href="#ui-course" aria-expanded="false" aria-controls="ui-basic">
+        <!-- <i class="icon-disc menu-icon"></i> -->
+        <span class="menu-title">Courses</span>
         <i class="menu-arrow"></i>
       </a>
+        <div class="collapse" id="ui-course">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/CreatCourse">Creat Course</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/ShowBasic">Basic Course</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/ShowSpecial">Specialized Course</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/ShowOther">Others Course</a></li>
+          </ul>
+      </div> 
     </li>
+    <!-- courses --> 
+    
+    
+    {{-- <li style="margin-left: 30px; margin-top: 20px;">
+      <div href="#" data-toggle="collapse" data-target="#products" aria-expanded="true"style="color: grey;">
+              
+              <i class="fa fa-fw fa-tags" style="color: grey;"></i> Products
+              <i class="fa fa-fw fa-caret-down"></i>
+              
+      </div>
+      
+      <ul id="products" class="collapse" style="margin-top: 20px; margin-left:20px;" >
+          <li style="margin-bottom: 17px;">
+              <a href="#" style="color: grey;"> Insert Product </a>
+          </li>
+          <li>
+              <a href="#" style="color: grey;"> View Products </a>
+          </li>
+      </ul>
+      
+  </li> --}}
+
+
+
+
     <li class="nav-item">
       <a class="nav-link" href=" /FillForm ">
         <!-- <i class="icon-command menu-icon"></i> -->

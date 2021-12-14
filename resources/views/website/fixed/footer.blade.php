@@ -6,17 +6,17 @@
             <div class="footer-logo">
             </div>
           </div>
-          <div class="thm-footer-content col-xs-12 col-md-4 col-sm-4">
+          <div class="thm-footer-content col-xs-4 col-md-6 col-sm-6">
             <ul style="list-style: none;">
-              <strong style="color:white !important;">Naval Headquarters</strong>
-              <li><i class="fa fa-map-marker" style="color: white; padding-right: 7px;"></i> <span>Banani, Dhaka - 1213 Bangladesh</span></li>
-              <li><i class="fa fa-phone" style="color: white; padding-right: 7px;"></i> <span>+88 02 983 6141-9</span></li>
-              <li><i class="fa fa-envelope-o" style="color: white; padding-right: 7px;"></i> <span>info@navy.mil.bd</span></li>
+              
+              
+              <li><i class="fa fa-phone" style="color: white; padding-right: 7px;"></i> <span>+88 01741909565</li>
+              <li><i class="fa fa-envelope-o" style="color: white; padding-right: 7px;"></i> <span>info@sailor.mil.bd</span></li>
             </ul>
           </div>
-          <div class="thm-footer-content col-xs-12 col-md-6 col-sm-6">
-            <ul style="list-style: none;">
-              <strong style="color:white !important;">Useful Links</strong>
+          {{-- <div class="thm-footer-content col-xs-2 col-md-2 col-sm-12"> --}}
+            {{-- <ul style="list-style: none;"> --}}
+              {{-- <strong style="color:white !important;">Useful Links</strong>
               
               
               <li><a style="color: #fff" href="https://www.bangladesh.gov.bd/" target="_blank">&nbsp; &raquo;&nbsp; Government of the People&#039;s Republic of Bangladesh </a></li>
@@ -24,8 +24,8 @@
               <li><a style="color: #fff" href="https://www.army.mil.bd/" target="_blank">&nbsp; &raquo;&nbsp; Bangladesh Army </a></li>
               <li><a style="color: #fff" href="https://www.baf.mil.bd/" target="_blank">&nbsp; &raquo;&nbsp; Bangladesh Air Force </a></li>
               <li><a style="color: #fff" href="https://www.facebook.com/bangladeshnavy.mil.bd" target="_blank">&nbsp; &raquo;&nbsp; Bangladesh Navy Official Facebook Page </a></li>
-              <li><a style="color: #fff" href="useful/link.html" target="_blank">&nbsp; &raquo;&nbsp; More Link </a></li>
-            </ul>
+              <li><a style="color: #fff" href="useful/link.html" target="_blank">&nbsp; &raquo;&nbsp; More Link </a></li> --}}
+            {{-- </ul> --}}
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@
       <div class="row">
         <div class="col-sm-7">
           <p class="wow fadeIn small"  >
-            © 2021 Bangladesh Navy. All rights reserved. Powered by <a href="#" target="_blank">DNIT</a>
+            © All rights reserved. Powered by <a href="#" target="_blank">Sifat Nowshin</a>
           </p>
         </div>
         <!-- <div class="col-sm-5">

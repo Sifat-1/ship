@@ -15,11 +15,14 @@ class CandidateController extends Controller
 
     public function StoreCandidatedata(Request $request)
     {
+        
         $image_name=null;
         // step1
         if ($request->hasFile('candidate_image'))
+        
         // step 2 genertae file name
         {
+           
             $image_name=date('Ymdhis').'.'.$request->file('candidate_image')->getClientOriginalExtension();
             // step 3: store project directory
              $request->File('candidate_image')->storeAs('/candidates',$image_name);
@@ -41,7 +44,7 @@ class CandidateController extends Controller
               'fathername'=>'required',
               'mothername'=>'required',
               'foccupation'=>'required',
-              'moccupation'=>'required',
+              'moccupationl'=>'required',
             //   'image_name'=>'required',
               
         
@@ -61,7 +64,7 @@ class CandidateController extends Controller
             'fathername'=>$request->fathername,
             'mothername'=>$request->mothername,
             'foccupation'=>$request->foccupation,
-            'moccupationl'=>$request->moccupation,
+            'moccupationl'=>$request->moccupationl,
             'image'=>$image_name
 
             

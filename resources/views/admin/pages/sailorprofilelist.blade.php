@@ -45,11 +45,19 @@
             <th>{{$person->id}}</th>
            <td>{{$person->name}}</td>
 
-           {{-- new created method has been declared with databse table fild name --}}
+           {{-- new created method has been declared with databse table fild name--}}
            <td>{{$person->rankcategory->rank}}</td>
            <td>{{$person->email}}</td>
     </tr>
     @endforeach
+
+    {{-- @foreach($Basic_courses as $course)                                                                              
+    <tr>
+            <th>{{$course->id}}</th>
+           <td>{{$course->name}}</td>
+           <td>{{$course->c_type}}</td>       
+    </tr>
+    @endforeach --}}
   </tbody>
 </table>
 

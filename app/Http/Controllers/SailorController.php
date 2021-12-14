@@ -11,6 +11,7 @@ class SailorController extends Controller
     public function SailorProfile()
     {
         $sailors=People::with('rankcategory')->get();
+        // $Basic_courses = Course::where('course_type','Basic')->get();
         // dd($sailors);
 
         return view('admin.pages.sailorprofilelist',compact('sailors'));

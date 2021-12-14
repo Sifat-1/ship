@@ -1193,7 +1193,7 @@ section h2:first-of-type::after, .section h2:first-of-type::after, .section-bg.s
 :: SECTION FOOTER
 ----------------------------------------- */
 .footer-logo {
-	background: url('../img/navy.png') center center no-repeat;
+	background: url('../img/logo.png') center center no-repeat;
 	width: 55%;
 	height: 94px;
 	display: flex;

@@ -286,7 +286,7 @@
               <div class="news-btn-hover">
               </div>
               <div class="news-btn-inner">
-                <img alt="news" src="{{url('Frontend/chief_about_gallery/3156aea06e3d7c9ce4a26afb78b6a417.jpg')}}" width="180px"> 
+                <img alt="news" src="{{url('Frontend/chief_about_gallery/download (1).jpg')}}" width="180px"> 
               </div>
             </div>
             <h3 class="article-numbered--title1">CHIEF OF NAVAL STAFF</h3>
@@ -333,7 +333,7 @@
                     <p>
                       <form method="post" action="https://www.navy.mil.bd/REQUEST-FOR-EXPRESSION-OF-INTEREST,-SHOPNIL-SHINDHU" target="_blank">
                         <input type="hidden" name="url_link" value="bm90aWNlZXhwbG9kZTEyMg%3D%3D" /> 
-                        <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                  <button type="submit" style="border-width: 0px; background-color: transparent;"><a>REQUEST FOR EXPRESSION OF INTEREST, SHOPNIL SHINDHU</a></button>
+                        {{-- <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                  <button type="submit" style="border-width: 0px; background-color: transparent;"><a>REQUEST FOR EXPRESSION OF INTEREST, SHOPNIL SHINDHU</a></button> --}}
                       </form>
                     </p>
                   </li>
@@ -341,7 +341,7 @@
                     <p>
                       <form method="post" action="https://www.navy.mil.bd/Written-Exam-Result---Officer-Cadet-Batch-2022-B" target="_blank">
                         <input type="hidden" name="url_link" value="bm90aWNlZXhwbG9kZTEyMQ%3D%3D" /> 
-                        <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                  <button type="submit" style="border-width: 0px; background-color: transparent;"><a>Written Exam Result - Officer Cadet Batch 2022-B</a></button>
+                        <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                  <button type="submit" style="border-width: 0px; background-color: transparent;"><a>Written Exam Result - Sailor Batch 2022-B</a></button>
                       </form>
                     </p>
                   </li>
@@ -349,7 +349,7 @@
                     <p>
                       <form method="post" action="https://www.navy.mil.bd/Written-Exam-Result---Direct-Entry-Artificer-Batch-2022-A" target="_blank">
                         <input type="hidden" name="url_link" value="bm90aWNlZXhwbG9kZTEyMA%3D%3D" /> 
-                        <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                  <button type="submit" style="border-width: 0px; background-color: transparent;"><a>Written Exam Result - Direct Entry Artificer Batch 2022-A</a></button>
+                        <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                  <button type="submit" style="border-width: 0px; background-color: transparent;"><a>The selected candidates viva will be start from 9 January,2022</a></button>
                       </form>
                     </p>
                   </li>
@@ -365,7 +365,7 @@
                     <p>
                       <form method="post" action="https://www.navy.mil.bd/কোভিড-১৯-ভ্যাকসিনের-জন্য-সকল-কর্মকর্তা-ও-কর্মচারীগণ-ওয়েব-পোর্টালের-মাধ্যমে-রেজিস্ট্রেশন-করুন" target="_blank">
                         <input type="hidden" name="url_link" value="bm90aWNlZXhwbG9kZTUx" /> 
-                        <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                  <button type="submit" style="border-width: 0px; background-color: transparent;"><a>কোভিড-১৯ ভ্যাকসিনের জন্য সকল কর্মকর্তা ও কর্মচারীগণ ওয়েব পোর্টালের মাধ্যমে রেজিস্ট্রেশন করুন</a></button>
+                        {{-- <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                  <button type="submit" style="border-width: 0px; background-color: transparent;"><a>কোভিড-১৯ ভ্যাকসিনের জন্য সকল কর্মকর্তা ও কর্মচারীগণ ওয়েব পোর্টালের মাধ্যমে রেজিস্ট্রেশন করুন</a></button> --}}
                       </form>
                     </p>
                   </li>
@@ -854,7 +854,7 @@
                                                           <h6>Read more</h6>
                                                         </span>
                                                       </div>
-                                                      <div class="in-content">
+                                                      {{-- <div class="in-content">
                                                         <h2>LT CDR Q EXAM RESULT - OCT 2021</h2>
                                                         <span>11 Nov 2021, Thursday</span>
                                                         <div>
@@ -869,8 +869,8 @@
                                                         <span class="in-green">
                                                           <h6>Read more</h6>
                                                         </span>
-                                                      </div>
-                                                      <div class="in-content">
+                                                      </div> --}}
+                                                      {{-- <div class="in-content">
                                                         <h2>কোভিড-১৯ ভ্যাকসিনের জন্য সকল কর্মকর্তা ও কর্মচারীগণ ওয়েব পোর্টালের মাধ্যমে রেজিস্ট্রেশন করুন</h2>
                                                         <span>01 Feb 2021, Monday</span>
                                                         <div>
@@ -887,7 +887,7 @@
                                                         <h2>no title...</h2>
                                                         <span style="color: black !important;">no date...</span>
                                                       </div>
-                                                    </div>
+                                                    </div> --}}
                                                     <div class="in-viewer-content">
                                                       no content...
                                                     </div>
@@ -940,7 +940,7 @@
                               <section class="section section-default ">
                                 <div class="container">
                                   <div class="section-inner"></br>
-                                    <h1 style="color:#fff;">UN Mission - Bangladesh Navy</h1><hr>
+                                    <h1 style="color:#fff;">UN Mission </h1><hr>
                                     <div id="owl-home-info" class="home-info owl-carousel">
                                       <div class="item">
                                         <div class="thumb dark thumb-social">
@@ -1129,7 +1129,7 @@
                                                         <div class="row">
                                                           <div class="col-xs-12">
                                                             <ul class="demo1">
-                                                              <li class="news-item">
+                                                              {{-- <li class="news-item">
                                                                 <table cellpadding="4">
                                                                   <tr>
                                                                     <td rowspan="3" style="width:112px;">
@@ -1149,7 +1149,7 @@
                                                                     </p></td>
                                                                   </tr>
                                                                 </table>
-                                                              </li>
+                                                              </li> --}}
                                                               <li class="news-item">
                                                                 <table cellpadding="4">
                                                                   <tr>
@@ -1368,7 +1368,7 @@
                                                   </div>
                                                 </div>
                                               </div>
-                                              <section class="section-dark parallax-image-a">
+                                              {{-- <section class="section-dark parallax-image-a">
                                                 <div class="section-inner" style="padding: 0px;">
                                                   <div class="section-heading wowed margin-bottom-50">
                                                     <h1 data-wow-delay=".5s" class="wow fadeInDown animated" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown; color:#fff; font-size:28px;">BN Links</h1>
@@ -1433,7 +1433,7 @@
                                                     </div>
                                                   </div>
                                                 </div>
-                                              </section>
+                                              </section> --}}
                                               <section class="section section-split-parallax_gallery">
                                                 <div class="row row-eq-height">
                                                   <div class="col-md-4  wow fadeInUp section-split-parallax--left">
