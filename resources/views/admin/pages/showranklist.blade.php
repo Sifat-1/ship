@@ -40,6 +40,7 @@
         <th scope="col">Id</th>
         <th scope="col">Rank_Name</th>
         <th scope="col">Designation</th>
+        <th scope="col">Action</th>
        
       </tr>
     </thead>
@@ -49,6 +50,11 @@
         <th>{{$value->id}}</th>
         <td>{{$value->rank}}</td>
         <td>{{$value->designation}}</td>
+        <td>
+          <a href="{{route('view.rank',$value->id)}}" class="btn btn-primary">View</a>
+          <a href=""  class="btn btn-success">Update</a>
+          <a href="" class="btn btn-danger">Delete</a>
+        </td>
        
  </tr>
         

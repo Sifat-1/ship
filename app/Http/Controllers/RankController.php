@@ -19,6 +19,11 @@ class RankController extends Controller
     {   
         return view('admin.pages.creatrank');
     }
+    public function ViewSailorRank($id)
+    {
+        $ranks=Rank::find($id);
+        return view('admin.pages.showrank_view', compact('ranks'));
+    }
     public function StoreRank( Request $request)
     {
         // dd($request)->all();

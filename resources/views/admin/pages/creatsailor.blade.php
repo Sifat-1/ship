@@ -1,5 +1,6 @@
 @extends('master')
 @section('content')
+<div class="col-xs-12 col-sm-12 col-md-12">
 <h3>Create new SailorProfile</h3>
 {{-- validation start --}}
 
@@ -32,7 +33,7 @@
     
     {{-- <input name="rank"placeholder="Enter Sailor rank"  type="text" class="form-control" id="exampleInputRank"> --}}
     <select name="rank" class="form-control">
-        <option>Select Rank</option>
+        {{-- <option>Select Rank</option> --}}
 
         {{-- compact name --}}
 
@@ -60,11 +61,15 @@
         <label for="exampleInputShip" class="form-label">Ship Name</label>
         <input name="ship"placeholder="Enter Shipname"  type="text" class="form-control" id="exampleInputShip" >
     </div>
+    {{-- <div class="mb-3">
+        <label for="exampleInputSimage" class="form-label">Sailor Image</label>
+        <input name="sailor_image"placeholder="Enter File"  type="file" class="form-control" id="exampleInputSimage" >
+    </div> --}}
 
   
 
     <button type="submit" class="btn btn-success">Submit</button>
 </form>
-
+</div>
 
 @endsection

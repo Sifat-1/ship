@@ -29,16 +29,24 @@ Route::get('/', function () {
  Route::get('/dashboard',[AdminController::class,'Dashboard']);
  Route::get('/SignUp',[RegistrationController::class,'Registration']);
  Route::post('/GetRegister',[RegistrationController::class,'GetRegistration'])->name('get.register');
- Route::get('/login',[LoginController::class,'Login']);         
+ Route::get('/login',[LoginController::class,'Login']); 
+//  SailorProfile        
  Route::get('/SailorProfile',[SailorController::class,'SailorProfile']);
  Route::get('/CreatSailor',[SailorController::class,'CreatSailor']);
  Route::post('/StoreSailor',[SailorController::class,'StoreSailor'])->name('store.sailor');
+ Route::get('/View/SailorProfile/{id}',[SailorController::class,'ViewSailorProfile'])->name('view.sailorprofile');
+
+//  Admission & Candidate
  Route::get('/FillForm',[AdmissionController::class,'FillForm']);
  Route::get('/CandidateList',[CandidateController::class,'CandidateList']);
  Route::post('/StoreCandidatedata',[CandidateController::class,'StoreCandidatedata'])->name('store.candidate');
+
+//  ranks
  Route::get('/ShowRank',[RankController::class,'ShowRank']);
  Route::get('/CtreatRank',[RankController::class,'CreatRank']);
  Route::post('/StoreRank',[RankController::class,'StoreRank'])->name('store.rank');
+ Route::get('/View/SailorRank/{id}',[RankController::class,'ViewSailorRank'])->name('view.rank');
+
 //  courses
 
 Route::get('/CreatCourse',[CourseController::class,'CreatCourse']);
@@ -70,11 +78,7 @@ Route::post('/StoresCriteria',[CourseController::class,'StoresCriteria'])->name(
 
 
 // this is for website view
-Route::get('/', function () {
-    return view('website.master');
-
-   
-})->name('home');
+ 
 
 
 

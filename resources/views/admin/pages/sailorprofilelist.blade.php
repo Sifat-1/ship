@@ -37,6 +37,7 @@
       <th scope="col">Name</th>
       <th scope="col">Rank</th>
       <th scope="col">Email</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>   
@@ -48,6 +49,15 @@
            {{-- new created method has been declared with databse table fild name--}}
            <td>{{$person->rankcategory->rank}}</td>
            <td>{{$person->email}}</td>
+           <td>
+             <a href="{{route('view.sailorprofile',$person->id)}}" class="btn btn-primary">View</a>
+             <a href=""class="btn btn-success">Update</a>
+             <a href=""class="btn btn-danger">Delete</a>
+
+             {{-- <a href="{{route('view.rank',$value->id)}}" class="btn btn-primary">View</a> --}}
+             
+           </td>
+           
     </tr>
     @endforeach
 

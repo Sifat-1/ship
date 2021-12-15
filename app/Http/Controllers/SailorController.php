@@ -23,6 +23,13 @@ class SailorController extends Controller
         $ranks=Rank::all();
         return view('admin.pages.creatsailor',compact('ranks'));
     }
+    public function ViewSailorProfile($id)
+    {
+           $sailors=People::find($id);
+           return view('admin.pages.sailorprofile_view',compact('sailors'));
+
+    }
+
     public function StoreSailor(Request $request)
     {
     // dd($request->all());
@@ -42,7 +49,8 @@ class SailorController extends Controller
         'address'=>$request->address,
         'email'=>$request->email,
         'phone'=>$request->phone,
-        'ship'=>$request->ship
+        'ship'=>$request->ship,
+        
 
         
 
