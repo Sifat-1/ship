@@ -2,6 +2,12 @@
 @section('content')
 <div class="col-xs-12 col-sm-12 col-md-12"> 
 <h3> Showing SailorProfile List </h3>
+
+@if(session()->has('success'))
+<p class="alert alert-success">
+    {{session()->get('success')}}
+</p>
+@endif
 <!-- <a href="" class="btn btn-success">Create new Sailor_profile</a> -->
 <!DOCTYPE html>
 <html>
@@ -25,10 +31,25 @@
 
 <body>
 
-  <a href="/CreatSailor" class="button">Create New_Profile</a>
+  <a href="{{route('creat.sailor')}}" class="button">Create New_Profile</a>
 <!-- <button class="button">View Chart</button> -->
 
-
+<form action="{{route('bring.sailor')}}" method="GET">
+  <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+          <input value="{{$key}}" type="text" placeholder="Search" name="search" class="form-control">
+      </div>
+      <div class="col-md-4">
+          <button type="submit" class="btn btn-success">Search</button>
+      </div>
+  </div>
+  </form>
+  @if($key)
+  <h4>
+      Your are searching for: {{$key}}. found: {{$sailors->count()}}
+  </h4>
+@endif
 
 <table class="table table-success table-striped">
   <thead>
@@ -52,7 +73,7 @@
            <td>
              <a href="{{route('view.sailorprofile',$person->id)}}" class="btn btn-primary">View</a>
              <a href=""class="btn btn-success">Update</a>
-             <a href=""class="btn btn-danger">Delete</a>
+             <a href="{{route('delete.sailorprofile',$person->id)}}"class="btn btn-danger">Delete</a>
 
              {{-- <a href="{{route('view.rank',$value->id)}}" class="btn btn-primary">View</a> --}}
              

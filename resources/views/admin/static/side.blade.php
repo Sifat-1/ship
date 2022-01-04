@@ -48,7 +48,7 @@
       </a>
         <div class="collapse" id="ui-basic">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="/SailorProfile">Sailor Profile</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{{route('bring.sailor')}}">Sailor Profile</a></li>
           <li class="nav-item"> <a class="nav-link" href="/ShowRank">Sailor Rank</a></li>
           </ul>
       </div> 

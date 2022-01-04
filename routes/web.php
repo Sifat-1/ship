@@ -10,6 +10,8 @@ use App\Http\Controllers\CandidateController;
 use App\Http\Controllers\RankController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\website\HomeController;
+use App\Http\Controllers\admin\UserController as AdminUserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,23 +23,56 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
-    return view('master');
-    // return view('admin.pages.homepage');
-});
 
+// this is for website view
+
+Route::get('/',[HomeController::class,'viewWebsite'])->name('website');
+
+// Login and registration
+
+Route::post('/registration',[UserController::class,'registration'])->name('user.registration');
+Route::post('/login',[UserController::class,'login'])->name('user.login');
+Route::get('/logout',[UserController::class,'logout'])->name('user.logout');
+//  Admission
+Route::get('/FillForm',[AdmissionController::class,'FillForm']);
+
+
+
+
+
+
+
+
+
+
+
+ //  this is for admin view
+
+
+    // Route::get('/',function(){
+    //     return view('master');
+    // })->name('admin');
+    Route::get('/login',[AdminUserController::class,'login'])->name('admin.login'); 
+    Route::post('/dologin',[AdminUserController::class,'doLogin'])->name('admin.dologin'); 
+
+
+    Route::group(['prefix'=>'admin','middleware'=>'auth'],function (){
+        Route::get('/', function () {
+                return view('master');
+            })->name('backend');
+ Route::get('/logout',[AdminUserController::class,'logout'])->name('admin.logout');
  Route::get('/dashboard',[AdminController::class,'Dashboard']);
  Route::get('/SignUp',[RegistrationController::class,'Registration']);
  Route::post('/GetRegister',[RegistrationController::class,'GetRegistration'])->name('get.register');
- Route::get('/login',[LoginController::class,'Login']); 
+ 
 //  SailorProfile        
- Route::get('/SailorProfile',[SailorController::class,'SailorProfile']);
- Route::get('/CreatSailor',[SailorController::class,'CreatSailor']);
+ Route::get('/SailorProfile',[SailorController::class,'SailorProfile'])->name('bring.sailor');
+ Route::get('/CreatSailor',[SailorController::class,'CreatSailor'])->name('creat.sailor');
  Route::post('/StoreSailor',[SailorController::class,'StoreSailor'])->name('store.sailor');
  Route::get('/View/SailorProfile/{id}',[SailorController::class,'ViewSailorProfile'])->name('view.sailorprofile');
-
-//  Admission & Candidate
- Route::get('/FillForm',[AdmissionController::class,'FillForm']);
+ Route::get('/Delete/SailorProfile/{id}',[SailorController::class,'DeleteSailorProfile'])->name('delete.sailorprofile');
+//   Candidate
+ 
  Route::get('/CandidateList',[CandidateController::class,'CandidateList']);
  Route::post('/StoreCandidatedata',[CandidateController::class,'StoreCandidatedata'])->name('store.candidate');
 
@@ -66,18 +101,10 @@ Route::post('/StorebCriteria',[CourseController::class,'StorebCriteria'])->name(
 Route::get('/CreatsCriteria',[CourseController::class,'CreatsCriteria']);
 Route::get('/ShowsCriteria',[CourseController::class,'ShowsCriteria']);
 Route::post('/StoresCriteria',[CourseController::class,'StoresCriteria'])->name('store.scriteria');
-
- // Login and registration
-
- Route::post('/registration',[UserController::class,'registration'])->name('user.registration');
- Route::post('/login',[UserController::class,'login'])->name('user.login');
- Route::get('/logout',[UserController::class,'logout'])->name('user.logout');
-
+});
 
  
 
-
-// this is for website view
  
 
 
@@ -86,6 +113,7 @@ Route::post('/StoresCriteria',[CourseController::class,'StoresCriteria'])->name(
 
 
 
+ 
 
 
 
@@ -107,7 +135,9 @@ Route::post('/StoresCriteria',[CourseController::class,'StoresCriteria'])->name(
 
 
 
-// Route::get('/test', function () {
-//     return view('admin.pages.test');
-//     // return view('admin.pages.homepage');
-// });
+
+
+
+
+
+

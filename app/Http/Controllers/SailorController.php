@@ -10,11 +10,20 @@ class SailorController extends Controller
 {
     public function SailorProfile()
     {
+        $key=null;
+        if(request()->search){
+            $key=request()->search;
+            $sailors = People::with('rankcategory')
+                ->where('name','LIKE','%'.$key.'%')
+                // ->orWhere('rank','LIKE','%'.$key.'%')
+                ->get();
+            return view('admin.pages.sailorprofilelist',compact('sailors','key'));
+        }
         $sailors=People::with('rankcategory')->get();
         // $Basic_courses = Course::where('course_type','Basic')->get();
         // dd($sailors);
 
-        return view('admin.pages.sailorprofilelist',compact('sailors'));
+        return view('admin.pages.sailorprofilelist',compact('sailors','key'));
 
     }
     public function CreatSailor()
@@ -28,6 +37,11 @@ class SailorController extends Controller
            $sailors=People::find($id);
            return view('admin.pages.sailorprofile_view',compact('sailors'));
 
+    }
+    public function DeleteSailorProfile($id)
+    {
+        People::find($id)->delete();
+        return redirect()->back()->with('success',"Sailor Profile has been deleted");
     }
 
     public function StoreSailor(Request $request)

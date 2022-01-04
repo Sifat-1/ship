@@ -17,12 +17,15 @@
             <a class="nav-link" href="{{url('/login')}}">
                 <button type="button" class="btn btn-info font-weight-bold">+ Log in</button>
             </li> --> 
-            <li class="nav-item dropdown d-lg-flex d-none">
+            {{-- <li class="nav-item dropdown d-lg-flex d-none">
               <a class="nav-link" href="{{url('/SignUp')}}">
-              <button type="button" class="btn btn-info font-weight-bold">+ Sign Up</button>
-          </li>
+              <button type="button" class="btn btn-info font-weight-bold">+ Sign Up</button> --}}
+          {{-- </li> --}}
             <li class="nav-item dropdown d-lg-flex d-none">
-                <button type="button" class="btn btn-info font-weight-bold">+ Log In</button>
+              <a href="{{route('admin.logout')}}">
+
+                <button type="button" class="btn btn-info font-weight-bold"> Log Out</button>
+              </a>
             </li>
        
             </a>
