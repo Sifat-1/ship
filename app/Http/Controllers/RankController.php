@@ -24,6 +24,11 @@ class RankController extends Controller
         $ranks=Rank::find($id);
         return view('admin.pages.showrank_view', compact('ranks'));
     }
+    public function DeleteSailorRank($id)
+    {
+      Rank::find($id)->delete();
+        return redirect()->back()->with('success',"Sailor Rank has been deleted");
+    }
     public function StoreRank( Request $request)
     {
         // dd($request)->all();

@@ -42,7 +42,7 @@ class UserController extends Controller
         public function logout()
         {
             Auth::logout();
-         return redirect()->route('home')->with('notification','Logging out.');
+         return redirect()->route('website')->with('notification','Logging out.');
         }
     
     }

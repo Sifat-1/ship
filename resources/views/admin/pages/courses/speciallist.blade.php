@@ -26,6 +26,9 @@
              <td>
               <a href="/CreatsCriteria" class="btn btn-primary">Add Criteria</a>
               <a href="/ShowsCriteria" class="btn btn-info">View Criteria</a>
+              {{-- @if($course->cgpa > 3)
+              <a href="/ShowsCriteria" class="btn btn-info">View Criteria</a>
+              @endif --}}
              </td>
                    
       </tr>

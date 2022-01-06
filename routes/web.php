@@ -34,7 +34,7 @@ Route::post('/registration',[UserController::class,'registration'])->name('user.
 Route::post('/login',[UserController::class,'login'])->name('user.login');
 Route::get('/logout',[UserController::class,'logout'])->name('user.logout');
 //  Admission
-Route::get('/FillForm',[AdmissionController::class,'FillForm']);
+Route::get('/FillForm',[AdmissionController::class,'FillForm'])->name('fillform');
 
 
 
@@ -70,27 +70,32 @@ Route::get('/FillForm',[AdmissionController::class,'FillForm']);
  Route::get('/CreatSailor',[SailorController::class,'CreatSailor'])->name('creat.sailor');
  Route::post('/StoreSailor',[SailorController::class,'StoreSailor'])->name('store.sailor');
  Route::get('/View/SailorProfile/{id}',[SailorController::class,'ViewSailorProfile'])->name('view.sailorprofile');
+ 
+ Route::get('/edit-sailor/{id}',[SailorController::class,'editSailor'])->name('edit.sailor');
+ Route::put('/update-sailor/{id}',[SailorController::class,'updateSailor'])->name('update.sailor');
+
  Route::get('/Delete/SailorProfile/{id}',[SailorController::class,'DeleteSailorProfile'])->name('delete.sailorprofile');
 //   Candidate
  
- Route::get('/CandidateList',[CandidateController::class,'CandidateList']);
+ Route::get('/CandidateList',[CandidateController::class,'CandidateList'])->name('show.candidate');
  Route::post('/StoreCandidatedata',[CandidateController::class,'StoreCandidatedata'])->name('store.candidate');
+//  Route::get('/BringCandidatedata',[CandidateController::class,'BringCandidatedata'])->name('bring.candidate');
 
 //  ranks
- Route::get('/ShowRank',[RankController::class,'ShowRank']);
- Route::get('/CtreatRank',[RankController::class,'CreatRank']);
+ Route::get('/ShowRank',[RankController::class,'ShowRank'])->name('show.rank');
+ Route::get('/CtreatRank',[RankController::class,'CreatRank'])->name('create.rank');
  Route::post('/StoreRank',[RankController::class,'StoreRank'])->name('store.rank');
  Route::get('/View/SailorRank/{id}',[RankController::class,'ViewSailorRank'])->name('view.rank');
+ Route::get('/Delete/SailorRank/{id}',[RankController::class,'DeleteSailorRank'])->name('delete.sailorrank');
 
 //  courses
 
-Route::get('/CreatCourse',[CourseController::class,'CreatCourse']);
- Route::get('/ShowBasic',[CourseController::class,'ShowBasic']);
+Route::get('/CreatCourse',[CourseController::class,'CreatCourse'])->name('create.course');
+ Route::get('/ShowBasic',[CourseController::class,'ShowBasic'])->name('show.basic');
  Route::post('/StoreBasic',[CourseController::class,'StoreBasic'])->name('store.basic');
- Route::get('/ShowSpecial',[CourseController::class,'ShowSpecial']);
+ Route::get('/ShowSpecial',[CourseController::class,'ShowSpecial'])->name('show.special');
  Route::post('/StoreSpecial',[CourseController::class,'StoreSpecial'])->name('store.special');
- Route::get('/ShowOther',[CourseController::class,'ShowOther']);
- Route::post('/StoreOther',[CourseController::class,'StoreOther'])->name('store.other');
+
 //  criteria_courses
 
 // basic
@@ -141,3 +146,5 @@ Route::post('/StoresCriteria',[CourseController::class,'StoresCriteria'])->name(
 
 
 
+//  Route::get('/ShowOther',[CourseController::class,'ShowOther']);
+//  Route::post('/StoreOther',[CourseController::class,'StoreOther'])->name('store.other');

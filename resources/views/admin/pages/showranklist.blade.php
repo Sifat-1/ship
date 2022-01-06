@@ -2,6 +2,12 @@
 @section('content')
 
 <h3> Showing SailorRank List </h3>
+
+@if(session()->has('success'))
+<p class="alert alert-success">
+    {{session()->get('success')}}
+</p>
+@endif
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +35,7 @@
 {{-- <button class="button button1">Green</button> --}}
 {{-- link --}}
 
-<a href="/CtreatRank" class="button button2">Creat Rank</a>
+<a href="{{route('create.rank')}}" class="button button2">Creat Rank</a>
 
 </body>
 </html>
@@ -45,15 +51,15 @@
       </tr>
     </thead>
     <tbody>
-        @foreach($ranks as $value) 
+        @foreach($ranks as $key=>$value) 
       <tr>
-        <th>{{$value->id}}</th>
+        <th>{{$key+1}}</th>
         <td>{{$value->rank}}</td>
         <td>{{$value->designation}}</td>
         <td>
           <a href="{{route('view.rank',$value->id)}}" class="btn btn-primary">View</a>
           <a href=""  class="btn btn-success">Update</a>
-          <a href="" class="btn btn-danger">Delete</a>
+          <a href="{{route('delete.sailorrank',$value->id)}}" class="btn btn-danger">Delete</a>
         </td>
        
  </tr>

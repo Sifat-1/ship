@@ -28,6 +28,7 @@ class CreateCandidatesTable extends Migration
             $table->string('mothername');
             $table->string('foccupation');
             $table->string('moccupationl');
+
             $table->timestamps();
         });
     }

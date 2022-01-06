@@ -3,6 +3,7 @@
 <div class="col-xs-12 col-sm-12 col-md-12"> 
 <h3> Showing SailorProfile List </h3>
 
+{{-- success message code --}}
 @if(session()->has('success'))
 <p class="alert alert-success">
     {{session()->get('success')}}
@@ -62,9 +63,9 @@
     </tr>
   </thead>
   <tbody>   
-    @foreach($sailors as $person)                                                                              
+    @foreach($sailors as $key=>$person)                                                                              
     <tr>
-            <th>{{$person->id}}</th>
+            <th>{{$key+1}}</th>
            <td>{{$person->name}}</td>
 
            {{-- new created method has been declared with databse table fild name--}}
@@ -72,7 +73,7 @@
            <td>{{$person->email}}</td>
            <td>
              <a href="{{route('view.sailorprofile',$person->id)}}" class="btn btn-primary">View</a>
-             <a href=""class="btn btn-success">Update</a>
+             <a href="{{route('edit.sailor',$person->id)}}"class="btn btn-success">Update</a>
              <a href="{{route('delete.sailorprofile',$person->id)}}"class="btn btn-danger">Delete</a>
 
              {{-- <a href="{{route('view.rank',$value->id)}}" class="btn btn-primary">View</a> --}}

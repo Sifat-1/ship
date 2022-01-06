@@ -35,7 +35,7 @@
 
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="/CandidateList ">
+      <a class="nav-link" href="{{route('show.candidate')}} ">
           <!-- <i class="icon-disc menu-icon"></i> -->
           <span class="menu-title">Candidate</span>
           <i class="menu-arrow"></i>
@@ -49,7 +49,7 @@
         <div class="collapse" id="ui-basic">
         <ul class="nav flex-column sub-menu">
           <li class="nav-item"> <a class="nav-link" href="{{route('bring.sailor')}}">Sailor Profile</a></li>
-          <li class="nav-item"> <a class="nav-link" href="/ShowRank">Sailor Rank</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{{route('show.rank')}}">Sailor Rank</a></li>
           </ul>
       </div> 
     </li>
@@ -62,10 +62,10 @@
       </a>
         <div class="collapse" id="ui-course">
         <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="/CreatCourse">Creat Course</a></li>
-          <li class="nav-item"> <a class="nav-link" href="/ShowBasic">Basic Course</a></li>
-          <li class="nav-item"> <a class="nav-link" href="/ShowSpecial">Specialized Course</a></li>
-          <li class="nav-item"> <a class="nav-link" href="/ShowOther">Others Course</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{{route('create.course')}}">Creat Course</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{{route('show.basic')}}">Basic Course</a></li>
+          <li class="nav-item"> <a class="nav-link" href="{{route('show.special')}}">Specialized Course</a></li>
+          {{-- <li class="nav-item"> <a class="nav-link" href="/ShowOther">Others Course</a></li> --}}
           </ul>
       </div> 
     </li>
@@ -95,7 +95,7 @@
 
 
     <li class="nav-item">
-      <a class="nav-link" href=" /FillForm ">
+      <a class="nav-link" href="{{route('fillform')}}">
         <!-- <i class="icon-command menu-icon"></i> -->
         <span class="menu-title">Admission</span>
         <i class="menu-arrow"></i>

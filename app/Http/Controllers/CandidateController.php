@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Models\Candidate;
-
+// use App\Models\People;
+// use App\Models\Rank;
 use Illuminate\Http\Request;
 
 class CandidateController extends Controller
@@ -67,12 +68,39 @@ class CandidateController extends Controller
             'moccupationl'=>$request->moccupationl,
             'image'=>$image_name
 
-            
-    
-            
-    
         ]);
         return redirect()->back()->with('success','Admission Form has filled up successfully.');
     }
 }
+
+
+
+
+
+
+
+
+            //    public function BringCandidate($id) 
+            //    {
+            //        $candidates=Candidate::find($id);
+            //        $ranks=Rank::all(); 
+                   
+
+            //        People::create([
+            //         'name'=>$request->name,
+            //         'rank_id'=>$request->rank,
+            //         'address'=>$request->address,
+            //         'email'=>$request->email,
+            //         'phone'=>$request->phone,
+            //         'ship'=>$request->ship,    
+            
+            //     ]);
+            //        return view('admin.pages.candidatelist',compact('candidates'));
+
+
+                   
+
+            //    }
+
+
 }

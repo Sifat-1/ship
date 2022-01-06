@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\People;
 use App\Models\Rank;
 
+
 class SailorController extends Controller
 {
     public function SailorProfile()
@@ -32,17 +33,7 @@ class SailorController extends Controller
         $ranks=Rank::all();
         return view('admin.pages.creatsailor',compact('ranks'));
     }
-    public function ViewSailorProfile($id)
-    {
-           $sailors=People::find($id);
-           return view('admin.pages.sailorprofile_view',compact('sailors'));
 
-    }
-    public function DeleteSailorProfile($id)
-    {
-        People::find($id)->delete();
-        return redirect()->back()->with('success',"Sailor Profile has been deleted");
-    }
 
     public function StoreSailor(Request $request)
     {
@@ -63,14 +54,64 @@ class SailorController extends Controller
         'address'=>$request->address,
         'email'=>$request->email,
         'phone'=>$request->phone,
-        'ship'=>$request->ship,
-        
-
-        
+        'ship'=>$request->ship,    
 
     ]);
     return redirect()->back()->with('success','Sailor_profile has created successfully.');
 }
+
+    public function ViewSailorProfile($id)
+    {
+           $sailors=People::find($id);
+           return view('admin.pages.sailorprofile_view',compact('sailors'));
+
+    }
+
+
+    public function editSailor($id)
+     { 
+      
+        $sailor = People::find($id);
+        $ranks=Rank::all(); 
+      return view('admin.pages.updatesailor',compact('ranks','sailor'));
+    }
+
+
+    public function updateSailor(Request $request,$id)
+    {
+    // dd($request->all());
+    $request->validate([
+      'name'=>'required',
+      'rank'=>'required',
+      'address'=>'required',
+      'phone'=>'required',
+      'email'=>'required',
+      'ship'=>'required',
+
+
+    ]);
+
+    $sailor = People::find($id);
+
+    $sailor->update([
+        'name'=>$request->name,
+        'rank_id'=>$request->rank,
+        'address'=>$request->address,
+        'email'=>$request->email,
+        'phone'=>$request->phone,
+        'ship'=>$request->ship,    
+
+    ]);
+    return redirect()->route('bring.sailor')->with('success','Sailor_profile has created successfully.');
+}
+
+
+    public function DeleteSailorProfile($id)
+    {
+        People::find($id)->delete();
+        return redirect()->back()->with('success',"Sailor Profile has been deleted");
+    }
+
 
 
 }

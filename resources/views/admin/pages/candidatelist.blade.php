@@ -1,5 +1,7 @@
 @extends('master')
 @section('content')
+<div class="col-xs-12 col-sm-12 col-md-12"> 
+<h3> Showing Candidate List</h3>
 <table class="table">
     <thead>
       <tr>
@@ -10,6 +12,7 @@
         <th scope="col">Nationality</th>
         <th scope="col">Phone Number</th>
         <th scope="col">Image</th>
+        <th scope="col">Action</th>
        
       </tr>
     </thead>
@@ -23,8 +26,10 @@
            <td>{{$user->nationality}}</td>
            <td>{{$user->phone}}</td>
            <td><img src="{{url('/uploads/candidates/'.$user->image)}}" style="border-radious:1px" width="200px" alt="candidate image"></td>
+           <td> <a href=""class="btn btn-success">Approved</a></td>
     </tr>
     @endforeach
     </tbody>
   </table>
+  </div>
 @endsection
