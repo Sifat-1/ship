@@ -25,8 +25,8 @@
            <td>{{$course->details}}</td>
            <td>
              {{-- to duplicate line use alt+shift+down arrow --}}
-             <a href="/CreatbCriteria" class="btn btn-primary">Add Criteria</a>
-             <a href="/ShowbCriteria" class="btn btn-info">View Criteria</a>
+             <a href="{{route('create.bcriteria',$course->id)}}" class="btn btn-primary">Add Criteria</a>
+             <a href="{{route('show.bcriteria')}}" class="btn btn-info">View Criteria</a>
    
              
              

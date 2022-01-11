@@ -33,7 +33,7 @@ class CourseController extends Controller
     {
         return view('admin.pages.courses.courseform');
     }
-    public function StoreBasic(Request $request)
+    public function StoreBasic(Request $request,)
     
     {
         // dd($request->all());
@@ -53,26 +53,29 @@ class CourseController extends Controller
 
     // Criteria for Courses
 
-        public function CreatbCriteria()
+        public function CreatbCriteria($id)
         {
-            return view('admin.pages.courses.cribasic');
+            $bcourse=Course::find($id);
+            return view('admin.pages.courses.cribasic',compact('bcourse'));
         }
       
         public function ShowbCriteria()
         {
+            // dd($id);
            
             $bcriteria=Coursecriteria::with('criterialRelation')->get();
-            
+            // dd($bcriteria);
             return view('admin.pages.courses.showcribasiclist',compact('bcriteria'));
         }
 
-        public function StorebCriteria(Request $request)
+        public function StorebCriteria(Request $request,$id)
     
     {
+        // dd($id);
         // dd($request->all());
         Coursecriteria::create([
             
-                        'course_id'=>1,
+                        'course_id'=>$id,
                         'name'=>$request->name,
                         'point'=>$request->point,
                         'details'=>$request->details
@@ -80,28 +83,33 @@ class CourseController extends Controller
            ]);
                 return redirect()->back();
     }
-    public function CreatsCriteria()
+    public function CreatsCriteria($id)
     {
-        return view('admin.pages.courses.crispecial');
+        // dd($id);
+        $course=Course::find($id);
+        // dd($course);
+        return view('admin.pages.courses.crispecial',compact('course'));
     }
     
     public function ShowsCriteria()
     {
-        
+        // dd($id);
+       
         $scriteria=Coursecriteria::with('criterialRelation')->get();
     
     
         return view('admin.pages.courses.showcrispecial',compact('scriteria'));
     }
 
-    public function StoresCriteria(Request $request)
+    public function StoresCriteria(Request $request,$id)
     
     {
+        // dd($id);
         // dd($request->all());
         CourseCriteria::create([
             
 
-                        'course_id'=>2,//TO DO
+                        'course_id'=>$id,//TO DO
                         'name'=>$request->name,
                         'point'=>$request->point,
                         'details'=>$request->details

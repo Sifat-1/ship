@@ -24,8 +24,8 @@
              <td>{{$course->shortform}}</td>
              <td>{{$course->details}}</td>
              <td>
-              <a href="/CreatsCriteria" class="btn btn-primary">Add Criteria</a>
-              <a href="/ShowsCriteria" class="btn btn-info">View Criteria</a>
+              <a href="{{route('create.scriteria',$course->id)}}" class="btn btn-primary">Add Criteria</a>
+              <a href="{{route('show.scriteria')}}" class="btn btn-info">View Criteria</a>
               {{-- @if($course->cgpa > 3)
               <a href="/ShowsCriteria" class="btn btn-info">View Criteria</a>
               @endif --}}

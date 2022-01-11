@@ -5,7 +5,7 @@
   
 <br>
 
-<h4>Others Courses</h4>
+<h4>Basic Courses</h4>
 
 <table class="table">
     
@@ -14,7 +14,7 @@
         <th scope="col">Id</th>
         <th scope="col">Course Short_Form</th>
 
-        <th scope="col">Criteria Namet</th>
+        <th scope="col">Criteria Name</th>
         <th scope="col">Required Point</th>
         <th scope="col">Details</th>
       </tr>

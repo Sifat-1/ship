@@ -99,13 +99,13 @@ Route::get('/CreatCourse',[CourseController::class,'CreatCourse'])->name('create
 //  criteria_courses
 
 // basic
-Route::get('/CreatbCriteria',[CourseController::class,'CreatbCriteria']);
-Route::get('/ShowbCriteria',[CourseController::class,'ShowbCriteria']);
-Route::post('/StorebCriteria',[CourseController::class,'StorebCriteria'])->name('store.bcriteria');
+Route::get('/CreatbCriteria/{id}',[CourseController::class,'CreatbCriteria'])->name('create.bcriteria');
+Route::get('/ShowbCriteria',[CourseController::class,'ShowbCriteria'])->name('show.bcriteria');
+Route::post('/StorebCriteria/{id}',[CourseController::class,'StorebCriteria'])->name('store.bcriteria');
 // special
-Route::get('/CreatsCriteria',[CourseController::class,'CreatsCriteria']);
-Route::get('/ShowsCriteria',[CourseController::class,'ShowsCriteria']);
-Route::post('/StoresCriteria',[CourseController::class,'StoresCriteria'])->name('store.scriteria');
+Route::get('/CreatsCriteria/{id}',[CourseController::class,'CreatsCriteria'])->name('create.scriteria');
+Route::get('/ShowsCriteria',[CourseController::class,'ShowsCriteria'])->name('show.scriteria');
+Route::post('/StoresCriteria/{id}',[CourseController::class,'StoresCriteria'])->name('store.scriteria');
 });
 
  

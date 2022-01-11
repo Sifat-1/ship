@@ -19,7 +19,7 @@
       <select name="variation" class="form-control" id="exampleFormControlSelect1" >
         <option>Basic </option>
         <option>Specialized </option>
-        <option>Others </option>
+        
       
       </select>
     </div>

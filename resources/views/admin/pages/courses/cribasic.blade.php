@@ -3,7 +3,7 @@
 <div class="col-xs-12 col-sm-12 col-md-12"><br>
     <h4>Create Basic Courses Criteria</h4>
 
-<form action="{{route('store.bcriteria')}}" method="POST">
+<form action="{{route('store.bcriteria',$bcourse->id)}}" method="POST">
     @csrf
     <div class="form-group">
       <label for="exampleFormControlName">Criteria Name</label>
