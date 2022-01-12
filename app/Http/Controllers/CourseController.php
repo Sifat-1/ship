@@ -33,7 +33,7 @@ class CourseController extends Controller
     {
         return view('admin.pages.courses.courseform');
     }
-    public function StoreBasic(Request $request,)
+    public function StoreBasic(Request $request)
     
     {
         // dd($request->all());

@@ -80,7 +80,8 @@ Route::get('/FillForm',[AdmissionController::class,'FillForm'])->name('fillform'
  Route::get('/CandidateList',[CandidateController::class,'CandidateList'])->name('show.candidate');
  Route::post('/StoreCandidatedata',[CandidateController::class,'StoreCandidatedata'])->name('store.candidate');
 //  Route::get('/BringCandidatedata',[CandidateController::class,'BringCandidatedata'])->name('bring.candidate');
-
+Route::get('/view/candidate/profile/{candidate_id}', [CandidateController::class, 'VIewCandidateProfile'])->name('candiate.view');
+Route::get('/AddCandidate',[CandidateController::class,'AddCandidate'])->name('add.candidate');
 //  ranks
  Route::get('/ShowRank',[RankController::class,'ShowRank'])->name('show.rank');
  Route::get('/CtreatRank',[RankController::class,'CreatRank'])->name('create.rank');

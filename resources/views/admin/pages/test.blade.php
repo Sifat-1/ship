@@ -37,7 +37,7 @@
 			  </div>
 			  <div class="form-group">
 				<label for="exampleFormControlInputDate">Date</label>
-				<input name=date type="number" class="form-control" id="exampleFormControlInputdate" placeholder="enter Date">
+				<input name=date type="date" class="form-control" id="exampleFormControlInputdate" placeholder="enter Date">
 			  </div>
 			  <div class="form-group">
 				<label for="exampleFormControlInputDate">nationality</label>

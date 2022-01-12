@@ -21,12 +21,12 @@
     <tr>
       <th>{{$user->id}}</th>
            <td>{{$user->first_name}}</td>
-           <td>{{$user->first_name}}</td>
+           <td>{{$user->last_name}}</td>
            <td>{{$user->date}}</td>
            <td>{{$user->nationality}}</td>
            <td>{{$user->phone}}</td>
            <td><img src="{{url('/uploads/candidates/'.$user->image)}}" style="border-radious:1px" width="200px" alt="candidate image"></td>
-           <td> <a href=""class="btn btn-success">Approved</a></td>
+           <td> <a href="{{route('candiate.view', $user->id)}}"class="btn btn-success">View</a></td>
     </tr>
     @endforeach
     </tbody>
