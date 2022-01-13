@@ -56,6 +56,7 @@
   <thead>
     <tr>
       <th scope="col">Id</th>
+      <th scope="col">Image</th>
       <th scope="col">Name</th>
       <th scope="col">Rank</th>
       <th scope="col">Email</th>
@@ -66,11 +67,14 @@
     @foreach($sailors as $key=>$person)                                                                              
     <tr>
             <th>{{$key+1}}</th>
-           <td>{{$person->name}}</td>
+            <td>
+              <img src="{{url('uploads/candidates/',$person->pullcandidate->image)}}" alt="">
+            </td>
+           <td>{{$person->pullcandidate->first_name}} {{$person->pullcandidate->last_name}}</td>
 
            {{-- new created method has been declared with databse table fild name--}}
            <td>{{$person->rankcategory->rank}}</td>
-           <td>{{$person->email}}</td>
+           <td>{{$person->pullcandidate->email}}</td>
            <td>
              <a href="{{route('view.sailorprofile',$person->id)}}" class="btn btn-primary">View</a>
              <a href="{{route('edit.sailor',$person->id)}}"class="btn btn-success">Update</a>

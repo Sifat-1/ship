@@ -12,6 +12,7 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\website\HomeController;
 use App\Http\Controllers\admin\UserController as AdminUserController;
+use App\Http\Controllers\PeopleController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -79,9 +80,13 @@ Route::get('/FillForm',[AdmissionController::class,'FillForm'])->name('fillform'
  
  Route::get('/CandidateList',[CandidateController::class,'CandidateList'])->name('show.candidate');
  Route::post('/StoreCandidatedata',[CandidateController::class,'StoreCandidatedata'])->name('store.candidate');
-//  Route::get('/BringCandidatedata',[CandidateController::class,'BringCandidatedata'])->name('bring.candidate');
-Route::get('/view/candidate/profile/{candidate_id}', [CandidateController::class, 'VIewCandidateProfile'])->name('candiate.view');
-Route::get('/AddCandidate',[CandidateController::class,'AddCandidate'])->name('add.candidate');
+ Route::get('/view/candidate/profile/{candidate_id}', [CandidateController::class, 'VIewCandidateProfile'])->name('candiate.view');
+
+//  New_Sailor
+
+Route::post('/StoreSailordata',[PeopleController::class,'StoreSailordata'])->name('store.sailor_c');
+
+
 //  ranks
  Route::get('/ShowRank',[RankController::class,'ShowRank'])->name('show.rank');
  Route::get('/CtreatRank',[RankController::class,'CreatRank'])->name('create.rank');

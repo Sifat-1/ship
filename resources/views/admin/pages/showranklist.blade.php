@@ -44,8 +44,9 @@
     <thead>
       <tr>
         <th scope="col">Id</th>
-        <th scope="col">Rank_Name</th>
+        <th scope="col">Rank Name</th>
         <th scope="col">Designation</th>
+        <th scope="col">Rank Image</th>
         <th scope="col">Action</th>
        
       </tr>
@@ -56,6 +57,8 @@
         <th>{{$key+1}}</th>
         <td>{{$value->rank}}</td>
         <td>{{$value->designation}}</td>
+       
+        <td><img src="{{url('/uploads/ranks/'.$value->rank_image)}}" style="border-radious:1px" width="200px" alt="rank image"></td>
         <td>
           <a href="{{route('view.rank',$value->id)}}" class="btn btn-primary">View</a>
           <a href=""  class="btn btn-success">Update</a>

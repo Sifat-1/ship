@@ -31,10 +31,23 @@ class RankController extends Controller
     }
     public function StoreRank( Request $request)
     {
-        // dd($request)->all();
+        // dd($request->all());
+        $image_name=null;
+        // step1
+        if ($request->hasFile('rank_image'))
+        
+        // step 2 genertae file name
+        {
+           
+            $image_name=date('Ymdhis').'.'.$request->file('rank_image')->getClientOriginalExtension();
+            // step 3: store project directory
+             $request->File('rank_image')->storeAs('/ranks',$image_name);
+        }
+     
         Rank::create([
             'rank'=>$request->rank,
-            'designation'=>$request->designation
+            'designation'=>$request->designation,
+            'rank_image'=>$image_name
         ]);
         return redirect()->back();
 

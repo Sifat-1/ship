@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Models\People;
 use App\Models\Rank;
+use App\Models\People;
+use App\Models\Sailor;
+use Illuminate\Http\Request;
 
 
 class SailorController extends Controller
@@ -20,7 +21,7 @@ class SailorController extends Controller
                 ->get();
             return view('admin.pages.sailorprofilelist',compact('sailors','key'));
         }
-        $sailors=People::with('rankcategory')->get();
+        $sailors=Sailor::with(['rankcategory','pullcandidate'])->get();
         // $Basic_courses = Course::where('course_type','Basic')->get();
         // dd($sailors);
 

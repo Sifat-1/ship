@@ -2,9 +2,9 @@
 @section('content')
 <style>
 
-        .image-container {
+        /* .image-container {
             position: relative;
-        }
+        } */
 
         .image {
             opacity: 1;
@@ -36,7 +36,7 @@
 </style>
 
 
-<link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css"/>
+{{-- <link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css"/> --}}
 
 
 
@@ -123,9 +123,14 @@
                                         <hr />
                                     </div>
                                     <div class="tab-pane fade" id="connectedServices" role="tabpanel" aria-labelledby="ConnectedServices-tab">
-                                       
-                                       <form>
+                                      
+                                           
+                                       <form action="{{route('store.sailor_c')}}" method="POST" >
+                                           @csrf
                                         <h4>Adding New Sailor</h4>
+
+                                        <input type="hidden" name="candidate_id" value="{{$candidate->id}}">
+
                                         <div class="col-xs-12 col-sm-12 col-md-12">
                                             <div class="mb-3">
                                                 <label for="exampleInputRank" class="form-label">Sailor rank</label>
@@ -144,14 +149,14 @@
                                             </div>
                                             <div class="mb-3">
                                                 <label for="exampleInputName" class="form-label">Ship</label>
-                                                <input name="name" placeholder="Enter Sailor Name" type="text" class="form-control" id="exampleInputName">
+                                                <input name="ship" placeholder="Enter Sailor Name" type="text" class="form-control" id="exampleInputName">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="exampleInputName" class="form-label">Blood Group</label>
-                                                <input name="name" placeholder="Enter Sailor Name" type="text" class="form-control" id="exampleInputName">
+                                                <input name="blood" placeholder="Enter Sailor Name" type="text" class="form-control" id="exampleInputName">
                                             </div>
 
-                                            <button type="button" class="btn btn-success">Submit</button>
+                                            <button type="submit" class="btn btn-success">Submit</button>
                                         
                                             </div>
                                         
