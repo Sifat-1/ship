@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSailorsTable extends Migration
+class CreateSailorRanksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateSailorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('sailors', function (Blueprint $table) {
+        Schema::create('sailor__ranks', function (Blueprint $table) {
             $table->id();
-            $table->integer('rank_id');
-            $table->integer('candidate_id');
-            $table->integer('ship_id');
-            $table->string('blood');
+            $table->integer('sailor_id');
+            $table->integer('from_rank_id')->nullable();
+            $table->integer('to_rank_id')->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateSailorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sailors');
+        Schema::dropIfExists('sailor__ranks');
     }
 }

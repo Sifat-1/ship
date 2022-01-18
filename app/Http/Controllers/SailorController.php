@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Rank;
 use App\Models\People;
 use App\Models\Sailor;
+use App\Models\Ship;
 use Illuminate\Http\Request;
 
 
@@ -15,13 +16,18 @@ class SailorController extends Controller
         $key=null;
         if(request()->search){
             $key=request()->search;
-            $sailors = People::with('rankcategory')
-                ->where('name','LIKE','%'.$key.'%')
+            // dd($key);
+            $rank = Rank::where('rank','LIKE','%'.$key.'%')->get();
+            // dd($rank);
+            $rank_id = $rank->pluck('id');
+            $sailors = Sailor::with(['rankcategory','shipcategory'])
+                ->where('rank_id','LIKE',$rank_id)
                 // ->orWhere('rank','LIKE','%'.$key.'%')
                 ->get();
+                // dd($sailors);
             return view('admin.pages.sailorprofilelist',compact('sailors','key'));
         }
-        $sailors=Sailor::with(['rankcategory','pullcandidate'])->get();
+        $sailors=Sailor::with(['rankcategory','pullcandidate','shipcategory'])->get();
         // $Basic_courses = Course::where('course_type','Basic')->get();
         // dd($sailors);
 

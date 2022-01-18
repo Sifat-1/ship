@@ -109,7 +109,7 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="pages/icons/feather-icons.html">
+      <a class="nav-link" href="{{route('show.ship')}}">
         <!-- <i class="icon-help menu-icon"></i> -->
         <span class="menu-title">Ship</span>
         <i class="menu-arrow"></i>

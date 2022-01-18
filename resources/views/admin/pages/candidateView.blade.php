@@ -66,7 +66,7 @@
                                         <a class="nav-link active" id="basicInfo-tab" data-toggle="tab" href="#basicInfo" role="tab" aria-controls="basicInfo" aria-selected="true">Basic Info</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="connectedServices-tab" data-toggle="tab" href="#connectedServices" role="tab" aria-controls="connectedServices" aria-selected="false">Connected Services</a>
+                                        <a class="nav-link" id="connectedServices-tab" data-toggle="tab" href="#connectedServices" role="tab" aria-controls="connectedServices" aria-selected="false">Adding as New_Sailor</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content ml-1" id="myTabContent">
@@ -149,11 +149,16 @@
                                             </div>
                                             <div class="mb-3">
                                                 <label for="exampleInputName" class="form-label">Ship</label>
-                                                <input name="ship" placeholder="Enter Sailor Name" type="text" class="form-control" id="exampleInputName">
+                                                <select name="name" class="form-control">
+                                                    @foreach ($ships as $item)
+                                                    <option value="{{$item->id}}">{{$item->name}}</option>
+                                                @endforeach
+                                            </select>
+        
                                             </div>
                                             <div class="mb-3">
                                                 <label for="exampleInputName" class="form-label">Blood Group</label>
-                                                <input name="blood" placeholder="Enter Sailor Name" type="text" class="form-control" id="exampleInputName">
+                                                <input name="blood" placeholder="Enter Blood Group" type="text" class="form-control" id="exampleInputName">
                                             </div>
 
                                             <button type="submit" class="btn btn-success">Submit</button>

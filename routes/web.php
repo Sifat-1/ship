@@ -13,6 +13,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\website\HomeController;
 use App\Http\Controllers\admin\UserController as AdminUserController;
 use App\Http\Controllers\PeopleController;
+use App\Http\Controllers\ShipController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -93,6 +94,12 @@ Route::post('/StoreSailordata',[PeopleController::class,'StoreSailordata'])->nam
  Route::post('/StoreRank',[RankController::class,'StoreRank'])->name('store.rank');
  Route::get('/View/SailorRank/{id}',[RankController::class,'ViewSailorRank'])->name('view.rank');
  Route::get('/Delete/SailorRank/{id}',[RankController::class,'DeleteSailorRank'])->name('delete.sailorrank');
+
+//  ship
+
+Route::get('/ShowShip',[ShipController::class,'ShowShip'])->name('show.ship');
+Route::get('/CreateShip',[ShipController::class,'CreateShip'])->name('create.ship');
+Route::post('/StoreShip',[ShipController::class,'StoreShip'])->name('store.ship');
 
 //  courses
 

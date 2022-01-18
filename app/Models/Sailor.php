@@ -21,4 +21,9 @@ class Sailor extends Model
         return $this->belongsTo(Candidate::class,'candidate_id','id');
         //sailor profile->rank_id,id
     }
+    public function shipcategory()
+    {
+        return $this->belongsTo(Ship::class,'ship_id','id');
+        
+    }
 }
