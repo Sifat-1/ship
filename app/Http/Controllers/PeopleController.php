@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Rank;
 use App\Models\Sailor;
 use App\Models\Candidate;
-use App\Models\Sailor_Rank;
+use App\Models\SailorRank;
 use Illuminate\Http\Request;
 
 class PeopleController extends Controller
@@ -24,7 +24,7 @@ class PeopleController extends Controller
     ]);
 
 
-    Sailor_Rank::create([
+    SailorRank::create([
         'sailor_id'=>$newSailor->id,
         'to_rank_id'=>$request->rank,
     ]);

@@ -12,7 +12,7 @@
     <thead>
       <tr>
         <th scope="col">Id</th>
-        <th scope="col">Course Short_Form</th>
+        <th scope="col">Course Name</th>
         <th scope="col">Criteria Name</th>
         <th scope="col">Required Point</th>
         <th scope="col">Details</th>

@@ -1,42 +1,24 @@
 @extends('master')
 @section('content')
+<div class="col-xs-12 col-sm-12 col-md-12"> 
 
 <h3> Showing SailorRank List </h3>
+<br>
+<br>
 
 @if(session()->has('success'))
 <p class="alert alert-success">
     {{session()->get('success')}}
 </p>
 @endif
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-.button {
-  border: none;
-  color: white;
-  padding: 12px 17px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 22px 8px;
-  width:11%;
-  cursor: pointer;
-}
-
-/* .button1 {background-color: #4CAF50;} Green */
-.button2 {background-color: #008CBA;} /* Blue */
-</style>
-</head>
-<body>
-
-
 {{-- <button class="button button1">Green</button> --}}
 {{-- link --}}
 
-<a href="{{route('create.rank')}}" class="button button2">Creat Rank</a>
 
+<a href="{{route('create.rank')}}" button type="submit" class="btn btn-info">Creat Rank</button></a>
+
+<br>
+<br>
 </body>
 </html>
 
@@ -70,6 +52,6 @@
  @endforeach
     </tbody>
   </table>
-
+</div>
 
 @endsection

@@ -69,6 +69,13 @@
           </ul>
       </div> 
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{route('select.course')}}">
+        <!-- <i class="icon-help menu-icon"></i> -->
+        <span class="menu-title">Course_Eligiblity</span>
+        <i class="menu-arrow"></i>
+      </a>
+    </li>
     <!-- courses --> 
     
     
@@ -98,13 +105,6 @@
       <a class="nav-link" href="{{route('fillform')}}">
         <!-- <i class="icon-command menu-icon"></i> -->
         <span class="menu-title">Admission</span>
-        <i class="menu-arrow"></i>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="pages/icons/feather-icons.html">
-        <!-- <i class="icon-help menu-icon"></i> -->
-        <span class="menu-title">Training</span>
         <i class="menu-arrow"></i>
       </a>
     </li>

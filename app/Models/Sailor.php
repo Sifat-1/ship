@@ -26,4 +26,10 @@ class Sailor extends Model
         return $this->belongsTo(Ship::class,'ship_id','id');
         
     }
+
+    public function ranks()
+    {
+        return $this->hasMany(SailorRank::class);
+        
+    }
 }

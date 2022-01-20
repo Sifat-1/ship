@@ -6,6 +6,7 @@ use App\Models\Rank;
 use App\Models\People;
 use App\Models\Sailor;
 use App\Models\Ship;
+use App\Models\SailorRank;
 use Illuminate\Http\Request;
 
 
@@ -20,6 +21,7 @@ class SailorController extends Controller
             $rank = Rank::where('rank','LIKE','%'.$key.'%')->get();
             // dd($rank);
             $rank_id = $rank->pluck('id');
+            // dd($rank_id);
             $sailors = Sailor::with(['rankcategory','shipcategory'])
                 ->where('rank_id','LIKE',$rank_id)
                 // ->orWhere('rank','LIKE','%'.$key.'%')
@@ -69,56 +71,58 @@ class SailorController extends Controller
 
     public function ViewSailorProfile($id)
     {
-           $sailors=People::find($id);
+           $sailors=Sailor::with('ranks')->find($id);
+        //    dd($sailors);
+        
            return view('admin.pages.sailorprofile_view',compact('sailors'));
 
     }
+    
 
-
-    public function editSailor($id)
-     { 
-      
-        $sailor = People::find($id);
-        $ranks=Rank::all(); 
-      return view('admin.pages.updatesailor',compact('ranks','sailor'));
+    // for rank
+    public function editRank($sailor_id)
+    {
+        $sailors=Sailor::find($sailor_id);
+        $ranks=Rank::all();
+        return view('admin.pages.updaterank',compact('ranks','sailors'));
     }
 
 
-    public function updateSailor(Request $request,$id)
+
+
+    public function updateSailorRank(Request $request,$sailor_id)
     {
     // dd($request->all());
-    $request->validate([
-      'name'=>'required',
-      'rank'=>'required',
-      'address'=>'required',
-      'phone'=>'required',
-      'email'=>'required',
-      'ship'=>'required',
+    
+    $sailors=Sailor::find($sailor_id);
 
-
+    SailorRank::create([
+        'sailor_id'=>$sailor_id,
+        'from_rank_id'=>$sailors->rank_id,
+        'to_rank_id'=>$request->rank,
     ]);
 
-    $sailor = People::find($id);
-
-    $sailor->update([
-        'name'=>$request->name,
+    $sailors->update([
+        
         'rank_id'=>$request->rank,
-        'address'=>$request->address,
-        'email'=>$request->email,
-        'phone'=>$request->phone,
-        'ship'=>$request->ship,    
+          
 
     ]);
-    return redirect()->route('bring.sailor')->with('success','Sailor_profile has created successfully.');
-}
+  
 
+  
+    return redirect()->back();
+    }
 
     public function DeleteSailorProfile($id)
     {
-        People::find($id)->delete();
+        Sailor::find($id)->delete();
         return redirect()->back()->with('success',"Sailor Profile has been deleted");
     }
 
 
 
 }
+
+
+// return redirect()->route('bring.sailor')->with('success','Sailor_profile has created successfully.');

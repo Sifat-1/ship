@@ -13,7 +13,7 @@ class CreateSailorRanksTable extends Migration
      */
     public function up()
     {
-        Schema::create('sailor__ranks', function (Blueprint $table) {
+        Schema::create('sailor_ranks', function (Blueprint $table) {
             $table->id();
             $table->integer('sailor_id');
             $table->integer('from_rank_id')->nullable();
@@ -29,6 +29,6 @@ class CreateSailorRanksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sailor__ranks');
+        Schema::dropIfExists('sailor_ranks');
     }
 }

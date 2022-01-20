@@ -79,7 +79,7 @@
            <td>{{$person->pullcandidate->email}}</td>
            <td>
              <a href="{{route('view.sailorprofile',$person->id)}}" class="btn btn-primary">View</a>
-             <a href="{{route('edit.sailor',$person->id)}}"class="btn btn-success">Update</a>
+             {{-- <a href="{{route('edit.sailor',$person->id)}}"class="btn btn-success">Update</a> --}}
              <a href="{{route('delete.sailorprofile',$person->id)}}"class="btn btn-danger">Delete</a>
 
              {{-- <a href="{{route('view.rank',$value->id)}}" class="btn btn-primary">View</a> --}}

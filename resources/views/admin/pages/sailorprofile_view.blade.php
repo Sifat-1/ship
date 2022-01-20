@@ -1,18 +1,48 @@
 @extends('master')
 @section('content')
-<h3>Sailor Profile List</h3>
+<div class="col-xs-12 col-sm-12 col-md-12"><br>
+<h3>Sailor Profile Details</h3>
+
 
 {{-- <p><b>Rank_Name: {{$ranks->rank}}</b></p> --}}
 <div id="SailorProfilePrint">
-
-<p><b>Sailor Name:{{$sailors->name}}</b></p>
+<img src="{{url('/uploads/candidates/'.$sailors->pullcandidate->image)}}" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
+<p><b>Sailor Name:{{$sailors->pullcandidate->first_name}} {{$sailors->pullcandidate->last_name}}</b></p>
 <p><b>Sailor rank:{{$sailors->rankcategory->rank}}</b></p>
-<p><b>Sailor Address:{{$sailors->address}}</b></p>
-<p><b>Sailor Email:{{$sailors->email}}</b></p>
-<p><b>Sailor PhoneNumber:{{$sailors->phone}}</b></p>
-<p><b>Ship Name:{{$sailors->ship}}</b></p>
+<p><b>Ship Name:{{$sailors->shipcategory->name}}</b></p>
+<p><b>Sailor Email:{{$sailors->pullcandidate->email}}</b></p>
 </div>
 <button class="btn btn-primary" type="submit" onClick="PrintDiv('SailorProfilePrint');" value="Print">Print</button>
+<a class="btn btn-success" type="button" href="{{route('edit.sailorrank',$sailors->id)}}" >Update Rank</a>
+<br><br>
+<h4>Rank History</h4>
+
+<table class="table table-striped">
+
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Previous Rank</th>
+        <th scope="col">Holding Rank</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+        @foreach($sailors->ranks as $key=>$rank)  
+        
+      <tr>
+        <th>{{$key}}</th>
+        <td>{{$rank->fromrank ? $rank->fromrank->rank : '-'}}</td>
+        
+        <td>{{$rank->torank ? $rank->torank->rank : '-'}}</td>
+
+        
+      </tr>
+      @endforeach
+    </tbody>
+
+  </table>
+</div>
 @endsection
 
 <script language="javascript">

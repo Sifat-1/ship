@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Sailor_Rank extends Model
+class CourseResult extends Model
 {
     use HasFactory;
     protected $guarded=[];

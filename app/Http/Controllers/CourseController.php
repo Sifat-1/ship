@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Course;
+use App\Models\Rank;
+use App\Models\Candidte;
+use App\Models\Sailor;
 use App\Models\CourseCriteria;
 
 
@@ -116,6 +119,18 @@ class CourseController extends Controller
             
            ]);
                 return  redirect()->back();
+    }
+    // select course
+    public function SelectCourse()
+    {
+        $courses=Course::all();
+        return view('admin.pages.courses.selectcourses',compact('courses'));
+    }
+    public function EligibleSailor()
+    {
+        $sailors=Sailor::with(['rankcategory','pullcandidate'])->get();
+
+        return view('admin.pages.courses.eligiblelist',compact('sailors'));
     }
 
 }
