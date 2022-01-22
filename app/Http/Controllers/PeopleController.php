@@ -20,6 +20,8 @@ class PeopleController extends Controller
         'rank_id'=>$request->rank,
         'ship_id'=>$request->name, 
         'blood'=>$request->blood,    
+        'point'=>$request->point,
+            
 
     ]);
 

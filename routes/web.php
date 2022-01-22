@@ -112,6 +112,8 @@ Route::get('/CreatCourse',[CourseController::class,'CreatCourse'])->name('create
  Route::post('/StoreSpecial',[CourseController::class,'StoreSpecial'])->name('store.special');
  Route::get('/SelectCourse',[CourseController::class,'SelectCourse'])->name('select.course');
  Route::get('/EligibleSailor',[CourseController::class,'EligibleSailor'])->name('eligible.sailor');
+ Route::get('/AddPoint/{sailor_id}',[CourseController::class,'AddPoint'])->name('add.point');
+ Route::post('/StorePoint/{id}',[CourseController::class,'StorePoint'])->name('store.point');
 
 //  criteria_courses
 

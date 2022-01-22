@@ -23,6 +23,7 @@ class ShipController extends Controller
     {
         Ship::create([
             'name'=>$request->name,
+            'type'=>$request->type,
             'details'=>$request->details,
           
         ]);

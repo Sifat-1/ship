@@ -160,6 +160,11 @@
                                                 <label for="exampleInputName" class="form-label">Blood Group</label>
                                                 <input name="blood" placeholder="Enter Blood Group" type="text" class="form-control" id="exampleInputName">
                                             </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPoint" class="form-label">Point</label>
+                                            <input name="point" placeholder="Enter Result Point" type="number" class="form-control" id="exampleInputPoint">
+                                        </div>
 
                                             <button type="submit" class="btn btn-success">Submit</button>
                                         

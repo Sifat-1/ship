@@ -10,6 +10,7 @@
       <tr>
         <th scope="col">ID</th>
         <th scope="col">Ship Name</th>
+        <th scope="col">Type</th>
         <th scope="col">Details</th>
       </tr>
     </thead>
@@ -20,6 +21,7 @@
       
         <th>{{$key+1}}</th>
         <td>{{$value->name}}</td>
+        <td>{{$value->type}}</td>
         <td>{{$value->details}}</td>
         
    

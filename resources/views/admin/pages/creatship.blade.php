@@ -15,6 +15,10 @@
       <input name="name"type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Ship Name">
     </div>
     <div class="form-group">
+      <label for="formGroupExampleInput">Ship Type</label>
+      <input name="type"type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Ship Type">
+    </div>
+    <div class="form-group">
       <label for="formGroupExampleInput2">Ship Details</label>
       <input name="details" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Ship Details">
       <button type="submit" class="btn btn-success">Submit</button>

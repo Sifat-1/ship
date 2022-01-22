@@ -9,4 +9,10 @@ class CourseResult extends Model
 {
     use HasFactory;
     protected $guarded=[];
+    public function addingcoursename()
+    {
+        return $this->belongsTo(Course::class,'course_id','id');
+        
+    }
+
 }

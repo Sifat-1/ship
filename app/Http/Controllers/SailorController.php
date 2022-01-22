@@ -7,6 +7,7 @@ use App\Models\People;
 use App\Models\Sailor;
 use App\Models\Ship;
 use App\Models\SailorRank;
+use App\Models\CourseResult;
 use Illuminate\Http\Request;
 
 
@@ -72,9 +73,10 @@ class SailorController extends Controller
     public function ViewSailorProfile($id)
     {
            $sailors=Sailor::with('ranks')->find($id);
-        //    dd($sailors);
+           $results=CourseResult::with('addingcoursename')->get();
+        //    dd($results);
         
-           return view('admin.pages.sailorprofile_view',compact('sailors'));
+           return view('admin.pages.sailorprofile_view',compact('sailors','results'));
 
     }
     

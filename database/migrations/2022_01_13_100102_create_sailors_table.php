@@ -19,6 +19,8 @@ class CreateSailorsTable extends Migration
             $table->integer('candidate_id');
             $table->integer('ship_id');
             $table->string('blood');
+            $table->integer('point');
+            
             $table->timestamps();
         });
     }

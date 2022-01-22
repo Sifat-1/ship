@@ -32,4 +32,6 @@ class Sailor extends Model
         return $this->hasMany(SailorRank::class);
         
     }
+    
+    
 }

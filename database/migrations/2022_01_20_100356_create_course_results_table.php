@@ -17,7 +17,7 @@ class CreateCourseResultsTable extends Migration
             $table->id();
             $table->integer('sailor_id');
             $table->integer('course_id');
-            $table->integer('result');
+            $table->integer('point');
             $table->timestamps();
         });
     }

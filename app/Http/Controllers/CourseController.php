@@ -8,6 +8,7 @@ use App\Models\Rank;
 use App\Models\Candidte;
 use App\Models\Sailor;
 use App\Models\CourseCriteria;
+use App\Models\CourseResult;
 
 
 class CourseController extends Controller
@@ -133,6 +134,28 @@ class CourseController extends Controller
         return view('admin.pages.courses.eligiblelist',compact('sailors'));
     }
 
+    // adding Course Result
+
+    public function Addpoint($sailor_id)
+    {
+        $sailors=Sailor::find($sailor_id);
+        $courses=Course::all();
+        return view('admin.pages.courses.addresult',compact('courses','sailors'));
+    }
+
+    public function StorePoint(Request $request,$sailor_id)
+    {
+
+        $sailors=Sailor::find($sailor_id);
+        
+    CourseResult::create([
+        'sailor_id'=>$sailor_id,
+        'course_id'=>$request->shortform,
+        'point'=>$request->point,
+    ]);
+    return redirect()->back();
+
+    }
 }
 
 

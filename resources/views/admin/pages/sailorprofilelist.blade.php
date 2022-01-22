@@ -61,6 +61,7 @@
       <th scope="col">Rank</th>
       <th scope="col">Ship</th>
       <th scope="col">Email</th>
+      <th scope="col">Point</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
@@ -77,6 +78,8 @@
            <td>{{$person->rankcategory->rank}}</td>
            <td>{{$person->shipcategory->name}}</td>
            <td>{{$person->pullcandidate->email}}</td>
+            <td>{{$person->point}}</td> 
+           
            <td>
              <a href="{{route('view.sailorprofile',$person->id)}}" class="btn btn-primary">View</a>
              {{-- <a href="{{route('edit.sailor',$person->id)}}"class="btn btn-success">Update</a> --}}

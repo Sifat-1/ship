@@ -11,8 +11,10 @@
 <p><b>Sailor rank:{{$sailors->rankcategory->rank}}</b></p>
 <p><b>Ship Name:{{$sailors->shipcategory->name}}</b></p>
 <p><b>Sailor Email:{{$sailors->pullcandidate->email}}</b></p>
+{{-- <p><b>Sailor Result_Point:{{$sailors->point}}</b></p> --}}
 </div>
 <button class="btn btn-primary" type="submit" onClick="PrintDiv('SailorProfilePrint');" value="Print">Print</button>
+<br><br>
 <a class="btn btn-success" type="button" href="{{route('edit.sailorrank',$sailors->id)}}" >Update Rank</a>
 <br><br>
 <h4>Rank History</h4>
@@ -42,6 +44,36 @@
     </tbody>
 
   </table>
+  <br><br>
+  <a class="btn btn-warning" type="button" href="{{route('add.point',$sailors->id)}}" >Add Result</a>
+  <br><br>
+   <h4>Result Status</h4>
+
+<table class="table table-striped">
+
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Course Name</th>
+        <th scope="col">Course Point</th>
+      </tr>
+    </thead>
+    <tbody>
+        @foreach($results as $key=>$result)  
+        
+      <tr>
+        <th>{{$key+1}}</th>
+        <td>{{$result->addingcoursename->shortform}}</td>
+        <td>{{$result->point}}</td>
+        
+    
+
+        
+      </tr>
+      @endforeach
+    </tbody>
+
+  </table> 
 </div>
 @endsection
 
