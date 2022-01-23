@@ -39,7 +39,7 @@ class SailorController extends Controller
     }
     public function CreatSailor()
      { 
-        //    though here i will show rank thats y rank variable took
+        //    though here i will show rank thats y rank variable has taken
         $ranks=Rank::all();
         return view('admin.pages.creatsailor',compact('ranks'));
     }
@@ -73,7 +73,7 @@ class SailorController extends Controller
     public function ViewSailorProfile($id)
     {
            $sailors=Sailor::with('ranks')->find($id);
-           $results=CourseResult::with('addingcoursename')->get();
+           $results=CourseResult::with('addingcoursename')->where('sailor_id',$id)->get();
         //    dd($results);
         
            return view('admin.pages.sailorprofile_view',compact('sailors','results'));

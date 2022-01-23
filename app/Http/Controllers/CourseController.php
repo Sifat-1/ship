@@ -129,9 +129,17 @@ class CourseController extends Controller
     }
     public function EligibleSailor()
     {
-        $sailors=Sailor::with(['rankcategory','pullcandidate'])->get();
+        $course=Course::with('criteria')->find(request()->course_id);
 
-        return view('admin.pages.courses.eligiblelist',compact('sailors'));
+        if($course->criteria)
+        {
+            $sailors=Sailor::with(['rankcategory','pullcandidate'])->where('point','>=',$course->criteria->point)->get();
+          
+
+            return view('admin.pages.courses.eligiblelist',compact('sailors','course'));
+        }
+        return redirect()->back()->with('success','No criteria found.');
+      
     }
 
     // adding Course Result
@@ -140,6 +148,7 @@ class CourseController extends Controller
     {
         $sailors=Sailor::find($sailor_id);
         $courses=Course::all();
+      
         return view('admin.pages.courses.addresult',compact('courses','sailors'));
     }
 
@@ -147,13 +156,31 @@ class CourseController extends Controller
     {
 
         $sailors=Sailor::find($sailor_id);
-        
-    CourseResult::create([
-        'sailor_id'=>$sailor_id,
-        'course_id'=>$request->shortform,
-        'point'=>$request->point,
-    ]);
-    return redirect()->back();
+        $check=CourseResult::where('sailor_id',$sailor_id)
+        ->where('course_id',$request->shortform)->first();
+
+        if($check)
+        {
+            return redirect()->back()->with('success','This Course has already been done.');
+        }
+        else
+        {
+            CourseResult::create([
+                'sailor_id'=>$sailor_id,
+                'course_id'=>$request->shortform,
+                'point'=>$request->point,
+            ]);
+
+            // $sailors->update([
+            //     'point'=>$sailors->point+$request->point
+            // ]);
+
+            $sailors->increment('point',$request->point);
+
+
+          
+              return redirect()->back()->with('success','Result has been Submitted Successfully.');;
+       }
 
     }
 }

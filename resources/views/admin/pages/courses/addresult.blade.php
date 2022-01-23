@@ -3,8 +3,15 @@
 <div class="col-xs-12 col-sm-12 col-md-12"><br>
 
    <h4>Adding Course Point</h4> 
+
+   @if(session()->has('success'))
+   <p class="alet alert-success">
+       {{session()->get ('success')}}
+   </p>
+   @endif <br>
    <form action="{{route('store.point',$sailors->id)}}" method="POST">
     @csrf
+    <input type="hidden" name="$sailor_id" value="{{$sailors->id}}">
    
     <div class="mb-3">
         <label for="exampleInputCourse" class="form-label">Select Course</label>
@@ -22,8 +29,8 @@
     </select>
     </div>
     <div class="mb-3">
-        <label for="exampleInputResult" class="form-label">Result Point</label>
-        <input name="point" placeholder="Enter Course Point" type="number" class="form-control" id="exampleInputResult">
+        <label for="exampleInputResult" class="form-label">Result Point (result should  be in between 1 to 4)</label>
+        <input name="point" max='4' required  placeholder="Enter Course Point" type="number" class="form-control" id="exampleInputResult">
     </div>
     <button type="submit" class="btn btn-success">Submit</button>
 </form>

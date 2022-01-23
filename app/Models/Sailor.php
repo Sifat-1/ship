@@ -32,6 +32,12 @@ class Sailor extends Model
         return $this->hasMany(SailorRank::class);
         
     }
+    public function bringcourse()
+    {
+        return $this->belongsTo(CourseCriteria::class,'course_criteria_id','id');
+        
+    }
+
     
     
 }

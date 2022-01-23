@@ -10,4 +10,9 @@ class Course extends Model
     use HasFactory;
 
     Protected $guarded=[];
+
+    public function criteria()
+    {
+        return $this->hasOne(CourseCriteria::class);
+    }
 }

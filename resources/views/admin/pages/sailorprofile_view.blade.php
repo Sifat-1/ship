@@ -11,6 +11,7 @@
 <p><b>Sailor rank:{{$sailors->rankcategory->rank}}</b></p>
 <p><b>Ship Name:{{$sailors->shipcategory->name}}</b></p>
 <p><b>Sailor Email:{{$sailors->pullcandidate->email}}</b></p>
+<p><b>Sailor Point:{{$sailors->point}}</b></p>
 {{-- <p><b>Sailor Result_Point:{{$sailors->point}}</b></p> --}}
 </div>
 <button class="btn btn-primary" type="submit" onClick="PrintDiv('SailorProfilePrint');" value="Print">Print</button>
