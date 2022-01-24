@@ -11,10 +11,12 @@ class UserController extends Controller
         //  Registration
     public function registration(Request $request)
     {
+        // dd($request->all());
         User::create([
             'name'=>$request->user_name,
            'email'=>$request->user_email,
            'password'=>bcrypt($request->user_password),
+           'role'=>'sailor',
            'mobile'=>$request->user_mobile,
 
 

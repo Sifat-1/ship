@@ -11,6 +11,7 @@ use App\Http\Controllers\RankController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\website\HomeController;
+use App\Http\Controllers\website\ProfileController;
 use App\Http\Controllers\admin\UserController as AdminUserController;
 use App\Http\Controllers\PeopleController;
 use App\Http\Controllers\ShipController;
@@ -37,6 +38,9 @@ Route::post('/login',[UserController::class,'login'])->name('user.login');
 Route::get('/logout',[UserController::class,'logout'])->name('user.logout');
 //  Admission
 Route::get('/FillForm',[AdmissionController::class,'FillForm'])->name('fillform');
+
+// Sailor Profile Details
+Route::get('/showProfile',[ProfileController::class,'showprofile'])->name('show.profile');
 
 
 

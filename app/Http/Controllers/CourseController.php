@@ -130,15 +130,19 @@ class CourseController extends Controller
     public function EligibleSailor()
     {
         $course=Course::with('criteria')->find(request()->course_id);
+        // dd($course);
+        $course_point = CourseCriteria::where('course_id',$course->id)->get();
+        $course_point = $course_point->pluck('point');
+        // dd($course_point);
 
         if($course->criteria)
         {
-            $sailors=Sailor::with(['rankcategory','pullcandidate'])->where('point','>=',$course->criteria->point)->get();
-          
+            $sailors=Sailor::with(['rankcategory','pullcandidate'])->where('point','<',$course->criteria->point)->get();
+        //   dd($sailors);
 
-            return view('admin.pages.courses.eligiblelist',compact('sailors','course'));
+            return view('admin.pages.courses.eligiblelist',compact('sailors','course','course_point'));
         }
-        return redirect()->back()->with('success','No criteria found.');
+        return redirect()->back()->with('success','No criteria has been fixed yet.');
       
     }
 

@@ -13,6 +13,8 @@
             <th scope="col">Id</th>
             <th scope="col">Sailor Name</th>
             <th scope="col">Rank</th>
+            <th scope="col">Saiolr_Point</th>
+            <th scope="col">Course_Point</th>
           </tr>
         </thead>
         <tbody>
@@ -21,6 +23,11 @@
             <th>{{$key+1}}</th>
             <td>{{$person->pullcandidate->first_name}} {{$person->pullcandidate->last_name}}</td>
             <td>{{$person->rankcategory->rank}}</td>
+            <td>{{$person->point}}</td>
+            @php
+                $result = trim($course_point, '[]');
+            @endphp
+            <td>{{$result}}</td>
           </tr>
           @endforeach
         </tbody>

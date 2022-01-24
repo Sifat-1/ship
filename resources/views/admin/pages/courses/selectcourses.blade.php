@@ -3,13 +3,10 @@
 <div class="col-xs-12 col-sm-12 col-md-12"><br>
 
     @if(session()->has('success'))
-
-    <p>
-    <span class="badge badge-success">{{session()->get('success')}}
-    </span>
+    <p class="alet alert-success">
+        {{session()->get ('success')}}
     </p>
-
-    @endif
+    @endif <br>
 
     <form action="{{route('eligible.sailor')}}" method="GET">
       

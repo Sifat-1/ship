@@ -178,40 +178,20 @@
                                         <li class="dropdown megamenu-fw mmm2linemenu">
                                           <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Sailor</a>
                                           <ul class="dropdown-menu megamenu-content animated fade-Out-Up" role="menu">
+                                            @if(auth()->user())
                                             <li>
                                               <div class="row">
                                                 <div class="col-menu col-sm-6 col-md-3">
-                                                  <h4 class="title"> Rank of Sailor</h4>
-                                                  <div class="content">
-                                                    <ul class="menu-col">
-                                                      <li style="cursor: pointer;">
-                                                        <a class="submitmyform"> rank list</a>
-                                                        <form method="post" action="https://www.navy.mil.bd/Role-of-BN">
-                                                          <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEz" /> 
-                                                          <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                        </li>
-                                                      </ul>
-                                                    </div>
+                                                  <a class="title" href="{{route('show.profile')}}"> Sailor Profile</a>
+        
                                                   </div>
-                                                  {{-- <div class="col-menu col-sm-6 col-md-3">
-                                                    <h4 class="title">OPERATIONS</h4>
-                                                    <div class="content">
-                                                      <ul class="menu-col">
-                                                        <li style="cursor: pointer;">
-                                                          <a class="submitmyform">OPERATIONS</a>
-                                                          <form method="post" action="https://www.navy.mil.bd/OPERATIONS">
-                                                            <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTE2" /> 
-                                                            <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                          </li>
-                                                        </ul>
-                                                      </div>
-                                                    </div>
-                                                     --}}
+                                                 
                                                     
                                                     
                                                     
                                                   </div>
                                                 </li>
+                                                @endif
                                               </ul>
                                             </li>
                                             <li class="dropdown megamenu-fw mmm2linemenu">
@@ -1066,6 +1046,10 @@
                                                                                                                                                                                                                                                                                         <label for="">Enter User Mobile:</label>
                                                                                                                                                                                                                                                                                         <input name="user_mobile" type="text" class="form-control" placeholder="Enter user mobile">
                                                                                                                                                                                                                                                                                     </div>
+                                                                                                                                                                                                                                                                                    {{-- <div class="form-group">
+                                                                                                                                                                                                                                                                                      <label for="">Role:</label>
+                                                                                                                                                                                                                                                                                      <input name="user_role" type="text" class="form-control" placeholder="Enter value">
+                                                                                                                                                                                                                                                                                  </div> --}}
                                                                                                                                                                                                                                                                                 </div>
                                                                                                                                                                                                                                                                                 <div class="modal-footer">
                                                                                                                                                                                                                                                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
