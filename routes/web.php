@@ -40,7 +40,11 @@ Route::get('/logout',[UserController::class,'logout'])->name('user.logout');
 Route::get('/FillForm',[AdmissionController::class,'FillForm'])->name('fillform');
 
 // Sailor Profile Details
-Route::get('/showProfile',[ProfileController::class,'showprofile'])->name('show.profile');
+Route::get('/showProfile}',[ProfileController::class,'showprofile'])->name('show.profile');
+Route::get('/updatePassword',[ProfileController::class,'updatePassword'])->name('update.password');
+Route::get('/viewresult',[ProfileController::class,'viewresult'])->name('view.result');
+Route::get('/ShowRank',[ProfileController::class,'showrank'])->name('show.history');
+Route::get('/RankList',[ProfileController::class,'ranklist'])->name('rank.list');
 
 
 

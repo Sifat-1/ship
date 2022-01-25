@@ -182,13 +182,14 @@
                                             <li>
                                               <div class="row">
                                                 <div class="col-menu col-sm-6 col-md-3">
-                                                  <a class="title" href="{{route('show.profile')}}"> Sailor Profile</a>
+                                                  <h4 class="title"> Sailor  Profile</h4>
+                                                  <a class="title" href="{{route('show.profile')}}"> Showing Profile</a>
         
                                                   </div>
                                                  
                                                     
                                                     
-                                                    
+                                           
                                                   </div>
                                                 </li>
                                                 @endif
@@ -197,17 +198,16 @@
                                             <li class="dropdown megamenu-fw mmm2linemenu">
                                               <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Courses</a>
                                               <ul class="dropdown-menu megamenu-content animated fade-Out-Up" role="menu">
+                                                @if(auth()->user())
                                                 <li>
                                                   <div class="row">
                                                     <div class="col-menu col-sm-6 col-md-3">
-                                                      <h4 class="title"> All  Courses</h4>
+                                                      <h4 class="title"> Courses Result</h4>
                                                       <div class="content">
                                                         <ul class="menu-col">
                                                           <li style="cursor: pointer;">
-                                                            <a class="submitmyform"> show courses</a>
-                                                            <form method="post" action="https://www.navy.mil.bd/Role-of-BN">
-                                                              <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEz" /> 
-                                                              <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
+                                                            <a class="title" href="{{route('view.result')}}"> View Result</a>
+                                                                                      
                                                             </li>
                                                           </ul>
                                                         </div>
@@ -246,6 +246,7 @@
                                                         
                                                       </div>
                                                     </li>
+                                                    @endif
                                                   </ul>
                                                 </li>
                                             <li class="dropdown megamenu-fw mmm2linemenu">
@@ -425,7 +426,7 @@
                                                                                   </ul>
                                                                                 </li>
                                                                                 <li class="dropdown megamenu-fw mmm2linemenu">
-                                                                                  <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Training</a>
+                                                                                  <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Rank</a>
                                                                                   <ul class="dropdown-menu megamenu-content animated fade-Out-Up" role="menu">
                                                                                     <li>
                                                                                       <div class="row">
@@ -444,52 +445,36 @@
                                                                                           {{-- </div> --}}
                                                                                      
                                                                                                   <div class="col-menu col-sm-6 col-md-3">
-                                                                                                    <h4 class="title">Sailors Training </h4>
+                                                                                                    <h4 class="title">Sailors Rank </h4>
                                                                                                     <div class="content">
                                                                                                       <ul class="menu-col">
+                                                                                                        
                                                                                                         <li style="cursor: pointer;">
-                                                                                                          <a class="submitmyform">Basic Training</a>
+                                                                                                          <a class="title" href="{{route('rank.list')}}">Rank List</a>
                                                                                                           <form method="post" action="https://www.navy.mil.bd/Basic-Training">
                                                                                                             <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTM0" /> 
                                                                                                             <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
                                                                                                           </li>
-                                                                                                          <li style="cursor: pointer;">
-                                                                                                            <a class="submitmyform">Specialised Training</a>
-                                                                                                            <form method="post" action="https://www.navy.mil.bd/Specialised-Training">
-                                                                                                              <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTM1" /> 
-                                                                                                              <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                            </li>
-                                                                                                            <li style="cursor: pointer;">
-                                                                                                              <a class="submitmyform">Others Training</a>
-                                                                                                              <form method="post" action="https://www.navy.mil.bd/Others-Training">
-                                                                                                                <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTM2" /> 
-                                                                                                                <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                              </li>
+                                                                                                         
+                                                                                                           
                                                                                                             </ul>
                                                                                                           </div>
                                                                                                         </div>
                                                                                                         <div class="col-menu col-sm-6 col-md-3">
-                                                                                                          <h4 class="title"> Infrastructure</h4>
+                                                                                                          <h4 class="title"> Rank Record</h4>
                                                                                                           <div class="content">
                                                                                                             <ul class="menu-col">
+                                                                                                              @if(auth()->user())
                                                                                                               <li style="cursor: pointer;">
-                                                                                                                <a class="submitmyform">Training Bases</a>
+                                                                                                                <a class="title" href="{{route('show.history')}}">Show Record</a>
                                                                                                                 <form method="post" action="https://www.navy.mil.bd/Training-Bases">
                                                                                                                   <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTM4" /> 
                                                                                                                   <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
                                                                                                                 </li>
-                                                                                                                <li style="cursor: pointer;">
-                                                                                                                  <a class="submitmyform">Training Ships</a>
-                                                                                                                  <form method="post" action="https://www.navy.mil.bd/Training-Ships">
-                                                                                                                    <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTM5" /> 
-                                                                                                                    <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                  </li>
-                                                                                                                  <li style="cursor: pointer;">
-                                                                                                                    <a class="submitmyform">Simulators</a>
-                                                                                                                    <form method="post" action="https://www.navy.mil.bd/Simulators">
-                                                                                                                      <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTQw" /> 
-                                                                                                                      <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                    </li>
+                                                                                                                @endif
+
+                                                                                                               
+                                                                                                                  
                                                                                                                   </ul>
                                                                                                                 </div>
                                                                                                               </div>
@@ -984,9 +969,9 @@
                                                                                                                                                                                                                                                                                   <a style="color: yellow" href="{{route('user.logout')}}" class="">{{auth()->user()->name}} | Logout</a>
 
                                                                                                                                                                                                                                                                                   @else
-                                                                                                                                                                                                                                                                                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registration">
+                                                                                                                                                                                                                                                                                  {{-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registration">
                                                                                                                                                                                                                                                                                     Registration
-                                                                                                                                                                                                                                                                                </button>
+                                                                                                                                                                                                                                                                                </button> --}}
                                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login">
                                                                                                                                                                                                                                                                                     Login
@@ -1018,7 +1003,7 @@
                                                                                                                                                                                                                                                                       </div>
 
                                                                                                                                                                                                                                                                       {{-- Registration modal --}}
-                                                                                                                                                                                                                                                                      <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                                                                                                                                                                                                                      {{-- <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                                                                                                                                                                                                                         <div class="modal-dialog" role="document">
                                                                                                                                                                                                                                                                             <form action="{{route('user.registration')}}" method="post">
                                                                                                                                                                                                                                                                                 @csrf
@@ -1045,12 +1030,12 @@
                                                                                                                                                                                                                                                                                     <div class="form-group">
                                                                                                                                                                                                                                                                                         <label for="">Enter User Mobile:</label>
                                                                                                                                                                                                                                                                                         <input name="user_mobile" type="text" class="form-control" placeholder="Enter user mobile">
-                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                    </div> --}}
                                                                                                                                                                                                                                                                                     {{-- <div class="form-group">
                                                                                                                                                                                                                                                                                       <label for="">Role:</label>
                                                                                                                                                                                                                                                                                       <input name="user_role" type="text" class="form-control" placeholder="Enter value">
                                                                                                                                                                                                                                                                                   </div> --}}
-                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                {{-- </div>
                                                                                                                                                                                                                                                                                 <div class="modal-footer">
                                                                                                                                                                                                                                                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                                                                                                                                                                                                                                                                     <button type="submit" class="btn btn-primary">Registration</button>
@@ -1058,7 +1043,7 @@
                                                                                                                                                                                                                                                                             </div>
                                                                                                                                                                                                                                                                             </form>
                                                                                                                                                                                                                                                                         </div>
-                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                    </div> --}}
 
 
 

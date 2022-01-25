@@ -5,6 +5,7 @@ use App\Models\Candidate;
 // use App\Models\People;
 use App\Models\Rank;
 use App\Models\Ship;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class CandidateController extends Controller
@@ -52,8 +53,22 @@ class CandidateController extends Controller
         
         
             ]);
-        // dd($request->all());
+      
+
+
+            $user=User::create([
+                'name'=>$request->first_name .' '.$request->last_name,
+                'email'=>$request->email,
+                'password'=>bcrypt('12345'),
+                'role'=>'sailor',
+                 'mobile'=>$request->phone,
+    
+    
+            ]);
+
+
         Candidate::create([
+            'user_id'=>$user->id,
             'first_name'=>$request->first_name,
             'last_name'=>$request->last_name,
             'address'=>$request->address,
@@ -69,6 +84,8 @@ class CandidateController extends Controller
             'moccupationl'=>$request->moccupationl,
             'image'=>$image_name
 
+            
+           
         ]);
         return redirect()->back()->with('success','Admission Form has filled up successfully.');
     }

@@ -9,4 +9,9 @@ class Candidate extends Model
 {
     use HasFactory;
     protected $guarded=[];
+
+    public function sailor()
+    {
+        return $this->hasOne(Sailor::class);
+    }
 }
