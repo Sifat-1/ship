@@ -9,12 +9,13 @@ use Illuminate\Http\Request;
 
 class HazzController extends Controller
 {
-    public function ShowshazzCriteria()
+    public function ShowshazzCriteria ()
     
     {
       
         $hazz=Hazz::all();
-        return view('admin.pages.hazz.hazzcriteriallist',compact('hazz'));
+        $sailors=Sailor::with(['pullcandidate','rankcategory'])->where('is_hazz_done','=','yes')->get();
+        return view('admin.pages.hazz.hazzcriteriallist',compact('hazz','sailors'));
         
     }
 

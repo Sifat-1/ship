@@ -530,20 +530,20 @@
                                                                                                                                   </ul>
                                                                                                                                 </li>
                                                                                                                                 <li class="dropdown megamenu-fw mmm2linemenu">
-                                                                                                                                  <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Report</a>
+                                                                                                                                  <a style="padding: 13px 10px;" href="#" class="dropdown-toggle " data-toggle="dropdown">Hazz_Pannel</a>
                                                                                                                                   <ul class="dropdown-menu megamenu-content animated fade-Out-Up" role="menu">
                                                                                                                                     <li>
                                                                                                                                       <div class="row">
                                                                                                                                         <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                                          <h4 class="title">Hierarchical Setup</h4>
+                                                                                                                                          <h4 class="title">Eligible For Hazz</h4>
                                                                                                                                           <div class="content">
                                                                                                                                             <ul class="menu-col">
+                                                                                                                                              @if(auth()->user())
                                                                                                                                               <li style="cursor: pointer;">
-                                                                                                                                                <a class="submitmyform">Ministry Of Defence</a>
-                                                                                                                                                <form method="post" action="https://www.navy.mil.bd/Ministry-Of-Defence">
-                                                                                                                                                  <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTQ5" /> 
-                                                                                                                                                  <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
+                                                                                                                                                <a class="title" href="{{route('hazzi.list')}}">Showing List</a>
+                                                                                                                                                
                                                                                                                                                 </li>
+                                                                                                                                                @endif
                                                                                                                                               </ul>
                                                                                                                                             </div>
                                                                                                                                           </div>
@@ -551,21 +551,16 @@
                                                                                                                                                               
                                                                                                                                          
                                                                                                                                                                                           <div class="col-menu col-sm-6 col-md-3">
-                                                                                                                                                                                            <h4 class="title">CHIEF HYDROGRAPHER</h4>
+                                                                                                                                                                                            <h4 class="title">Hazz Completed</h4>
                                                                                                                                                                                             <div class="content">
                                                                                                                                                                                               <ul class="menu-col">
+                                                                                                                                                                                                @if(auth()->user())
                                                                                                                                                                                                 <li style="cursor: pointer;">
-                                                                                                                                                                                                  <a class="submitmyform">BIODATA</a>
-                                                                                                                                                                                                  <form method="post" action="https://www.navy.mil.bd/BIODATA">
-                                                                                                                                                                                                    <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEyMg%3D%3D" /> 
-                                                                                                                                                                                                    <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
+                                                                                                                                                                                                  <a class="title" href="{{route('hazz.done')}}">Already  Done  with Hazz </a>
+                                                                                                                                                                                                  
                                                                                                                                                                                                   </li>
-                                                                                                                                                                                                  <li style="cursor: pointer;">
-                                                                                                                                                                                                    <a class="submitmyform">ACTIVITIES</a>
-                                                                                                                                                                                                    <form method="post" action="https://www.navy.mil.bd/ACTIVITIES">
-                                                                                                                                                                                                      <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTEyMw%3D%3D" /> 
-                                                                                                                                                                                                      <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                              </form>
-                                                                                                                                                                                                    </li>
+                                                                                                                                                                                                  @endif
+                                                                                                                                                                                                  
                                                                                                                                                                                                   </ul>
                                                                                                                                                                                                 </div>
                                                                                                                                                                                               </div>

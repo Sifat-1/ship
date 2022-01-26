@@ -11,6 +11,7 @@ use App\Models\Candidate;
 use App\Models\CourseResult;
 use App\Models\Rank;
 use App\Models\User;
+use App\Models\Hazz;
 use Illuminate\Http\Request;
 
 class ProfileController extends Controller
@@ -81,4 +82,21 @@ class ProfileController extends Controller
       
       return view ('website.sailor.rank.ranklist',compact('ranks'));
     }
+    // for hazz
+    public function hazzilist()
+    {
+      $hazz=Hazz::find(1);
+      $candidates=Candidate::with('sailor')->where('age','>=',$hazz->age)
+      ->where('religion',$hazz->religion)
+      ->get();
+
+      return view('website.sailor.hazz.eligible',compact('candidates','hazz'));
+    }
+    public function hazzdone()
+    {
+      
+      $sailors=Sailor::with(['pullcandidate','shipcategory'])->where('is_hazz_done','=','yes')->get();
+      return view('website.sailor.hazz.donehazz',compact('sailors'));
+    }
+
 }

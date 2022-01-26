@@ -37,10 +37,7 @@ class Sailor extends Model
         return $this->belongsTo(CourseCriteria::class,'course_criteria_id','id');
         
     }
-    public function hazz()
-    {
-        return $this->hasOne(Hazz::class);
-    }
+   
     
     
 }

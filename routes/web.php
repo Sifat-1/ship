@@ -51,6 +51,9 @@ Route::get('/viewresult',[ProfileController::class,'viewresult'])->name('view.re
            // rank
 Route::get('/ShowRank',[ProfileController::class,'showrank'])->name('show.history');
 Route::get('/RankList',[ProfileController::class,'ranklist'])->name('rank.list');
+           // hazz
+Route::get('/EligibleList',[ProfileController::class,'hazzilist'])->name('hazzi.list');           
+Route::get('/HazzDone',[ProfileController::class,'hazzdone'])->name('hazz.done');           
 
 
 
