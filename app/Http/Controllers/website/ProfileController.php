@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers\website;
+use App\Rules\MatchOldPassword;
+use Illuminate\Support\Facades\Hash;
 
 use App\Http\Controllers\Controller;
 use App\Models\Sailor;
@@ -8,6 +10,7 @@ use App\Models\SailorRank;
 use App\Models\Candidate;
 use App\Models\CourseResult;
 use App\Models\Rank;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class ProfileController extends Controller
@@ -25,11 +28,33 @@ class ProfileController extends Controller
      return view('website.sailor.sailorprofile',compact('user'));
 
     }
-    public function updatePassword()
+    // password update
+
+    public function __construct()
     {
-      return view('website.sailor.updatepassword');
+      $this->middleware('auth');
     }
 
+    public function showPasswordform()
+    {
+      return view('website.sailor.updatepasswordform');
+    }
+    public function storePasswordform(Request $request)
+    {
+      $request->validate([
+        'current_password' => ['required', new MatchOldPassword],
+        'new_password' => ['required'],
+        'new_confirm_password' => ['same:new_password'],
+    ]);
+    User::find(auth()->user()->id)->update(['password'=> Hash::make($request->new_password)]);
+   
+    }
+
+
+
+
+
+    // for result
     public function viewresult()
     {
       $user_id = auth()->user()->id;
@@ -39,6 +64,8 @@ class ProfileController extends Controller
       
       return view ('website.sailor.result',compact('results'));
     }
+
+    // for rank
     public function showrank()
     {
       $user_id = auth()->user()->id;

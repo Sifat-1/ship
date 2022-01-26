@@ -15,6 +15,7 @@ use App\Http\Controllers\website\ProfileController;
 use App\Http\Controllers\admin\UserController as AdminUserController;
 use App\Http\Controllers\PeopleController;
 use App\Http\Controllers\ShipController;
+use App\Http\Controllers\HazzController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,8 +42,13 @@ Route::get('/FillForm',[AdmissionController::class,'FillForm'])->name('fillform'
 
 // Sailor Profile Details
 Route::get('/showProfile}',[ProfileController::class,'showprofile'])->name('show.profile');
-Route::get('/updatePassword',[ProfileController::class,'updatePassword'])->name('update.password');
+
+            // password change
+Route::get('/showUpdatePassword',[ProfileController::class,'showPasswordform'])->name('show.passwordform');
+Route::post('/storeUpdatePassword',[ProfileController::class,'storePasswordform'])->name('store.passwordform');
+            // result
 Route::get('/viewresult',[ProfileController::class,'viewresult'])->name('view.result');
+           // rank
 Route::get('/ShowRank',[ProfileController::class,'showrank'])->name('show.history');
 Route::get('/RankList',[ProfileController::class,'ranklist'])->name('rank.list');
 
@@ -113,7 +119,7 @@ Route::post('/StoreShip',[ShipController::class,'StoreShip'])->name('store.ship'
 
 //  courses
 
-Route::get('/CreatCourse',[CourseController::class,'CreatCourse'])->name('create.course');
+ Route::get('/CreatCourse',[CourseController::class,'CreatCourse'])->name('create.course');
  Route::get('/ShowBasic',[CourseController::class,'ShowBasic'])->name('show.basic');
  Route::post('/StoreBasic',[CourseController::class,'StoreBasic'])->name('store.basic');
  Route::get('/ShowSpecial',[CourseController::class,'ShowSpecial'])->name('show.special');
@@ -133,6 +139,14 @@ Route::post('/StorebCriteria/{id}',[CourseController::class,'StorebCriteria'])->
 Route::get('/CreatsCriteria/{id}',[CourseController::class,'CreatsCriteria'])->name('create.scriteria');
 Route::get('/ShowsCriteria',[CourseController::class,'ShowsCriteria'])->name('show.scriteria');
 Route::post('/StoresCriteria/{id}',[CourseController::class,'StoresCriteria'])->name('store.scriteria');
+
+// Hazz_Pannel
+Route::get('/ShowHazzCriteria',[HazzController::class,'ShowshazzCriteria'])->name('show.hazzcriteria');
+Route::get('/CreatHazzCriteria',[HazzController::class,'creathazzCriteria'])->name('creat.hazzcriteria');
+Route::post('/StoreHazzCriteria',[HazzController::class,'storehazzCriteria'])->name('store.hazzcriteria');
+Route::get('/ShowEligible/HAzzSailor}',[HazzController::class,'showEligibleHazz'])->name('show.eligiblehazzsailor');
+Route::get('/UpdateHAzzSailor/{id}',[HazzController::class,'doneEligibleHazz'])->name('done.eligiblehazzsailor');
+
 });
 
  

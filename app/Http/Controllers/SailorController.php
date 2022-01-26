@@ -30,7 +30,7 @@ class SailorController extends Controller
                 // dd($sailors);
             return view('admin.pages.sailorprofilelist',compact('sailors','key'));
         }
-        $sailors=Sailor::with(['rankcategory','pullcandidate','shipcategory'])->get();
+        $sailors=Sailor::with(['rankcategory','pullcandidate','shipcategory'])->paginate(10);
         // $Basic_courses = Course::where('course_type','Basic')->get();
         // dd($sailors);
 

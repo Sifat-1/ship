@@ -475,7 +475,7 @@
                           <div class="form-group">
                             <div class="col-xs-12">
                                  <br>
-                                   <a href="{{route('update.password')}}" button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Update Password </button></a>
+                                   <a href="{{route('show.passwordform')}}" button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Update Password </button></a>
                                   
                              </div>
                        </div>

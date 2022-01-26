@@ -1,12 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Candidate;
+// use Carbon\Carbon;
 // use App\Models\People;
 use App\Models\Rank;
 use App\Models\Ship;
 use App\Models\User;
+use App\Models\Candidate;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 
 class CandidateController extends Controller
 {
@@ -62,11 +64,14 @@ class CandidateController extends Controller
                 'password'=>bcrypt('12345'),
                 'role'=>'sailor',
                  'mobile'=>$request->phone,
-    
-    
             ]);
 
 
+
+            $dob=$request->date;
+            // dd(date('Y- m -d',strtotime($dob)));
+            $age=Carbon::parse(date("Ymd",strtotime($dob)))->age;
+            // dd($age);
         Candidate::create([
             'user_id'=>$user->id,
             'first_name'=>$request->first_name,
@@ -82,7 +87,8 @@ class CandidateController extends Controller
             'mothername'=>$request->mothername,
             'foccupation'=>$request->foccupation,
             'moccupationl'=>$request->moccupationl,
-            'image'=>$image_name
+            'image'=>$image_name,
+            'age'=>$age
 
             
            

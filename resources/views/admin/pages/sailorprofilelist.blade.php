@@ -28,9 +28,7 @@
   width:11%;
 }
 </style>
-</head>
 
-<body>
 
   {{-- <a href="{{route('creat.sailor')}}" class="button">Create New_Profile</a> --}}
 <!-- <button class="button">View Chart</button> -->
@@ -104,10 +102,11 @@
     @endforeach --}}
   </tbody>
 </table>
+<div style="padding-top: 10px;"> 
+  {{$sailors->links()}}
+</div>
 
-</body>
 
-</html>
 </div>
 
 @endsection
