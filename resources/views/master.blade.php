@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="{{url('Backend/css/style.css')}}">
   <!-- endinject -->
   <link rel="shortcut icon" href="{{url('Backend/images/favicon1.png')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div class="container-scroller">
@@ -256,6 +257,7 @@
   <!-- End plugin js for this page -->
   <!-- Custom js for this page-->
   <script src="{{url('Backend/js/dashboard.js')}}"></script>
+  
   <!-- End custom js for this page-->
 </body>
 

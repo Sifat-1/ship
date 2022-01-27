@@ -16,6 +16,7 @@ use App\Http\Controllers\admin\UserController as AdminUserController;
 use App\Http\Controllers\PeopleController;
 use App\Http\Controllers\ShipController;
 use App\Http\Controllers\HazzController;
+use App\Http\Controllers\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -149,6 +150,14 @@ Route::get('/CreatHazzCriteria',[HazzController::class,'creathazzCriteria'])->na
 Route::post('/StoreHazzCriteria',[HazzController::class,'storehazzCriteria'])->name('store.hazzcriteria');
 Route::get('/ShowEligible/HAzzSailor}',[HazzController::class,'showEligibleHazz'])->name('show.eligiblehazzsailor');
 Route::get('/UpdateHAzzSailor/{id}',[HazzController::class,'doneEligibleHazz'])->name('done.eligiblehazzsailor');
+
+// dashboard
+Route::get('/showDashboard',[DashboardController::class,'showdashboard'])->name('show.dashboard');
+
+// Report 
+
+Route::get('/showreport',[DashboardController::class,'showreport'])->name('show.report');
+
 
 });
 

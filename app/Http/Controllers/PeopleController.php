@@ -1,17 +1,30 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use App\Models\Rank;
+use App\Mail\NotificationMail;
+
 use App\Models\Sailor;
 use App\Models\Candidate;
 use App\Models\SailorRank;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
 
 class PeopleController extends Controller
 {
     public function StoreSailordata(Request $request)
     {
+        // mail notification
+
+        $details=[
+            'title'=>'Mail from Sailor Head Quater',
+            'body'=>'Congrats!You are qualified as Sailor'
+        ];
+
+        Mail::to("sifat.nowshin00@gmail.com")->send(new NotificationMail($details));
+
+        return "Email Sent";
         // dd($request->all());
     //    $candidate=Candidate::find($request->candidate_id);
     //    dd($candidate);

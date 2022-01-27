@@ -12,7 +12,7 @@
   </div>
   <ul class="nav">
     <li class="nav-item">
-      <a class="nav-link" href="{{url('/dashboard')}}">
+      <a class="nav-link" href="{{route('show.dashboard')}}">
         <!-- <i class="icon-box menu-icon"></i> -->
         <span class="menu-title">Dashboard</span>
 
@@ -123,9 +123,9 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+      <a class="nav-link" href="{{route('show.report')}}">
         <!-- <i class="icon-head menu-icon"></i> -->
-        <span class="menu-title">Gallery</span>
+        <span class="menu-title">Report</span>
         <i class="menu-arrow"></i>
       </a>
        <div class="collapse" id="auth">
