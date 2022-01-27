@@ -1,10 +1,21 @@
 @extends('master')
 @section('content')
-<div class="col-xs-12 col-sm-12 col-md-12"><br>
-    <h1> Bangladesh Navy Eligible Sailors' List</h1>
+<div class="col-xs-12 col-sm-12 col-md-12">
+ 
+  <br>
+  
     <br><br>
     <div id="eligibleCoursePrint">
-   <h4>{{$course->shortform}}</h4>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4" style="text-align: center;">
+          <img style="width:100px;" src="{{url('/logo.png')}}" alt="sailor image">
+          <h1> Bangladesh Navy Eligible Sailor's List</h1>
+
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+   <h4> Course Title: {{$course->shortform}}</h4>
 
 
     <table class="table">

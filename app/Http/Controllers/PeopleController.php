@@ -22,9 +22,7 @@ class PeopleController extends Controller
             'body'=>'Congrats!You are qualified as Sailor'
         ];
 
-        Mail::to("sifat.nowshin00@gmail.com")->send(new NotificationMail($details));
-
-        return "Email Sent";
+       
         // dd($request->all());
     //    $candidate=Candidate::find($request->candidate_id);
     //    dd($candidate);
@@ -41,7 +39,11 @@ class PeopleController extends Controller
         'sailor_id'=>$newSailor->id,
         'to_rank_id'=>$request->rank,
     ]);
-    return redirect()->back();
+
+    // $candidate=Candidate::find($request->candidate_id);
+    // Mail::to($candidate->email)->send(new NotificationMail($details));
+    Mail::to('sifat.nowshin00@gmail.com')->send(new NotificationMail($details));
+    return "Email has been sent to qualified Candidate" ;
 
     }
 
