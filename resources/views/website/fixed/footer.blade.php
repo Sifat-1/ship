@@ -10,8 +10,8 @@
             <ul style="list-style: none;">
               
               
-              <li><i class="fa fa-phone" style="color: white; padding-right: 7px;"></i> <span>+88 01741909565</li>
-              <li><i class="fa fa-envelope-o" style="color: white; padding-right: 7px;"></i> <span>info@sailor.mil.bd</span></li>
+              <li><i class="fa fa-phone" style="color: rgb(235, 177, 177); padding-right: 7px;"></i> <span>+88 01741909565</li>
+              <li><i class="fa fa-envelope-o" style="color: rgb(218, 144, 144); padding-right: 7px;"></i> <span>info@sailor.mil.bd</span></li>
             </ul>
           </div>
           {{-- <div class="thm-footer-content col-xs-2 col-md-2 col-sm-12"> --}}
@@ -36,7 +36,7 @@
       <div class="row">
         <div class="col-sm-7">
           <p class="wow fadeIn small"  >
-            © All rights reserved. Powered by <a href="#" target="_blank">Sifat Nowshin</a>
+            {{-- © All rights reserved. Powered by <a href="#" target="_blank">Sifat Nowshin</a> --}}
           </p>
         </div>
         <!-- <div class="col-sm-5">

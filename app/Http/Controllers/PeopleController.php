@@ -14,14 +14,16 @@ use Illuminate\Support\Facades\Mail;
 class PeopleController extends Controller
 {
     public function StoreSailordata(Request $request)
+    
     {
+      
         // mail notification
 
         $details=[
             'title'=>'Mail from Sailor Head Quater',
             'body'=>'Congrats!You are qualified as Sailor'
         ];
-
+      
        
         // dd($request->all());
     //    $candidate=Candidate::find($request->candidate_id);
@@ -35,6 +37,9 @@ class PeopleController extends Controller
     ]);
 
 
+ 
+
+
     SailorRank::create([
         'sailor_id'=>$newSailor->id,
         'to_rank_id'=>$request->rank,
@@ -46,5 +51,7 @@ class PeopleController extends Controller
     return "Email has been sent to qualified Candidate" ;
 
     }
+
+   
 
 }

@@ -5,7 +5,7 @@
   
 <br>
 
-<h4>Specialized Courses</h4>
+<h4> Criteria For Specific Courses</h4>
 
 <table class="table">
   
@@ -19,9 +19,9 @@
       </tr>
     </thead>
     <tbody>
-        @foreach($scriteria as $scriteri)                                                                              
+        @foreach($scriteria as $key=>$scriteri)                                                                              
         <tr>
-                <td>{{$scriteri->id}}</td>
+                <td>{{$key+1}}</td>
               
                 <td>{{$scriteri->criterialRelation->shortform}}</td>
                <td>{{$scriteri->name}}</td>

@@ -85,7 +85,7 @@ class ProfileController extends Controller
     // for hazz
     public function hazzilist()
     {
-      $hazz=Hazz::find(1);
+      $hazz=Hazz::find(2);
       $candidates=Candidate::with('sailor')->where('age','>=',$hazz->age)
       ->where('religion',$hazz->religion)
       ->get();

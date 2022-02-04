@@ -20,19 +20,11 @@
       </a>
     </li>
     <li class="nav-item">
-    <a class="nav-link" href="pages/charts/chartjs.html">
-        <!-- <i class="icon-disc menu-icon"></i> -->
-        <span class="menu-title">Admin</span>
+      <a class="nav-link" href="{{route('fillform')}}">
+        <!-- <i class="icon-command menu-icon"></i> -->
+        <span class="menu-title">Admission</span>
         <i class="menu-arrow"></i>
       </a>
-       <!-- <div class="collapse" id="ui-basic">
-        <ul class="nav flex-column sub-menu">
-          <li class="nav-item"> <a class="nav-link" href="">Sailor</a></li>
-          <li class="nav-item"> <a class="nav-link" href="">exam</a></li>
-          <li class="nav-item"> <a class="nav-link" href=""></a></li> 
-        </ul>
-      </div> -->
-
     </li>
     <li class="nav-item">
       <a class="nav-link" href="{{route('show.candidate')}} ">
@@ -52,6 +44,14 @@
           <li class="nav-item"> <a class="nav-link" href="{{route('show.rank')}}">Sailor Rank</a></li>
           </ul>
       </div> 
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link" href="{{route('show.ship')}}">
+        <!-- <i class="icon-help menu-icon"></i> -->
+        <span class="menu-title">Ship</span>
+        <i class="menu-arrow"></i>
+      </a>
     </li>
 
     <li class="nav-item" >
@@ -101,20 +101,8 @@
 
 
 
-    <li class="nav-item">
-      <a class="nav-link" href="{{route('fillform')}}">
-        <!-- <i class="icon-command menu-icon"></i> -->
-        <span class="menu-title">Admission</span>
-        <i class="menu-arrow"></i>
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{{route('show.ship')}}">
-        <!-- <i class="icon-help menu-icon"></i> -->
-        <span class="menu-title">Ship</span>
-        <i class="menu-arrow"></i>
-      </a>
-    </li>
+    
+    
     <li class="nav-item">
       <a class="nav-link" href="{{route('show.hazzcriteria')}}">
         <!-- <i class="icon-help menu-icon"></i> -->
@@ -123,9 +111,9 @@
       </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="{{route('show.report')}}">
+      <a class="nav-link" href="{{route('show.donehazz')}}">
         <!-- <i class="icon-head menu-icon"></i> -->
-        <span class="menu-title">Report</span>
+        <span class="menu-title">Hazz Proceed</span>
         <i class="menu-arrow"></i>
       </a>
        <div class="collapse" id="auth">

@@ -128,6 +128,24 @@
                                        <form action="{{route('store.sailor_c')}}" method="POST" >
                                            @csrf
                                         <h4>Adding New Sailor</h4>
+                                        
+
+
+   @if(session()->has('success'))
+  <p class="alet alert-success">
+      {{session()->get ('success')}}
+  </p>
+  @endif
+
+  @if($errors->any())
+<div class="alert alert-danger">
+    <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{$error}}</li>
+        @endforeach
+    </ul>
+</div>
+@endif
 
                                         <input type="hidden" name="candidate_id" value="{{$candidate->id}}">
 

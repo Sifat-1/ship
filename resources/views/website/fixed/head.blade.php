@@ -18,7 +18,7 @@
               <a href="index.html">Sailor Life</a>
              
             </h1>
-            <p>In War and Peace Invincible at Sea</p>
+            <p>Where Sea rewards in mystrious way</p>
             
           </div>
           <div>

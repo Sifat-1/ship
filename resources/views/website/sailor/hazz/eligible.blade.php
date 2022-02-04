@@ -403,7 +403,8 @@
                               </tr>
                             </thead>
                              <tbody>
-                                @foreach($candidates as $key=>$value) 
+                                @foreach($candidates as $key=>$value)
+                                @if($value->sailor) 
     @if($value->sailor->point >= $hazz->point && $value->sailor->is_hazz_done == 'no')
     <tr>
         {{-- <th>{{$key+1}}</th> --}}
@@ -412,6 +413,7 @@
         <td>{{$value->religion}}</td>
       
         </tr>
+    @endif
     @endif
     @endforeach 
       

@@ -20,17 +20,22 @@ class SailorController extends Controller
             $key=request()->search;
             // dd($key);
             $rank = Rank::where('rank','LIKE','%'.$key.'%')->get();
-            // dd($rank);
-            $rank_id = $rank->pluck('id');
-            // dd($rank_id);
-            $sailors = Sailor::with(['rankcategory','shipcategory'])
-                ->where('rank_id','LIKE',$rank_id)
+          
+            $sailors=[];
+            if(count($rank)>0)
+            {
+                 // dd($rank);
+                $rank_id = $rank->pluck('id');
+                $sailors = Sailor::with(['rankcategory','shipcategory'])
+                ->whereIn('rank_id',$rank_id)
                 // ->orWhere('rank','LIKE','%'.$key.'%')
-                ->get();
+                ->paginate(10);
+            }
+          
                 // dd($sailors);
             return view('admin.pages.sailorprofilelist',compact('sailors','key'));
         }
-        $sailors=Sailor::with(['rankcategory','pullcandidate','shipcategory'])->paginate(10);
+        $sailors=Sailor::with(['rankcategory','pullcandidate','shipcategory'])->paginate(5);
         // $Basic_courses = Course::where('course_type','Basic')->get();
         // dd($sailors);
 

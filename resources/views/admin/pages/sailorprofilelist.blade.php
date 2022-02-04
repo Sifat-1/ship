@@ -44,20 +44,24 @@
       </div>
   </div>
   </form>
-  @if($key)
-  <h4>
-      Your are searching for: {{$key}}. found: {{$sailors->count()}}
-  </h4>
-@endif
 
+{{-- @dd($sailors) --}}
+@if($sailors)
+@if($key)
+<h4>
+    Your are searching for: {{$key}}. found: {{$sailors->count()}}
+</h4>
+@endif
 <table class="table table-success table-striped">
   <thead>
     <tr>
       <th scope="col">Id</th>
       <th scope="col">Image</th>
       <th scope="col">Name</th>
+      <th scope="col">Religion</th>
       <th scope="col">Rank</th>
       <th scope="col">Ship</th>
+      <th scope="col">Age</th>
       <th scope="col">Email</th>
       <th scope="col">Blood_Group</th>
       <th scope="col">Point</th>
@@ -72,10 +76,12 @@
               <img src="{{url('uploads/candidates/',$person->pullcandidate->image)}}" alt="">
             </td>
            <td>{{$person->pullcandidate->first_name}} {{$person->pullcandidate->last_name}}</td>
+           <td>{{$person->pullcandidate->religion}}</td>
 
            {{-- new created method has been declared with databse table fild name--}}
            <td>{{$person->rankcategory->rank}}</td>
            <td>{{$person->shipcategory->name}}</td>
+           <td>{{$person->pullcandidate->age}}</td>
            <td>{{$person->pullcandidate->email}}</td>
            <td>{{$person->pullcandidate->bloodgroup}}</td>
             <td>{{$person->point}}</td> 
@@ -105,7 +111,9 @@
 <div style="padding-top: 10px;"> 
   {{$sailors->links()}}
 </div>
-
+@else
+<h1>No data found</h1>
+@endif
 
 </div>
 

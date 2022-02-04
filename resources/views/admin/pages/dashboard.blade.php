@@ -63,16 +63,25 @@
             background: rgba(0, 0, 0, 0.3);
         }
         .bg-blue {
-            background-color: #00c0ef !important;
+            background-color: #97c7b1 !important;
         }
         .bg-green {
-            background-color: #00a65a !important;
+            background-color: #eb7680 !important;
         }
         .bg-orange {
-            background-color: #47361a !important;
+            background-color: #cc959d !important;
         }
         .bg-red {
             background-color: #d9534f !important;
+        }
+        .bg-black {
+            background-color: #a9e97e !important;
+        }
+        .bg-pest {
+            background-color: #f0c17b !important;
+        }
+        .bg-pet {
+            background-color: #90a9f0 !important;
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
@@ -86,19 +95,19 @@
                         <p> Number of Candidates </p>
                     </div>
                     <div class="icon">
-                      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        <i class="fas fa-users" aria-hidden="true"></i>
                     </div>
                    
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
-              <div class="card-box bg-red">
+              <div class="card-box bg-black">
                   <div class="inner">
                       <h3> {{$count['sailors']}} </h3>
                       <p> Number of Sailors </p>
                   </div>
                   <div class="icon">
-                    <i class="fas fa-anchor"></i>
+                    <i class="fas fa-user-shield"> </i>
                   </div>
                  
               </div>
@@ -111,43 +120,50 @@
                         <p> Total Rank </p>
                     </div>
                     <div class="icon">
-                        <i class="fa fa-money" aria-hidden="true"></i>
+                        <i class="fas fa-anchor" aria-hidden="true"></i>
                     </div>
                     
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
-                <div class="card-box bg-orange">
+                <div class="card-box bg-pest">
                     <div class="inner">
                         <h3> {{$count['courses']}} </h3>
                         <p> Total Course </p>
                     </div>
                     <div class="icon">
-                        <i class="fa fa-user-plus" aria-hidden="true"></i>
+                        <i class="fas fa-stamp" aria-hidden="true"></i>
                     </div>
-                    <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                   
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="card-box bg-orange">
+            
+            {{-- <div class="col-lg-3 col-sm-6">
+                <div class="card-box bg-pest">
                     <div class="inner">
+
+                            
+                        
                         <h3> {{$count['hazz']}} </h3>
+                        
                         <p> Total Hazz Done </p>
+                      
+                    </div> --}}
+                    
+                    {{-- <div class="icon">
+                        <i class="fas fa-calendar-check" aria-hidden="true"></i>
                     </div>
-                    <div class="icon">
-                        <i class="fa fa-user-plus" aria-hidden="true"></i>
-                    </div>
-                    <a href="#" class="card-box-footer">View More <i class="fa fa-arrow-circle-right"></i></a>
+                    
                 </div>
-            </div>
+            </div> --}}
             <div class="col-lg-3 col-sm-6">
-              <div class="card-box bg-green">
+              <div class="card-box bg-pet">
                   <div class="inner">
                       <h3> {{$count['ships']}} </h3>
                       <p>Total Ship </p>
                   </div>
                   <div class="icon">
-                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    <i class="fas fa-ship" aria-hidden="true"></i>
                   </div>
                  
               </div>

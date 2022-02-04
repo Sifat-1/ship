@@ -286,31 +286,19 @@
               <div class="news-btn-hover">
               </div>
               <div class="news-btn-inner">
-                <img alt="news" src="{{url('Frontend/chief_about_gallery/download (1).jpg')}}" width="180px"> 
+                <img alt="news" src="{{url('Frontend/chief_about_gallery/Submarines.jpg')}}" width="180px"> 
               </div>
             </div>
-            <h3 class="article-numbered--title1">CHIEF OF NAVAL STAFF</h3>
-            <h4 class="article-numbered--title2">ADMIRAL M SHAHEEN IQBAL, NBP, NUP, ndc, afwc, psc</h4>
+            <h3 class="article-numbered--title1">Submarine </h3>
+            <h4 class="article-numbered--title2">BNS Joyjatra</h4>
             <p class="article-numbered-content">
               <div style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 8; -webkit-box-orient: vertical; text-align: justify; max-height: 180px;">
-                CHIEF OF NAVAL STAFF
+                Submarine in Bangladesh Navy
                 
-                Admiral M Shaheen Iqbal, NBP, NUP, ndc, afwc, psc assumed the command of Bangladesh Navy as the 16th Chief of Naval Staff on 25th July 2020. Prior to his appointment, Admiral Shaheen was serving as Assistant Chief of Naval Staff (Operations) at Naval Headquarters. Throughout his long and illustrious 40-year career, he has demonstrated exemplary military acumen and has commanded all major Navy ships, establishments and HQ appointments with utmost success. He is highly regarded for his dedication, professionalism and honesty amongst officers and sailors at all levels.
-                
-                The Admiral received numerous Commendations from the Chief of Naval Staff and Administrative Authorities in recognition of his outstanding professional excellence in Bangladesh Navy. He was adorned with the highest achievement awards in Navy namely &ldquo;Nou Bahini Padak&rdquo; (NBP)- for outstanding contribution for BN development, &ldquo;Nou Utkorsho Padak&rdquo; (NUP) &ndash; for his outstanding academic and professional course performance.
-                
-                Admiral Shaheen has attained extensive education and training in military strategies, combat and tactics both at home and abroad. Some of his major courses include &quot;International Surface Warfare Course&quot; in USA, &quot;Officers Weapon &amp; Tactics Course&quot; with Bangladesh Army and specialized on &quot;Anti-Submarine Warfare&quot; from India. He is a graduate of &quot;Naval Staff College&quot;, USA. Later, he completed &quot;Armed Forces War Course&quot; (AFWC), &quot;National Defence Course&quot; (NDC) and Capstone Course from National Defence College, Bangladesh. He has also successfully completed &quot;Combined Force Maritime Component Commander Flag Officers Course&quot; (CFMCC) in USA.
-                
-                The Admiral, a passionate seafarer, proved himself worthy of being entrusted with the command responsibilities from the very early stage of his career in the Navy. He has successfully commanded ships of all sizes including Frigates, Offshore Patrol Vessel (OPV), Large Patrol Craft (LPC), Minesweeper, Patrol Craft (PC), Fast Attack Crafts including - Missile and Torpedo Boats. He has also held Navy&rsquo;s top command posts as Assistant Chief of Naval Staff (Operations), Assistant Chief of Naval Staff (Personnel), Commander Chattogram Naval Area (COMCHIT), Commodore Commanding Khulna (COMKHUL) as well as commanded major administrative and training bases including BNS TITUMIR and School of Maritime Warfare and Tactics (SMWT). Besides, he has served as Director Naval Operations (DNO) and Director Naval Intelligence (DNI) at the Naval Headquarters. Additionally, he was also appointed as Director, National Security Intelligence (NSI), where he successfully fulfilled a number of important national responsibilities.
-                
-                On behalf of Bangladesh Navy, Admiral Shaheen spearheaded the entire Bhasan Char project to rehabilitate Forcibly Displaced Myanmar Nationals (FDMNs) during their influx in 2017 and played an instrumental role in its implementation. Besides, he also played a significant role in facilitating the overall visit of the Permanent Court of Arbitration (PCA) delegation regarding maritime boundary delimitation in 2013.
-                
-                Admiral Shaheen has extensively represented Bangladesh Navy (BN) overseas, including several international seminars. He led many high-level operational and training delegations. He has also led the BN delegation during several international naval exercises and headed the BN team during the ship acceptance of Corvettes and Frigates. He is a proud &quot;Blue Flag&quot; bearer as a member of the UN in Iraq.
-                
-                Admiral Shaheen Iqbal is married to Mrs Monira Rowshan Akhter, who is serving as President, Bangladesh Navy Family Welfare Association and Ladies Club. Their only son Muntasir Mamun Iqbal, is presently serving as Director (Institutional Ranking Cell) &amp; Senior Lecturer in the Department of Economics at North South University and his wife, Nabila Hossain Purno, as a Programme Analyst at UNFPA. Admiral Shaheen Iqbal is fond of travelling, gardening and reading books. He appreciates good music and enjoys golf and tennis.
+                BNS Joyjatra is a Type 035G (Ming class) diesel electric submarine of the Bangladesh Navy. She is one of the first two submarines of the Bangladesh Navy.
                 
                 &nbsp;            </div>
-                <a class="submitmyform">Read More</a>
+                {{-- <a class="submitmyform">Read More</a> --}}
                 <form method="post" action="https://www.navy.mil.bd/ADMIRAL-M-SHAHEEN-IQBAL,-NBP,-NUP,-ndc,-afwc,-psc">
                   <input type="hidden" name="url_link" value="Y2hpZWZfYWJvdXRleHBsb2RlMQ%3D%3D" /> 
                   <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">            </form>
@@ -341,7 +329,7 @@
                     <p>
                       <form method="post" action="https://www.navy.mil.bd/Written-Exam-Result---Officer-Cadet-Batch-2022-B" target="_blank">
                         <input type="hidden" name="url_link" value="bm90aWNlZXhwbG9kZTEyMQ%3D%3D" /> 
-                        <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                  <button type="submit" style="border-width: 0px; background-color: transparent;"><a>Written Exam Result - Sailor Batch 2022-B</a></button>
+                        <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                  <button type="submit" style="border-width: 0px; background-color: transparent;"><a>The Sailor who will go for Hazz this year has been published.</a></button>
                       </form>
                     </p>
                   </li>
@@ -395,7 +383,7 @@
                     <div style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-align: justify; background: #031031; color: #fff !important; font-size: 16px;">The military hires sailors to work on Navy frigates. In most countries, people who captain military vessels are required to have college degrees as well as several years of military service. Navigators, machinists, and engineers play a role in keeping the boat moving, while other sailors work as chefs, janitors, and deckhands. On military vessels, large numbers of the crew are assigned to heavy weaponry, and some boats carry airplanes and pilots who have no actual role in operating or navigating the ship.</div>
                     <form method="post" action="https://www.navy.mil.bd/Mission">
                       <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTI%3D" /> 
-                      <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                <button type="submit" style="border-width: 0px; background-color: transparent;"><a>Read More</a></button>
+                      {{-- <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                <button type="submit" style="border-width: 0px; background-color: transparent;"><a>Read More</a></button> --}}
                     </form>
                   </p>
                 </li>
@@ -405,7 +393,7 @@
                     <div style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-align: justify; background: #031031; color: #fff !important; font-size: 16px;">A recreational sailor does not typically have to undergo any formal training, and many sailors learn how to row small boats before moving on to motor powered boats and yachts. Many nations require sailors who operate boats beyond a certain size to obtain licenses, although in some countries these sailors do not have to undergo any kind of examination in order to receive a license. Highly skilled sailors take part in competitive races, some of which involve traveling long distances across major oceans. Many sailors spend months at sea and sail as a means of traveling between nations rather than for competitive or business reasons.</div>
                     <form method="post" action="https://www.navy.mil.bd/Vision">
                       <input type="hidden" name="url_link" value="bWVudV9wb3N0ZXhwbG9kZTI%3D" /> 
-                      <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                <button type="submit" style="border-width: 0px; background-color: transparent;"><a>Read More</a></button>
+                      {{-- <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">                <button type="submit" style="border-width: 0px; background-color: transparent;"><a>Read More</a></button> --}}
                     </form>
                   </p>
                 </li>
@@ -420,7 +408,7 @@
           <h1 style="color:#fff;" class="wow fadeInUp">LIFE IN THE SEA</h1>
           <div class="row wow fadeInUp">
             <p class="small_gallery hidden-xs" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 10; -webkit-box-orient: vertical; text-align: justify;">Life at sea is full of both hardships and rewards.For one thing, while at sea, you will be putting all your skills and determination to actual test. You will be given responsibility and will be doing an important job for which you have been uniquely trained.</p>
-            <a class="submitmyform">Read More</a>
+            {{-- <a class="submitmyform">Read More</a> --}}
             <form method="post" action="https://www.navy.mil.bd/LIFE-IN-THE-NAVY">
               <input type="hidden" name="url_link" value="bmF2eV9saWZlc2V4cGxvZGUx" /> 
               <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">      </form>
@@ -453,7 +441,7 @@
                     <article class="article-numbered wow fadeInUp">
                       <h3 class="article-numbered--title1">JOIN AS SAILOR</h3>
                       <p class="article-numbered-content" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; text-align: justify;">As a sailor someone can work on passenger ships, freighters, and tanker ships, navigating sea-going vessels and assisting with the maintenance, operation, and service of these vessels. The term sailor was derived from the fact that all water-borne vessels were once powered by sails. </p>
-                      <a style="padding-left: 16px;" class="submitmyform">Read More</a>
+                      {{-- <a style="padding-left: 16px;" class="submitmyform">Read More</a> --}}
                       <form method="post" action="https://www.navy.mil.bd/JOIN-AS-SAILOR">
                         <input type="hidden" name="url_link" value="bmF2eV9saWZlc2V4cGxvZGU0" /> 
                         <input type="hidden" name="_token" value="Ue8hmbFiO7IdIv4NcscRsNiEmf4VLIsLtP6PpSyW">          </form>
@@ -470,7 +458,7 @@
                     </div>
                   </div>
                 </section>
-                <section class="section section-default">
+                {{-- <section class="section section-default">
                   <div  class="section-inner">
                     <div class="container">
                       <div class="row">
@@ -675,8 +663,8 @@
                             </div>
                           </div>
                         </div>
-                      </section>
-                      <section class="section section-default">
+                      </section> --}}
+                      {{-- <section class="section section-default">
                         <div class="section-inner">
                           <div class="section-heading wowed margin-bottom-50">
                             <h1 data-wow-delay=".5s" class="wow fadeInDown animated animated" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown; color: rgb(255, 255, 255);"> 
@@ -778,14 +766,14 @@
                                           </div>
                                         </div> 
                                       </div>
-                                    </section>
+                                    </section> --}}
                                   </div>
                                 </section>
                                 <section class="section section-parallax">
                                   <div class="section-inner">
                                     <div class="container">
                                       <div class="row wow fadeInUp">
-                                        <h1 style="color:#fff;">NOTICE BOARD</h1>                                 
+                                        <h1 style="color:rgb(240, 243, 33);">NOTICE BOARD</h1>                                 
                                       </div>
                                       <hr>
                                       <div class="row">
@@ -793,7 +781,7 @@
                                           <div class="tab" role="tabpanel">
                                             <ul class="nav nav-tabs" role="tablist">
                                               <li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">Notice</a></li>
-                                              <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">CIRCULAR</a></li>
+                                              {{-- <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">CIRCULAR</a></li> --}}
                                             </ul>
                                             <div class="tab-content tabs">
                                               <div role="tabpanel" class="tab-pane fade in active" id="Section1">
@@ -801,57 +789,57 @@
                                                   <div class="ideaboxNews in-easing" id="idx1">
                                                     <ul>                       <li>
                                                       <div class="in-image">
-                                                        <img src="{{url('Frontend/notice_gallery/notice.png')}}">
+                                                        <img src="{{url('Frontend/notice_gallery/images.png')}}">
                                                         <span class="in-red">
-                                                          <h6>Read more</h6>
+                                                          {{-- <h6>Read more</h6> --}}
                                                         </span>
                                                       </div>
                                                       <div class="in-content">
-                                                        <h2>REQUEST FOR EXPRESSION OF INTEREST, SHOPNIL SHINDHU</h2>
-                                                        <span>01 Dec 2021, Wednesday</span>
-                                                        <div>
-                                                          <a download href="{{url('Frontend/public/notice_gallery/9e191fecb67520d0d494c01188437c46.pdf')}}"><p style="font-weight: bold; color: #023300">Download Notice</p></a>
+                                                        <h2> The mail notification about qualified candidates has been sent</h2>
+                                                        <span>29 January 2022, Saturday</span>
+                                                        {{-- <div> --}}
+                                                          {{-- <a download href="{{url('Frontend/public/notice_gallery/9e191fecb67520d0d494c01188437c46.pdf')}}"><p style="font-weight: bold; color: #023300">Download Notice</p></a> --}}
                                                           <pppppp></pppppp>
-                                                        </div>
+                                                        {{-- </div> --}}
                                                       </div>
                                                     </li>
                                                     <li>
                                                       <div class="in-image">
-                                                        <img src="{{url('Frontend/notice_gallery/notice.png')}}">
-                                                        <span class="in-blue">
-                                                          <h6>Read more</h6>
-                                                        </span>
+                                                        <img src="{{url('Frontend/notice_gallery/images.png')}}">
+                                                         <span class="in-blue"> 
+                                                          {{-- <h6>Read more</h6> --}}
+                                                        </span> 
                                                       </div>
                                                       <div class="in-content">
-                                                        <h2>Written Exam Result - Officer Cadet Batch 2022-B</h2>
-                                                        <span>28 Nov 2021, Sunday</span>
-                                                        <div>
+                                                        <h2> Course Exam Result has been Published already</h2>
+                                                        <span>25 january 2022, Tuesday</span>
+                                                        {{-- <div>
                                                           <a download href="{{url('Frontend/public/notice_gallery/63ef3be003c0b926219aa62d74dd1757.pdf')}}"><p style="font-weight: bold; color: #023300">Download Notice</p></a>
                                                           <pppppp></pppppp>
-                                                        </div>
+                                                        </div> --}}
                                                       </div>
                                                     </li>
                                                     <li>
                                                       <div class="in-image">
-                                                        <img src="{{url('Frontend/notice_gallery/notice.png')}}">
-                                                        <span class="in-purple">
-                                                          <h6>Read more</h6>
+                                                        <img src="{{url('Frontend/notice_gallery/images.png')}}">
+                                                        <span class="in-red">
+                                                          {{-- <h6>Read more</h6> --}}
                                                         </span>
                                                       </div>
                                                       <div class="in-content">
-                                                        <h2>Written Exam Result - Direct Entry Artificer Batch 2022-A</h2>
-                                                        <span>27 Nov 2021, Saturday</span>
-                                                        <div>
+                                                        <h2>The Eligible List of Sailor, who will be to perform Hazz this year has been published.</h2>
+                                                        <span>27 January 2022, Wednusday</span>
+                                                        {{-- <div>
                                                           <a download href="{{url('Frontend/public/notice_gallery/98b46f19ecaaf84b312eb3b70797d51a.pdf')}}"><p style="font-weight: bold; color: #023300">Download Notice</p></a>
                                                           <pppppp></pppppp>
-                                                        </div>
+                                                        </div> --}}
                                                       </div>
                                                     </li>
                                                     <li>
                                                       <div class="in-image">
                                                         <img src="{{url('Frontend/notice_gallery/notice.png')}}">
                                                         <span class="in-yellow">
-                                                          <h6>Read more</h6>
+                                                          {{-- <h6>Read more</h6> --}}
                                                         </span>
                                                       </div>
                                                       {{-- <div class="in-content">
@@ -937,7 +925,7 @@
                                   </div>
                                 </div>
                               </section>
-                              <section class="section section-default ">
+                              {{-- <section class="section section-default ">
                                 <div class="container">
                                   <div class="section-inner"></br>
                                     <h1 style="color:#fff;">UN Mission </h1><hr>
@@ -1113,11 +1101,11 @@
                                                     </div>
                                                   </div>
                                                 </div>
-                                              </section>
-                                              <section class="section section-bg section-bg-style4">
+                                              </section> --}}
+                                              {{-- <section class="section section-bg section-bg-style4">
                                                 <div class="section-bg-style4--bg-image"></div>
                                                 <div class="col-lg-4">
-                                                  <h1 class="wow fadeInUp" style="color:#fff;">News and Events</h1>
+                                                  <h1 class="wow fadeInUp" style="color:rgb(245, 222, 19);">News and Events</h1>
                                                   <div class="row wow fadeInUp">
                                                     <hr class="hr-small">
                                                   </div>
@@ -1128,7 +1116,7 @@
                                                       <div class="panel-body">
                                                         <div class="row">
                                                           <div class="col-xs-12">
-                                                            <ul class="demo1">
+                                                            <ul class="demo1"> --}}
                                                               {{-- <li class="news-item">
                                                                 <table cellpadding="4">
                                                                   <tr>
@@ -1150,7 +1138,7 @@
                                                                   </tr>
                                                                 </table>
                                                               </li> --}}
-                                                              <li class="news-item">
+                                                              {{-- <li class="news-item">
                                                                 <table cellpadding="4">
                                                                   <tr>
                                                                     <td rowspan="3" style="width:112px;">
@@ -1347,7 +1335,7 @@
                                                     </div>
                                                   </div>
                                                 </div>
-                                              </section>
+                                              </section> --}}
                                               <div class="modal" id="modal-audio-now" tabindex="-1" role="dialog">
                                                 <div class="modal-dialog" role="document">
                                                   <div class="modal-content">
@@ -1441,7 +1429,7 @@
                                                       <h1 style="color:#fff;">Gallery</h1>
                                                       <div class="row wow fadeInUp">
                                                         <div class="divider-sm"></div>
-                                                        <p class="small_gallery ">Liberation war, Birth of BN and present activities of BN are projected in this section with several photography’s and videos</p>
+                                                        <p class="small_gallery ">Where YOU can dig your dream more</p>
                                                       </div>
                                                       <hr class="hr-small">
                                                     </div>
@@ -1451,14 +1439,14 @@
                                                       <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
                                                         <div class="btn-group" role="group">
                                                           <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab"><i class="fa fa-photo"></i>
-                                                            <div class="hidden-xs">PHOTO GALLERY</div>
+                                                            <div class="hidden-xs">ARCADE</div>
                                                           </button>
                                                         </div>
-                                                        <div class="btn-group" role="group">
+                                                        {{-- <div class="btn-group" role="group">
                                                           <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab"><i class="fa fa-video-camera"></i>
                                                             <div class="hidden-xs">VIDEO GALLERY</div>
                                                           </button>
-                                                        </div>
+                                                        </div> --}}
                                                       </div>
                                                       <div class="well">
                                                         <div class="tab-content">
@@ -1467,15 +1455,15 @@
                                                               <div class="">
                                                                 <div class="filters">
                                                                   <ul>
-                                                                    <li class="active">
+                                                                    {{-- <li class="active">
                                                                       <a data-filter=".group9" href="#">Ceremony</a>
-                                                                    </li>
-                                                                    <li class="">
+                                                                    </li> --}}
+                                                                    {{-- <li class="">
                                                                       <a data-filter=".group1" href="#">Liberation War</a>
                                                                     </li>
                                                                     <li class="">
                                                                       <a data-filter=".group2" href="#">Rise of BD Navy</a>
-                                                                    </li>
+                                                                    </li> --}}
                                                                   </ul>
                                                                 </div>
                                                                 <div class="divider-lg"></div>
@@ -1488,12 +1476,12 @@
                                                                         <!-- slide -->
                                                                         <li class="group9">
                                                                           <div class="fsp-image">
-                                                                            <img alt="image" src="{{url('Frontend/photo_gallery/rsz_4_1595824198.jpg')}}" />
+                                                                            <img alt="image" src="{{url('Frontend/photo_gallery/a1.jpg')}}" />
                                                                           </div>
                                                                           <div class="fsp-cover">
                                                                             <div class="fsp-info">
                                                                               <div class="fsp-fancy">
-                                                                                <a class="fancybox" data-fancybox-group="group9" href="{{url('Frontend/photo_gallery/rsz_4_1595824198.jpg')}}">
+                                                                                <a class="fancybox" data-fancybox-group="group9" href="{{url('Frontend/photo_gallery/a2.jpg')}}">
                                                                                   <i class="fa fa-picture-o fa-1x"></i>
                                                                                 </a>
                                                                               </div>
@@ -1502,12 +1490,12 @@
                                                                         </li>
                                                                         <li class="group9">
                                                                           <div class="fsp-image">
-                                                                            <img alt="image" src="{{url('Frontend/photo_gallery/rsz_5_1595824139.jpg')}}" />
+                                                                            <img alt="image" src="{{url('Frontend/photo_gallery/a3.jpg')}}" />
                                                                           </div>
                                                                           <div class="fsp-cover">
                                                                             <div class="fsp-info">
                                                                               <div class="fsp-fancy">
-                                                                                <a class="fancybox" data-fancybox-group="group9" href="{{url('Frontend/photo_gallery/rsz_5_1595824139.jpg')}}">
+                                                                                <a class="fancybox" data-fancybox-group="group9" href="{{url('Frontend/photo_gallery/EoNW81cVcAAuFU4.jpg')}}">
                                                                                   <i class="fa fa-picture-o fa-1x"></i>
                                                                                 </a>
                                                                               </div>
@@ -1516,12 +1504,12 @@
                                                                         </li>
                                                                         <li class="group9">
                                                                           <div class="fsp-image">
-                                                                            <img alt="image" src="{{url('Frontend/photo_gallery/rsz_3_1595824234.jpg')}}" />
+                                                                            <img alt="image" src="{{url('Frontend/photo_gallery/EoNW81cVcAAuFU4.jpg')}}" />
                                                                           </div>
                                                                           <div class="fsp-cover">
                                                                             <div class="fsp-info">
                                                                               <div class="fsp-fancy">
-                                                                                <a class="fancybox" data-fancybox-group="group9" href="{{url('Frontend/photo_gallery/rsz_3_1595824234.jpg')}}">
+                                                                                <a class="fancybox" data-fancybox-group="group9" href="{{url('Frontend/photo_gallery/EoNW81cVcAAuFU4.jpg')}}">
                                                                                   <i class="fa fa-picture-o fa-1x"></i>
                                                                                 </a>
                                                                               </div>

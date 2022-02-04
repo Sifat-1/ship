@@ -21,24 +21,51 @@ class DashboardController extends Controller
         $count['ranks']=Rank::all()->count(); 
         $count['courses']=Course::all()->count(); 
         $count['ships']=Ship::all()->count(); 
-        $count['hazz']=Hazz::all()->count(); 
+        // $count['hazz']=Hazz::all()->count(); 
         return view('admin.pages.dashboard',compact('count'));
     }
-    public function showreport()
+    public function showdonehazz()
     {  
+        $sailors=Sailor::with(['pullcandidate','rankcategory'])->where('is_hazz_done','=','yes')->get();
         
-        $reports=[];
-        if(request()->has('fromdate'))
-        {
-            $from_date=request()->fromdate;
-            $to_date=request()->todate;
-            
-        
-        $reports=Sailor::where('is_hazz_done','yes')
-        ->whereDate('created_at','>=',$from_date)
-        ->whereDate('created_at','<=',$to_date)
-        ->get();
-        }
-        return view('admin.pages.report',compact('reports'));
+        return view('admin.pages.hazz.donehazz',compact('sailors'));
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $reports=[];
+//         if(request()->has('fromdate'))
+//         {
+//             $from_date=request()->fromdate;
+//             $to_date=request()->todate;
+            
+        
+//         $reports=Sailor::where('is_hazz_done','yes')
+//         ->whereDate('created_at','>=',$from_date)
+//         ->whereDate('created_at','<=',$to_date)
+//         ->get();
+//         }

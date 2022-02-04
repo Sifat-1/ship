@@ -14,7 +14,7 @@ class CandidateController extends Controller
 {
     public function CandidateList()
     {
-        $candidates=Candidate::all();
+        $candidates=Candidate::paginate(5);
        return view('admin.pages.candidatelist',compact('candidates'));
     }
 
@@ -104,6 +104,11 @@ public function VIewCandidateProfile($candidate_id)
     $ships=Ship::all();
     return view('admin.pages.candidateView', compact('candidate','ranks','ships'));
 }
+public function DeletecandidateProfile($id)
+    {
+        Candidate::find($id)->delete();
+        return redirect()->back()->with('success',"Candidate Profile has been deleted");
+    }
 
 }
 

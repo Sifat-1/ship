@@ -1,4 +1,4 @@
-<div id="social-sidebar">
+{{-- <div id="social-sidebar">
     <ul>
       <li>
       </li>
@@ -14,4 +14,4 @@
         <img src="{{url('Frontend/frontend/template/img/social/contacts.png')}}" alt="BD Navy" style=" width: 40px;"><span>Contact Us</span></a>
       </li>
     </ul>
-  </div>
+  </div> --}}

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Hazz;
 use App\Models\Sailor;
 
+use App\Models\Hazzlist;
 use App\Models\Candidate;
 use Illuminate\Http\Request;
 
@@ -14,8 +15,8 @@ class HazzController extends Controller
     {
       
         $hazz=Hazz::all();
-        $sailors=Sailor::with(['pullcandidate','rankcategory'])->where('is_hazz_done','=','yes')->get();
-        return view('admin.pages.hazz.hazzcriteriallist',compact('hazz','sailors'));
+        // $sailors=Sailor::with(['pullcandidate','rankcategory'])->where('is_hazz_done','=','yes')->get();
+        return view('admin.pages.hazz.hazzcriteriallist',compact('hazz'));
         
     }
 
@@ -44,7 +45,7 @@ class HazzController extends Controller
     public function showEligibleHazz()
     
     {
-        $hazz=Hazz::find(1);
+        $hazz=Hazz::find(2);
         // $sailors=Sailor::with(['rankcategory','pullcandidate','hazz']
         // )->where([
         //                                                                [$sailors->pullcandidate->religion,$hazz->religion],
@@ -52,11 +53,21 @@ class HazzController extends Controller
         //                                                                ['point','>=',$hazz->point]
         //                                                                ])->get();
                                                                    
-       $candidates=Candidate::with('sailor')->where('age','>=',$hazz->age)
+       $candidates=Candidate::whereHas('sailor',function($query) use ($hazz){
+           $query->where('is_hazz_done','no')->where('point','>=',$hazz->point);
+       })->where('age','>=',$hazz->age)
        ->where('religion',$hazz->religion)
        ->get();
 
-        return view('admin.pages.hazz.eligiblehazz',compact('candidates','hazz'));
+    //    dd($candidates);
+       
+         $hazzlist=Hazzlist::with('bringsailor')->get();
+        //  dd( $hazzlist);
+        
+
+      
+
+        return view('admin.pages.hazz.eligiblehazz',compact('candidates','hazz','hazzlist'));
         
     }
 
@@ -70,7 +81,39 @@ class HazzController extends Controller
         return redirect()->back();
         
     }
+ 
+
+    public function storehazzmonth(Request $request)
+          {
+            //   dd($request->all());
+            //   dd(date("Y-m-d h:m:i"));
+          
+          
+            foreach($request->sailor_id as $sailor)
+            {
+           
+        $check=Hazzlist::where('sailor_id',$sailor)->first();
+
+        if(!$check)
+            {
+                
+                Hazzlist::create([ 
+                    'sailor_id'=>$sailor,
+                    'fromdate'=>$request->fromdate,
+                    'todate'=>$request->todate,
+                    'year'=>date("Y"),
+                      
+            
+                ]);
+            
+            }
+        }
+        return redirect()->back()->with('success','Those sailors record has been stored Already.');
+
+         
+        }
     
+
 
 
 }

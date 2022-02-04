@@ -46,7 +46,7 @@
         <td><img src="{{url('/uploads/ranks/'.$value->rank_image)}}" style="border-radious:1px" width="200px" alt="rank image"></td>
         <td>
           <a href="{{route('view.rank',$value->id)}}" class="btn btn-primary">View</a>
-          <a href=""  class="btn btn-success">Update</a>
+          {{-- <a href=""  class="btn btn-success">Update</a> --}}
           <a href="{{route('delete.sailorrank',$value->id)}}" class="btn btn-danger">Delete</a>
         </td>
        

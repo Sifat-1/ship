@@ -29,7 +29,7 @@
 			</div>
 			<div class="form-group">
 				<label for="exampleFormControlInputLname">Last Name</label>
-				<input name=last_name type="text" class="form-control" id="exampleFormControlInputLname" placeholder="enter First Name">
+				<input name=last_name type="text" class="form-control" id="exampleFormControlInputLname" placeholder="enter Last Name">
 			  </div>
 			  <div class="form-group">
 				<label for="exampleFormControlInputaddress">Address</label>
@@ -40,19 +40,19 @@
 				<input name=date type="date" class="form-control" id="exampleFormControlInputdate" placeholder="enter Date">
 			  </div>
 			  <div class="form-group">
-				<label for="exampleFormControlInputDate">nationality</label>
+				<label for="exampleFormControlInputDate">Nationality</label>
 				<input name=nationality type="text" class="form-control" id="exampleFormControlInputnationality" placeholder="enter nationality">
 			  </div>
 			  <div class="form-group">
-				<label for="exampleFormControlInputbloodgroup">bloodgroup</label>
+				<label for="exampleFormControlInputbloodgroup">Bloodgroup</label>
 				<input name=bloodgroup type="textt" class="form-control" id="exampleFormControlInputbloodgroup" placeholder="enter bloodgroup">
 			  </div>
 			  <div class="form-group">
-				<label for="exampleFormControlInputPhone">phone</label>
+				<label for="exampleFormControlInputPhone">Phone</label>
 				<input name=phone type="number" class="form-control" id="exampleFormControlInputphone" placeholder="enter phone number">
 			  </div>
 			  <div class="form-group">
-				<label for="exampleFormControlInputDate">religion</label>
+				<label for="exampleFormControlInputDate">Religion</label>
 				<input name=religion type="text" class="form-control" id="exampleFormControlInputreligion" placeholder="enter religion">
 			  </div>
 			  <div class="form-group">

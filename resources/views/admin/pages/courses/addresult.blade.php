@@ -29,8 +29,8 @@
     </select>
     </div>
     <div class="mb-3">
-        <label for="exampleInputResult" class="form-label">Result Point (result should  be in between 1 to 4)</label>
-        <input name="point" max='4' required  placeholder="Enter Course Point" type="number" class="form-control" id="exampleInputResult">
+        <label for="exampleInputResult" class="form-label">Result Point (result should  be in between 1 to 5)</label>
+        <input name="point" max='5' required  placeholder="Enter Course Point" type="number" class="form-control" id="exampleInputResult">
     </div>
     <button type="submit" class="btn btn-success">Submit</button>
 </form>

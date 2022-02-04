@@ -18,9 +18,9 @@
       </tr>
     </thead>
     <tbody>
-      @foreach($special_courses as $course)                                                                              
+      @foreach($special_courses as $key=>$course)                                                                              
       <tr>
-              <th>{{$course->id}}</th>
+              <th>{{$key+1}}</th>
              <td>{{$course->shortform}}</td>
              <td>{{$course->details}}</td>
              <td>

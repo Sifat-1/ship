@@ -27,6 +27,7 @@ class ShipController extends Controller
             'details'=>$request->details,
           
         ]);
-        return redirect()->back()->with('success','Ship has created successfully.');
+        notify()->success('Ship has created successfully');
+        return redirect()->back();
     }
 }

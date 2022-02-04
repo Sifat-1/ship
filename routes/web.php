@@ -102,6 +102,7 @@ Route::get('/HazzDone',[ProfileController::class,'hazzdone'])->name('hazz.done')
  Route::get('/CandidateList',[CandidateController::class,'CandidateList'])->name('show.candidate');
  Route::post('/StoreCandidatedata',[CandidateController::class,'StoreCandidatedata'])->name('store.candidate');
  Route::get('/view/candidate/profile/{candidate_id}', [CandidateController::class, 'VIewCandidateProfile'])->name('candiate.view');
+ Route::get('/Delete/candidateProfile/{id}',[CandidateController::class,'DeletecandidateProfile'])->name('delete.candidateprofile');
 
 //  New_Sailor
 
@@ -148,15 +149,17 @@ Route::post('/StoresCriteria/{id}',[CourseController::class,'StoresCriteria'])->
 Route::get('/ShowHazzCriteria',[HazzController::class,'ShowshazzCriteria'])->name('show.hazzcriteria');
 Route::get('/CreatHazzCriteria',[HazzController::class,'creathazzCriteria'])->name('creat.hazzcriteria');
 Route::post('/StoreHazzCriteria',[HazzController::class,'storehazzCriteria'])->name('store.hazzcriteria');
-Route::get('/ShowEligible/HAzzSailor}',[HazzController::class,'showEligibleHazz'])->name('show.eligiblehazzsailor');
+Route::get('/ShowEligible/HAzzSailor',[HazzController::class,'showEligibleHazz'])->name('show.eligiblehazzsailor');
 Route::get('/UpdateHAzzSailor/{id}',[HazzController::class,'doneEligibleHazz'])->name('done.eligiblehazzsailor');
+Route::get('/showreportofdonehazz',[DashboardController::class,'showdonehazz'])->name('show.donehazz');
+Route::post('/storehazzmonth',[HazzController::class,'storehazzmonth'])->name('store.hazzmonth');
 
 // dashboard
 Route::get('/showDashboard',[DashboardController::class,'showdashboard'])->name('show.dashboard');
 
-// Report 
 
-Route::get('/showreport',[DashboardController::class,'showreport'])->name('show.report');
+
+
 
 
 });

@@ -14,7 +14,7 @@
 <p><b>Sailor Point:{{$sailors->point}}</b></p>
 {{-- <p><b>Sailor Result_Point:{{$sailors->point}}</b></p> --}}
 </div>
-<button class="btn btn-primary" type="submit" onClick="PrintDiv('SailorProfilePrint');" value="Print">Print</button>
+{{-- <button class="btn btn-primary" type="submit" onClick="PrintDiv('SailorProfilePrint');" value="Print">Print</button> --}}
 <br><br>
 <a class="btn btn-success" type="button" href="{{route('edit.sailorrank',$sailors->id)}}" >Update Rank</a>
 <br><br>

@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  @notifyCss
+  
   <!-- Required meta tags --> 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,9 +24,13 @@
   <!-- endinject -->
   <link rel="shortcut icon" href="{{url('Backend/images/favicon1.png')}}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  {{-- @notifyCss --}}
 </head>
 <body>
+ 
   <div class="container-scroller">
+    @include('notify::components.notify')
+    {{-- @include('notify::messages') --}}
     <!-- partial:partials/_navbar.html -->
      <!-- <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
@@ -259,6 +265,7 @@
   <script src="{{url('Backend/js/dashboard.js')}}"></script>
   
   <!-- End custom js for this page-->
+  @notifyJs
 </body>
 
 </html>

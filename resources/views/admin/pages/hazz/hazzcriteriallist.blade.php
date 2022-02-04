@@ -25,10 +25,6 @@
 
     </tr>
     @endforeach
-     
-
-    
-         
 
 </tbody>
 </table>
@@ -37,7 +33,30 @@
 <a href="{{route('show.eligiblehazzsailor')}}" button type="button" class="btn btn-primary">Eligible Sailor</button></a>
 <br> <br>
 
-<h3> The Marked Sailors List who have alreay done their HAzz </h3>
+
+</div>
+
+@endsection
+        
+        
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{-- testing done hazz --}}
+
+{{-- <h3> The Marked Sailors List who have alreay done their HAzz </h3>
 <table class="table">
   <thead>
     <tr>
@@ -46,9 +65,9 @@
       <th scope="col">Sailor_Rank</th>
       <th scope="col">Sailor_Religion</th>
       <th scope="col">Sailor_Age</th>
-      <th scope="col">Sailor Obtained_Point</th>
+      <th scope="col">Sailor Obtained_Point</th> --}}
       {{-- <th scope="col">Action</th> --}}
-  </tr>
+  {{-- </tr>
 </thead>
 <tbody>
   @foreach($sailors as $key=>$value) 
@@ -65,11 +84,4 @@
        
 
 </tbody>
-</table>
-</div>
-
-@endsection
-        
-        
-       
-    
+</table> --}}
